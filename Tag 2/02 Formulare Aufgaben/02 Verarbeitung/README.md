@@ -130,4 +130,4 @@ Wenn alles okay ist, soll neu eine einfache Bestätigungsmeldung angezeigt werde
 
 ## Lösung
 
-Mögliche Lösungen zu den Aufgaben werden dir vom Kursleiter bereitgestellt.Natürlich ist die Ausgabe und Funktionalität des Scripts entscheidend, nicht der Code dazu.
+Mögliche Lösungen zu den Aufgaben werden dir vom Kursleiter bereitgestellt. Natürlich ist die Ausgabe und Funktionalität des Scripts entscheidend, nicht der Code dazu.

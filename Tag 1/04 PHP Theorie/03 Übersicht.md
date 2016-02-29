@@ -487,9 +487,9 @@ Um zwei Werte in PHP zu vergleichen, gibt es die Vergleichsoperatoren `==` und `
 | Beispiel    | Name              | Ergebnis                                                                             |
 | :---------- | :---------------- | :----------------------------------------------------------------------------------- |
 | $a == $b    | Gleich            | Gibt `true` zurück, wenn $a gleich $b ist.                                           |
-| $a === $b   | Identisch         | Gibt `true` zurück, wenn $b gleich $b ist und beide vom gleichen Typ sind.           |
-| $a != $b    | Ungleich          | Gibt `true` zurück, wenn $b ungleich $b ist.                                         |
-| $a !== $b   | Nicht identisch   | Gibt `true` zurück, wenn $b ungleich $b ist und beide nicht vom gleichen Typ sind.   |
+| $a === $b   | Identisch         | Gibt `true` zurück, wenn $a gleich $b ist und beide vom gleichen Typ sind.           |
+| $a != $b    | Ungleich          | Gibt `true` zurück, wenn $a ungleich $b ist.                                         |
+| $a !== $b   | Nicht identisch   | Gibt `true` zurück, wenn $a ungleich $b ist und beide nicht vom gleichen Typ sind.   |
 | $a < $b     | Kleiner als       | Gibt `true` zurück, wenn $a kleiner als $b ist.                                      |
 | $a > $b     | Grösser als       | Gibt `true` zurück, wenn $a grösser als $b ist.                                      |
 | $a <= $b    | Kleiner Gleich    | Gibt `true` zurück, wenn $a kleiner oder gleich $b ist.                              |

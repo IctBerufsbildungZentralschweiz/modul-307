@@ -45,7 +45,7 @@ Wenn keine Flaschen mehr vorhanden sind, soll der letzte Vers ausgegeben werden:
 
 #### Schritt 4
 
-4. Nimm die Datei `beers_3.php` als Grundlage. Lagere die doppelt ausgeführte Abfrage (Zeilen 6 und 7) für die Singular-/Plural-Form des Wortes `bottle` in eine Funktion `getWord` aus.
+4. Nimm die Datei `beers_3.php` aus den Lösungen als Grundlage. Lagere die doppelt ausgeführte Abfrage (Zeilen 6 und 7) für die Singular-/Plural-Form des Wortes `bottle` in eine Funktion `getWord` aus.
 
 ## Lösung
 
