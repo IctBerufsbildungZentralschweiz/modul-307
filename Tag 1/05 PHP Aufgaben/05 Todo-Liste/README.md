@@ -79,6 +79,6 @@ echo printTasks('Unveränderte Aufgaben', $unbearbeitet);
 
 ## Lösung
 
-Mögliche Lösungen zu den Aufgaben werden dir vom Kursleiter bereitgestellt.Natürlich ist die Ausgabe des Scripts entscheidend, nicht der Code dazu.
+Mögliche Lösungen zu den Aufgaben werden dir vom Kursleiter bereitgestellt. Natürlich ist die Ausgabe des Scripts entscheidend, nicht der Code dazu.
 
 Es sind also mehrere Lösungen möglich, solange durch die richtige Logik die gewünschte Ausgabe erzeugt wird.
