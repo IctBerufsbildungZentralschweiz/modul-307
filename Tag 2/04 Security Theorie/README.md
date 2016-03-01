@@ -125,7 +125,7 @@ http://superman.ch/index.php?page=e-banking-passwd.txt
 
 #### Local File Inclusion verhindern
 
-Lege immer fest, welche Pfade eingebunden werden dürfen. Füge nie eine Variable von aussen direkt in einen Pfad ein. Verwende niemals komplette Dateienamen in deinen URLs!
+Lege immer fest, welche Pfade eingebunden werden dürfen. Füge nie eine Variable von aussen direkt in einen Pfad ein. Verwende niemals komplette Dateinamen in deinen URLs!
 
 ```
 http://superman.ch/index.php?page=home
