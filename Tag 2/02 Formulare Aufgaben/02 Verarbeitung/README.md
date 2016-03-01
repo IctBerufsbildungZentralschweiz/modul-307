@@ -27,7 +27,7 @@ Bereite die Fehlerausgabe vor. Zu Beginn des Formulares soll bei nicht validen D
 
 #### Schritt 2
 
-Lagere die «Beispielfehler» nun in ein PHP-Array am Anfang deines Dokumentes aus. Nutze `foreach` um die Fehler als Liste auszugeben. Zeige die Liste nicht an, wenn das Array leer ist!
+Lagere die «Beispielfehler» nun in ein PHP-Array **ganz am Anfang deines Dokumentes** aus. Nutze `foreach` um die Fehler als Liste auszugeben. Zeige die Liste nicht an, wenn das Array leer ist!
 
 ```php
 $errors = [];  // --> Keine Fehlerliste anzeigen
