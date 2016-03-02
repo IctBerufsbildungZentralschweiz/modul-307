@@ -96,7 +96,7 @@ TIPP: Mit 6 bis 9 Testusern erhält man bereits 90 % der Usability Problemen.
 
 Das Produkt wird veröffentlicht, das Testing und die Anpassungen sind jedoch keineswegs abgeschlossen.
 
-### Wichtigsten Werkzeuge
+### Die wichtigsten Werkzeuge
 
 ##### Fragen, fragen, fragen...
 Was? Wann? Warum? Wo? Wie? Wer? 
