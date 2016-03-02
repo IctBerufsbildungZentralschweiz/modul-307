@@ -41,7 +41,7 @@ var spielzugSpieler = prompt(...);
 
 ```js
 if(/* spielzugNichtInErlaubtArray */) {
-    alert('Der eingegebene Speilzug ist nicht erlaubt!');
+    alert('Der eingegebene Spielzug ist nicht erlaubt!');
     throw new Error('Unerlaubter Spielzug.');
 } else {
     alert('Du hast ' + spielzugSpieler + ' eingegeben.');

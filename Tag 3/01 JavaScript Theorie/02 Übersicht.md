@@ -355,7 +355,7 @@ console.log(i);
 ```
 
 
-### Konstrollstrukturen
+### Kontrollstrukturen
 
 #### if/then/else
 
