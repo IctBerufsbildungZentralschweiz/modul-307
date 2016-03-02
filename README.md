@@ -6,7 +6,7 @@
 |------------------------------|----------------------------------------------------|-----------------------------------------|----------------------------------|---------------------------------|
 | Begrüssung/Einführung        | Theorie: Formulare                                 | Theorie: Clientseitige Scriptsprache    | Theorie: Projektzyklus           | Use Case 2                      |
 | Theorie: Interaktive Website | Formular erstellen                                 | Theorie: JavaScript-Grundlagen          | Theorie: Automatisiertes Testing |                                 |
-| Webserver-Setup              | Theorie: Datenverarbeitung in PHP                  |                                         | Bestehende Tests automatisieren  |                                 |
+| Webserver-Setup              | Theorie: Datenverarbeitung in PHP                  | Javascript-Aufgaben                     | Bestehende Tests automatisieren  |                                 |
 |                              |                                                    |                                         | Use Case 1                       |                                 |
 |                              |                                                    |                                         |                                  |                                 |
 | PHP-Grundlagen               | Datenverarbeitung und -validierung in PHP umsetzen | Datenvalidierung in JavaScript umsetzen | Prüfungsbesprechung              | **Prüfung 2**: Abschlussprojekt |
