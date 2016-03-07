@@ -95,3 +95,6 @@ WENN           ich bei mindestens einem Produkt eine grössere Anzahl
                ODER ich bei mindestens einem Proudkt keine Anzahl eingebe
 DANN           wird das entsprechende Input-Feld für die Anzahl rot umrandet 
 ```
+
+
+Eine weitere Zusatzaufgabe findest Du im Dokument [Zusatzaufgabe.md](Zusatzaufgabe.md)
