@@ -68,7 +68,7 @@ DANN           wird das Gesamtotal ohne dieses Produkt berechnet
 
 ```
 GEGEBEN SEI    ich bin auf der Bestellseite (mit Firefox)
-               UND ich habe als Kundennummer "><script>alert('XSS');</script>  
+               UND ich habe als Passwort "><script>alert('XSS');</script>  
                eingegeben
 WENN           ich die Bestellung absende
 DANN           wird keine alert Box "XSS" angezeigt
