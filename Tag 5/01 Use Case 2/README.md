@@ -67,6 +67,16 @@ DANN           wird keine alert Box "XSS" angezeigt
 ```
 
 
+```
+GEGEBEN SEI    ich bin auf der Gewinnspielseite (mit Firefox)
+WENN           ich die Variable
+               ?code="><script>alert('XSS');</script>
+               an die URL anfüge und Enter drücke
+DANN           wird keine alert Box "XSS" angezeigt
+               UND das HTML-Markup wird durch die Eingabe nicht zerstört
+```
+
+
 ### Zusatzaufgaben
 
 ```
