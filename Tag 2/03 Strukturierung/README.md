@@ -147,9 +147,12 @@ formular/
 Kopiere die Formular-Verarbeitung aus deiner `app.php` jetzt in diese Datei.
 
 ```php
-if($_SERVER['REQUEST_METHOD'] === 'POST') {
+// Von hier...
+$name = $_POST['name'] ?? '';
 
-    ... // Alles hier kopieren
+if($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // ... 
+} // ... bis hier, alles kopieren
 ```
 
 Den übrigen Code aus deiner `app.php` kannst du in die `index.php` verschieben. Achte darauf, dass das `include` Statement für das `app.php` Template am Schluss steht!
@@ -160,18 +163,7 @@ Den übrigen Code aus deiner `app.php` kannst du in die `index.php` verschieben.
 $success = false;
 $errors = [];
 
-$name    = $_POST['name']    ?? '';
-$email   = $_POST['email']   ?? '';
-$phone   = $_POST['phone']   ?? '';
-$people  = $_POST['people']  ?? '';
-$hotel   = $_POST['hotel']   ?? '';
-$program = $_POST['program'] ?? '';
-$shuttle = $_POST['shuttle'] ?? '';
-$note    = $_POST['note']    ?? '';
-
-if($_SERVER['REQUEST_METHOD'] === 'POST') {
-    include 'controller/form.php';
-}
+include 'controller/form.php';
 
 // Unbedingt als letztes!
 include 'templates/app.php';
