@@ -13,23 +13,6 @@ XAMPP ist ein Software-Paket, welches die Installation von Apache mit PHP auf Li
 3. Installiere XAMPP ins Verzeichnis `C:\xampp`
 4. **Deaktiviere die Option «Learn more about Bitnami for XAMPP»**
 
-#### Umgebungsvariablen einstellen
-
-1. Führe unter «Start -> Ausführen...» den Befehl `control sysdm.cpl` aus.
-2. Klicke im Tab «Erweitert» auf «Umgebungsvariablen».
-3. Wähle die `Path` Variable aus und klicke auf «Bearbeiten».
-4. Füge am Schluss des Werts folgenden Pfad hinzu: `;C:\xampp\php` (achte auf den Strichpunkt am Anfang!)
-5. Bestätige die Änderungen mit «OK».
-
-Öffne anschliessend eine Kommandozeile (Start -> Ausführen -> `cmd`) und führe den Befehl `php -v` aus. Du solltest ungefähr folgende Ausgabe erhalten:
-
-```
-C:\Users\user> php -v
-PHP 7.0.0 (cli) (built: Dec  3 2015 11:36:59) ( ZTS )
-Copyright (c) 1997-2015 The PHP Group
-Zend Engine v3.0.0, Copyright (c) 1998-2015 Zend Technologies
-```
-
 ### XAMPP Control Panel
 
 Das XAMPP Control Panel startet nach erfolgreicher Installation automatisch. Falls nicht, findest Du es im Startemenü.
