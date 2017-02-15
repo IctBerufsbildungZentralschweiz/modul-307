@@ -46,8 +46,10 @@ DANN          wird dieser Benutzer aus der Datenbank gelöscht
 ### Roadmap
 Definiert für die Umsetzung des Projektes eine Roadmap für die nächsten beiden Tage. Darin sollte ersichtlich sein, wann ihr welche Projekt-Etappen realisieren wollt. Pflichtelemente für eure Roadmap sind folgende Punkte:
 1. Jeden Morgen, zum Start des Kurstages, gibt es ein kurzes Statusupdate sämtlicher Gruppen mit folgenden Fragestellungen:
-    * Sind wir auf Kurs?
-    * Was ist unser nächster Schritt?
+
+    - Sind wir auf Kurs?
+    - Was ist unser nächster Schritt?
+    
 2. Am 4. Kurstag am Nachmittag müsst ihr mit dem Auftraggeber (Kursleiter) einen Termin vereinbaren. An diesem Meeting präsentiert ihr den Zwischenstand eurer Arbeit und könnt offene Fragen an den Auftraggeber stellen.
 
 ## 2. Realisierung
