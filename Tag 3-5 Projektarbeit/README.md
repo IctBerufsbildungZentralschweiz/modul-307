@@ -45,6 +45,7 @@ DANN          wird dieser Benutzer aus der Datenbank gelöscht
 
 ### Roadmap
 Definiert für die Umsetzung des Projektes eine Roadmap für die nächsten beiden Tage. Darin sollte ersichtlich sein, wann ihr welche Projekt-Etappen realisieren wollt. Pflichtelemente für eure Roadmap sind folgende Punkte:
+
 1. Jeden Morgen, zum Start des Kurstages, gibt es ein kurzes Statusupdate sämtlicher Gruppen mit folgenden Fragestellungen:
 
     - Sind wir auf Kurs?
