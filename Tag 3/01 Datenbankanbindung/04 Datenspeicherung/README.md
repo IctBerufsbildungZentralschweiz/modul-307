@@ -6,7 +6,7 @@ Aus Gründen der Sicherheit führen wir die Abfrage nie direkt aus, sondern bere
 Im Prepare-Statement werden die effektiven Werte noch nicht eingetragen, sondern Platzhalter an deren Stelle positioniert.
 
 ```php
-$statement = $pdo->query('INSERT INTO `users` (name, role) VALUES (:name, :role)');
+$statement = $pdo->prepare('INSERT INTO `users` (name, role) VALUES (:name, :role)');
 ```
 
 Erst in einem zweiten Schritt werden mit der `bindParam`-Methode Werte für die Platzhalter definiert.
