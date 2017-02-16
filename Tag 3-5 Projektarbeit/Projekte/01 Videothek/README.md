@@ -28,8 +28,8 @@ Der Mitgliedschafts-Status bestimmt die Anzahl Zusatz-Tage, an denen das Video z
 | Mitgliedschaft | Zusätzliche Ausleihtage | Gesamte Ausleihtage |
 |----------------|:-----------------------:|:-------------------:|
 | keine          |            +0           |          30         |
-| Bronze         |           +10           |          45         |
-| Silber         |           +20           |          60         |
+| Bronze         |           +10           |          40         |
+| Silber         |           +20           |          50         |
 | Gold           |           +40           |          70         |
 
 ## Ausleihen bearbeiten
