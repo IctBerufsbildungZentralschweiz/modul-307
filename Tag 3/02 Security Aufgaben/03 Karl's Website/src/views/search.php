@@ -4,4 +4,4 @@
 
 <h1>Suchergebnisse</h1>
 
-<p>Deine Suche nach "<?= $_POST['q'] ?? '' ?>" lieferte keine Treffer!</p>
+<p>Deine Suche nach "<?= $_GET['q'] ?? '' ?>" lieferte keine Treffer!</p>

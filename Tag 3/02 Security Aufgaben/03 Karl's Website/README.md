@@ -16,4 +16,4 @@ Zeige ihm dann natürlich auch, wie er diese Lücken schliessen kann...
 
 * Lies die Zugangsdaten zu Karl's Hosting mit deinem Web-Browser aus.
 * Leite **alle** Besucher des Gästebuchs auf `http://google.com` um. (Tipp: Du kannst die Datei `database/guestbook.txt` einfach löschen, um das Gästebuch zu leeren)
-* Nutze die Suchfunktion um die Session-ID von Karl aus dem Cookie auszulesen. Frage Google, wie man dies tun könnte.
+* **Zusatzaufgabe:** Welchen Link auf seine eigene Website musst du Karl per Email senden, damit du sein Session-Cookie an einen von dir kontrollierten Server senden könntest, sobald er auf den Link klickt? Frage Google, wie man dies tun könnte und für was dies nützlich wäre.
