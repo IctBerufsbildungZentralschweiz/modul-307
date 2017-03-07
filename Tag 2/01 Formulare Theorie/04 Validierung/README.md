@@ -206,5 +206,5 @@ Damit der Benutzer bei einem Fehler nicht wieder alle Daten einfüllen muss. Fü
 
 Hier ein Beispiel dazu:
 ```html
-<input class="form-control" type="text" id="name" name="name" value="<?= (isset($name)) ? $name : ''; ?>">
+<input type="text" id="name" name="name" value="<?= $name ?? '' ?>">
 ```
