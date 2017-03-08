@@ -15,7 +15,8 @@
                 <li class="active"><a href="index.php">Home</a></li>
                 <li><a href="index.php?page=guestbook.php">Gästebuch</a></li>
             </ul>
-            <form class="navbar-search pull-left" action="index.php?page=search.php" method="GET">
+            <form class="navbar-search pull-left" action="index.php" method="GET">
+                <input type="hidden" name="page" value="search.php" />
                 <input type="text" name="q" class="search-query span2" placeholder="Search">
             </form>
         </div><!-- /.nav-collapse -->
