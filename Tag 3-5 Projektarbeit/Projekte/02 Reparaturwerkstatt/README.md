@@ -4,7 +4,7 @@ Die Firma WeBau ist ein mittelständiges Bauunternehmen. Das Unternehmen ist an 
 In den Grundzügen soll das Tool folgende Aufgaben übernehmen:
 
 1. Neue Reparaturaufträge sollen erfasst werden können.
-2. Bestehende Reparaturaufträge sollen übersichtlichen angezeigt werden können.
+2. Bestehende Reparaturaufträge sollen übersichtlich angezeigt werden können.
 3. Bestehende Reparaturaufträge sollen mutiert werden können.
 
 ## Ausleihen erfassen
