@@ -8,7 +8,7 @@ $statement = $pdo->prepare('SELECT * FROM users');
 ```
 Erst in einem zweiten Schritt wird der Datenbank-Befehl mit der `execute`-Methode effektiv ausgeführt.
 ```php
-$result = $statement->execute(); // Abfrage wird ausgeführt
+$statement->execute(); // Abfrage wird ausgeführt
 ```
 
 ## Resultate ausgeben
