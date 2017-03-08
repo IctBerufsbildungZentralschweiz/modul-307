@@ -177,7 +177,7 @@ Füge **niemals** Benutzereingaben direkt in eine SQL-Query ein. Verwende die mo
 Verwende Prepared Statements: Auf diese Weise werden deine Query und die Benutzereingaben getrennt an den Datenbankserver gesendet und müssen nicht vereint werden. Der DB-Server übernimmt das sichere Handling der Query dann für Dich.
 
 ```php
-$statement = $dbh->prepare("SELECT `password` FROM `users` WHERE username = :username");
+$statement = $dbo->prepare("SELECT `password` FROM `users` WHERE username = :username");
 $statement->bindParam(':username', $username);
 $statement->execute();
 

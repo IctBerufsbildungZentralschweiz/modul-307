@@ -6,7 +6,7 @@ Verbindungen werden durch das Erstellen von Instanzen der PDO-Basisklasse erzeug
 // Benutzer = root
 // Passwort = ADfk3lox!4foi4hd
 
-$dbh = new PDO('mysql:host=localhost;dbname=meinedatenbank', 'root', 'ADfk3lox!4foi4hd');
+$pdo = new PDO('mysql:host=localhost;dbname=meinedatenbank', 'root', 'ADfk3lox!4foi4hd');
 ```
 ## Datenbankquelle / Connection-String / DSN
 Die Datenbankquelle besteht aus einem definierten Connection-String. Darin wird angegeben, was für eine Art Quelle wir ansprechen möchten (`mysql`), was der Host dieser Datenbank ist (`host=localhost`) und wie die Datenbank heisst (`meinedatenbank`):
