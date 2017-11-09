@@ -89,6 +89,15 @@ Um Plugins zu installieren, gehe im Menü auf `File -> Settings -> Install`. Du 
 
 Um Plugins zu installieren, gehe im Menü auf `Datei -> Erweiterungs-Verwaltung...`. Du kannst jetzt den Namen eines Plugins eingeben und es über den «Installieren»-Button installieren.
 
+#### NetBeans
+
+1. Installer von [netbeans.org](https://netbeans.org/downloads/) herunterladen: Wähle oben Sprache und Plattform, dann unter Bundle `PHP` - `Download x64` wählen.
+2. NetBeans installieren und starten
+
+##### Plugins installieren
+
+Um Plugins zu installieren, gehe im Menü `Tools -> Plugins` auf `Available Plugins`, wähle die gewünschten Plugins aus (`Search` rechts oben hilft) und klicke auf `Install`.
+
 
 ### Plugin-Empfehlungen
 
@@ -131,6 +140,7 @@ Autocomplete-Funktionen, die Dir bei der Eingabe von PHP-Code helfen, kannst Du 
 | Sublime Text | PHP Completions Kit   |
 | Atom         | atom-autocomplete-php |
 | Brackets     | PHP SmartHints        |
+| NetBeans     | - (kann es sowieso)   |
 
 ##### Hinweis zu `atom-autocomplete-php`:
 
