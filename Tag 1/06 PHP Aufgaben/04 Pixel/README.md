@@ -105,7 +105,7 @@ Erweitere das PHP-Script so, dass über folgende Query-Strings die korrekten Pix
 
 |                  Query-String                            | Output            |
 |----------------------------------------------------------|-------------------|
-| ?rows=2&cols=2&pixels[]=1\|2&pixels[]=2\|2               | ![](res/out3.png) |
+| ?rows=2&cols=2&pixels[]=2\|1&pixels[]=2\|2               | ![](res/out3.png) |
 | ?rows=3&cols=3&pixels[]=3\|1&pixels[]=1\|3               | ![](res/out1.png) |
 | ?rows=3&cols=3&pixels[]=1\|1&pixels[]=2\|2&pixels[]=3\|3 | ![](res/out2.png) |
 
