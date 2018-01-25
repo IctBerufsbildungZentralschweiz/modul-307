@@ -31,7 +31,7 @@ $router->define([
 
 ##### core/Router.php
 ```php
-class Router
+class Router 
 {
 }    
 ```
@@ -73,7 +73,7 @@ Die Router-Klasse benötigt also nicht nur eine Funktion um die Routes zu speich
 ##### core/Router.php
 ```php
 class Router
-    
+{    
     protected $routes = [];
     
     public function define($routes)
