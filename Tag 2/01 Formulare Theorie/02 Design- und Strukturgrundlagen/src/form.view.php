@@ -79,7 +79,7 @@
                     <option value="Bowlingturnier">Bowlingturnier</option>
                     <option value="Weindegustation">Weindegustation</option>
                     <option value="Asiatischer Kochkurs">Asiatischer Kochkurs</option>
-                    <option value="Tankzurs für Webentwickler">Tankzurs für Webentwickler</option>
+                    <option value="Tanzkurs für Webentwickler">Tanzkurs für Webentwickler</option>
                     <option value="Ying &amp; Yang Yoga Einsteigerkurs">Ying &amp; Yang Yoga Einsteigerkurs</option>
                 </select>
             </div>
