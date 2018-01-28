@@ -119,10 +119,11 @@ echo demo();
 
 Erstelle eine Funktion, welche einen `$wert` automatisch in ein Die-Dump-Konstrukt einbindet.
 
-Lagere die Funktion in eine separate Datei `functions.php` aus und binde diese in die Datei `index.php` ein. Teste die Funktionsweise indem du das Array `$people` an die Funktion übergibst.
+Lagere die Funktion in eine separate Datei `functions.php` aus und binde diese in die Datei `index.php` ein. Teste 
+die Funktionsweise indem du das Array `$vehicles` an die Funktion übergibst.
 
 ```php
-    deineDieDumpFunktion($car);
+    deineDieDumpFunktion($vehicles);
 ```
 
 ## Aufgabe: Benutzerdefinierte Funktion mit Array (Einzelarbeit)
