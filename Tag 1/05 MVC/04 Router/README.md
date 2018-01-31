@@ -66,7 +66,7 @@ Nun haben wir die verschiedenen Routes im Router definiert. Jetzt müssen wir no
 
 Oder mit dem Beispiel oben: 
 * Wenn die URI `about` aufgerufen wird, lade den Controller `AboutController`.
-* Wenn die URI '' aufgerufen wird, lade den Controller `CarController`.
+* Wenn die URI '' (leer) aufgerufen wird, lade den Controller `CarController`.
 
 Die Router-Klasse benötigt also nicht nur eine Funktion um die Routes zu speichern, sondern auch eine Funktion um eine erhaltene Anfrage (URI) mit der Liste abzugleichen und die Anfrage an den dazugehörigen Controller weiterzuleiten.
 

@@ -6,6 +6,7 @@ Die Strukturierung einer Webapplikation ist ein wichtiger Bestandteil und sollte
 
 ## Das MVC-Konzept
 ![Szene 1](res/09.jpg)
+
 ([Zum schrittweisen Aufbau der Applikations-Struktur](res))
 
 ## Komponenten
