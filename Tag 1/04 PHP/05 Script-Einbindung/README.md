@@ -23,8 +23,17 @@ include 'echo.php';
 
 Erstelle die Datei `index.view.php`. Trenne nun das HTML-Gerüst (`index.view.php`) von der PHP-Logik (`index.php`) mit Hilfe der PHP-Script-Einbindung.
 
-Das Ziel ist es, dass in der Datei `index.view.php` nur noch folgender PHP-Code ist: 
+Das Ziel ist es, dass in der Datei `index.view.php` nur noch folgender Code ist: 
 
 ```php
-<?= $vehicle ?>
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <title>Meine Seite</title>
+    </head>
+    <body>
+        Heute bin ich mit dem <?= $vehicle ?> gefahren.
+    </body>
+</html>
 ```
