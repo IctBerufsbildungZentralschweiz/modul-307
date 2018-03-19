@@ -25,7 +25,7 @@ Erstelle die Datei `index.view.php`. Trenne nun das HTML-Gerüst (`index.view.ph
 
 Das Ziel ist es, dass in der Datei `index.view.php` nur noch folgender Code ist: 
 
-```php
+```html
 <!DOCTYPE html>
 <html lang="de">
     <head>
