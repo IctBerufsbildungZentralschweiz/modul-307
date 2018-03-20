@@ -103,6 +103,13 @@ setTimeout(function() {
 }.bind(this), 500);
 ```
 
+87.84% Der heutigen Browser unterstützen auch Pfeilfunktionen(arrow functions) was eine Kurzschreibweise für ```.bind(this)``` ist.
+```js
+setTimeout(() => {
+    $(this).css(...);
+}, 500);
+```
+
 #### Schritt 6
 
 Der Button bewegt sich nun wie gewünscht. Was wir noch benötigen ist eine Möglichkeit, den Klick auf den Button zu registrieren.
