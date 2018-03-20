@@ -152,7 +152,7 @@ Wie Du siehst, wird es sehr schnell sehr komplex. Reguläre Ausdrücke sind dahe
 * Siehe auch [PHP: Reguläre Ausdrücke auf wikibooks.org](https://de.wikibooks.org/wiki/Websiteentwicklung:_PHP:_Regul%C3%A4re_Ausdr%C3%BCcke)
 * Tool zum Testen von Ausdrücken: [PHP Live Regex](http://www.phpliveregex.com/)
 
-## Aufgabe: Direkte Validierung (Einzelarbeit)
+## Aufgabe: Validierung (Einzelarbeit)
 
 Alle Felder, ausser das für die Bemerkung, sind Pflichtfelder.
 
@@ -183,13 +183,10 @@ Die folgenden Testfälle sollte dein Formular erfüllen:
 | Anzahl Personen | `'5'`               | **keine**                                               |
 | Bemerkung       | `''`                | **keine**                                               |
     
-Gib die Fehler mit einem `echo`-Konstrukt im Controller aus.
 
-## Aufgabe: Indirekte Validierung (Einzelarbeit)
+Speichere alle gefundenen Fehler in ein`$errors` Array.
 
-Anstelle die Fehler direkt per `echo`-Konstrukt auszugeben, speichere die verschiedenen Meldungen in das Array `$errors`. 
-
-Sofern ein Fehler gefunden wurde, wird die Form-View geladen und sämtliche Fehler in einer Liste angezeigt:
+Sofern ein Fehler gefunden wurde, soll in der `form.view.php` eine Liste sämtlicher angezeigt werden:
 
 ```html
 <ul>
@@ -202,6 +199,7 @@ Sofern ein Fehler gefunden wurde, wird die Form-View geladen und sämtliche Fehl
 Falls kein Fehler gefunden wurde, wird die neue View `success.view.php` geladen.
 
 ## Aufgabe: Usability (Einzelarbeit)
+
 Damit der Benutzer bei einem Fehler nicht wieder alle Daten einfüllen muss. Fülle die eingetragenen Felder wieder in das Formular ab.
 
 Hier ein Beispiel dazu:
