@@ -103,7 +103,12 @@ setTimeout(function() {
 }.bind(this), 500);
 ```
 
-87.84% Der heutigen Browser unterstützen auch Pfeilfunktionen(arrow functions) was eine Kurzschreibweise für ```.bind(this)``` ist.
+Moderne Browser unterstützen auch Pfeilfunktionen (arrow functions) was eine Kurzschreibweise für `.bind(this)` ist.
+
+Welche Browser-Versionen diese Funktion unterstützen findest du auf [caniuse.com](https://caniuse.com/#search=arrow%20functions).
+
+
+
 ```js
 setTimeout(() => {
     $(this).css(...);
