@@ -1,0 +1,38 @@
+.wrapper {
+    margin-top: 2em;
+    width: 80%;
+    max-width: 550px;
+    margin: 2em auto 0;
+}
+
+.form-title {
+    margin-bottom: .7em;
+}
+
+.form-label {
+    margin-top: .7em;
+    margin-bottom: .3em;
+}
+
+fieldset {
+    margin-top: 2em;
+}
+
+.form-legend {
+    margin-bottom: .75em;
+}
+
+.form-legend + .form-group > .form-label:first-child {
+    margin-top: 0;
+}
+
+.option-group {
+    margin-top: 2em;
+}
+
+.form-actions {
+    padding-top: 1em;
+    border-top: 1px solid #eee;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
