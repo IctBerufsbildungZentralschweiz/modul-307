@@ -7,7 +7,7 @@ In den Grundzügen soll das Tool folgende Aufgaben übernehmen:
 2. Bestehende Reparaturaufträge sollen übersichtlich angezeigt werden können.
 3. Bestehende Reparaturaufträge sollen mutiert werden können.
 
-## Ausleihen erfassen
+## Reparatur erfassen
 Die Angestellten der anderen Abteilungen sollen die Möglichkeiten haben einen neuen Reparaturauftrag über ein Formular zu erfassen. Dabei werden folgende Informationen benötigt:
 
 | Feld                   | zwingend? |
