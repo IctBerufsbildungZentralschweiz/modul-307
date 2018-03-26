@@ -57,7 +57,7 @@ Ein Kreditverleih verfügt über zwei Status:
 Ein Kreditverleih wird niemals komplett aus der Datenbank gelöscht. Erledigte Einträge werden nicht mehr angezeigt, die Informationen bleiben aber in der Datenbank bestehen.
 
 ## Kreditverleihe anzeigen
-Der Kunde wünscht ebenfalls eine Übersicht sämtlicher Verleihe, welche momentan offen sind (also noch nicht vollständig zurück gezahlt). Diese soll so sortiert sein, dass der älteste Verleih jeweils zu oberst in der Tabelle ist. Wichtig ist für die Mitarbeitenden auf den ersten Blick zu sehen, wer den Kredit entgegengenommen hat, was für ein Kredit verliehen wurde und bis wann der Kredit vollständig zurück gezahlt werden sollte.
+Der Kunde wünscht ebenfalls eine Übersicht sämtlicher Verleihe, welche momentan offen sind (also noch nicht vollständig zurück gezahlt). Diese soll so sortiert sein, dass der älteste Verleih jeweils zu oberst in der Tabelle ist. Wichtig ist für die Mitarbeitenden auf den ersten Blick zu sehen, wie der Name des Kunden ist, was für ein Kredit verliehen wurde und bis wann der Kredit vollständig zurück gezahlt werden sollte.
 
 Damit optisch besser ersichtlich ist, welche Kreditverleihe gemäss Datum zurückgezahlt sein sollten, soll hinter jedem Eintrag eines der folgenden beiden Icons platziert werden:
 
