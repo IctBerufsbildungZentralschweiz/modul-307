@@ -1,5 +1,5 @@
 # Kreditfirma
-Die Kreditfirma «Kredihay» ist an eure Webagentur herangetreten und möchte ihre internen Abläufe zur Verwaltung von Kredit-Raten vereinfachen. Dazu soll ein Raten-Webtool entwickelt werden, mit dem der Kreditverleih verwaltet werden kann. 
+Die Kreditfirma «Kredihay» ist an eure Webagentur herangetreten und möchte ihre internen Abläufe zur Verwaltung von Kredit-Raten vereinfachen. Dazu soll ein Raten-Webtool entwickelt werden, mit dem der Kreditverleih verwaltet werden kann. Das Tool wird nur von internen Mitarbeitern verwendet. Es muss kein Login- oder Registrierungssystem vorhanden sein da das Tool vorerst nicht direkt vom Kunden verwendet wird.
 
 In den Grundzügen soll das Tool folgende Aufgaben übernehmen:
 

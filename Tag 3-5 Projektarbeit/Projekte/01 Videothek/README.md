@@ -1,5 +1,5 @@
 # Videothek
-Die Videothek «Vidicted» ist an eure Webagentur herangetreten und möchte ihre internen Abläufe vereinfachen. Dazu soll ein Ausleih-Webtool entwickelt werden, mit dem der Video-Ausleih verwaltet werden kann. 
+Die Videothek «Vidicted» ist an eure Webagentur herangetreten und möchte ihre internen Abläufe vereinfachen. Dazu soll ein Ausleih-Webtool entwickelt werden, mit dem der Video-Ausleih verwaltet werden kann. Das Tool wird nur von internen Mitarbeitern verwendet. Es muss kein Login- oder Registrierungssystem vorhanden sein da das Tool vorerst nicht direkt vom Kunden verwendet wird.
 
 In den Grundzügen soll das Tool folgende Aufgaben übernehmen:
 

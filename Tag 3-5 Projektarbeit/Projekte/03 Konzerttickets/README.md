@@ -1,5 +1,5 @@
 # Konzerttickets
-Die Firma «Tikitas», ein Händler von Konzerttickets, ist an eure Webagentur herangetreten und möchte die Verkäufs- und Rechnungs-Abläufe vereinfachen. Dazu soll ein Webtool entwickelt werden, mit dem die Ticket-Verkäufe verwaltet werden können. 
+Die Firma «Tikitas», ein Händler von Konzerttickets, ist an eure Webagentur herangetreten und möchte die Verkäufs- und Rechnungs-Abläufe vereinfachen. Dazu soll ein Webtool entwickelt werden, mit dem die Ticket-Verkäufe verwaltet werden können. Das Tool wird nur von internen Mitarbeitern verwendet. Es muss kein Login- oder Registrierungssystem vorhanden sein da das Tool vorerst nicht direkt vom Kunden verwendet wird.
 
 In den Grundzügen soll das Tool folgende Aufgaben übernehmen:
 
