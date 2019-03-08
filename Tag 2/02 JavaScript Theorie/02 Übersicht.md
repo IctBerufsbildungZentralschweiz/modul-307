@@ -456,3 +456,16 @@ for(var key in wochentage) {
 // sa ist kurz für Samstag
 // so ist kurz für Sonntag
 ```
+
+##### Zugriff auf DOM-Elemente
+
+```js
+// Wähle ein Element mit der ID "submit" aus (<button id="submit"></button>)
+var button = document.querySelector('#submit');
+
+// Wähle ein Element mit der Klasse "submit" aus (<button class="submit"></button>)
+var button = document.querySelector('.submit');
+
+// Wähle alle Buttons aus
+var buttons = document.querySelectorAll('button');
+```

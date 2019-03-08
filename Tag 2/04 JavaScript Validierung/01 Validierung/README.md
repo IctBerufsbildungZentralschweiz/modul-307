@@ -8,15 +8,11 @@ Wir möchten die Validierung also ausführen, bevor das Formular an den Server v
 
 Wird ein Formular versendet, wird vom Browser ein `submit` Event für das abgesendete Formular ausgelöst.
 
-Wir können jQuery verwenden, um eine Aktion für diesen Event zu definieren.
+Wir können JavaScript verwenden, um eine Aktion für diesen Event zu definieren.
 
 ```js
-$(function() {
-
-    $('#formular').on('submit', function() {
-        console.log('Formular wurde versendet.');
-    });
-
+document.querySelector('#formular').addEventListener('submit', function() {
+    console.log('Formular wurde versendet.');
 });
 ```
 
@@ -29,15 +25,9 @@ Solange die Callback-Funktion nicht `false` zurückgibt, wird das Formular nach 
 Um diesen Vorgang abzubrechen, muss die Funktion `false` zurückgeben.
 
 ```js
-$(function() {
-
-    $('#formular').on('submit', function() {
-
-        // Formular kann nicht mehr abgesendet werden
-        return false;
-
-    });
-
+document.querySelector('#formular').addEventListener('submit', function() {
+    // Formular kann nicht mehr abgesendet werden
+    return false;
 });
 ```
 
@@ -73,109 +63,51 @@ Auch die Methode um Fehlermeldungen zu sammeln oder darzustellen ist dir überla
 #### Ausgabe einer Fehlerliste
 
 ```js
-$(function() {
 
-    $('#loginForm').on('submit', function() {
+document.querySelector('#formular').addEventListener('submit', function() {
 
-        var errors  = [];
+    var errors  = [];
 
-        if($('#username').val() === '') {
-            errors.push('Bitte gib einen Benutzernamen ein.');
-        }
-
-        if($('#password').val() === '') {
-            errors.push('Bitte gib ein Passwort ein.');
-        }
-
-        // Das Formular ist nur dann `valid` wenn 0 Fehler vorhanden sind.
-        var isValid = errors.length < 1;
-
-        if( ! isValid) {
-            renderErrors(errors);
-        }
-
-        return isValid;
-
-    });
-
-
-    /**
-     * Wandelt das `errors` Array in eine
-     * normale HTML-Liste um.
-     *
-     * @param array errors
-     */
-    function renderErrors(errors) {
-
-        var $errorList = $('#errorList');
-
-        // Bestehende <li> entfernen
-        $errorList.html('');
-
-        errors.forEach(function(error) {
-            $errorList.append('<li>' + error + '</li>');
-        });
-
-        $errorList.show();
+    if(document.querySelector('#username').value === '') {
+        errors.push('Bitte gib einen Benutzernamen ein.');
     }
 
+    if(document.querySelector('#password').value === '') {
+        errors.push('Bitte gib ein Passwort ein.');
+    }
+
+    // Das Formular ist nur dann `valid` wenn 0 Fehler vorhanden sind.
+    var isValid = errors.length < 1;
+
+    if( ! isValid) {
+        renderErrors(errors);
+    }
+
+    return isValid;
 });
-```
-
-#### Inline-Fehler
 
 
-```js
-$(function() {
+/**
+ * Wandelt das `errors` Array in eine
+ * normale HTML-Liste um.
+ *
+ * @param array errors
+ */
+function renderErrors(errors) {
 
-    $('#loginForm').on('submit', function() {
+    var errorList = document.querySelector('#errorList');
 
-        var isValid = true;
+    // Bestehende Fehler entfernen
+    errorList.innerHTML = '';
 
-        // Bei einfachen Validierungen kann z. B. auch ein
-        // Array für die Felder und Fehlermeldungen
-        // verwendet werden. Dieses kann dann in einer forEach
-        // Schleife verarbeitet werden.
-        var fields = [
-            {id: 'username', message: 'Bitte gib einen Benutzernamen ein.'},
-            {id: 'password', message: 'Bitte gib ein Passwort ein.'},
-        ];
+    errors.forEach(function(error) {
+        var li = document.createElement('li');
+        li.innerText = error;
 
-        // Alle vorhandenen Fehlerklassen entfernen
-        $('.has-error').removeClass('has-error');
-
-        // Alle vorhandenen Fehlermeldungen entfernen
-        $('label .error-msg').remove();
-
-        fields.forEach(function(field) {
-
-            var $field = $('#' + field.id);
-
-            if($field.val() === '') {
-
-                isValid = false;
-
-                // Eine Fehlermeldung generieren
-                var errorMessage = '<span class="error-msg">'
-                                 + field.message
-                                 + '</span>';
-
-                // Die .has-error Klasse kann in CSS z. B.
-                // rot formatiert werden, damit die fehlerhaften
-                // Felder direkt ersichtlich sind.
-                $field
-                    .parent() // .form-group
-                    .addClass('has-error') // Fehlerklasse hinzufügen
-
-                    .find('label') // Das <label> auswählen
-                        .append(errorMessage); // Fehlermeldung hinzufügen
-            }
-
-        });
-
-        return isValid;
-
+        errorList.appendChild(li)
     });
 
-});
+    errorList.style.display = 'block';
+}
+
 ```

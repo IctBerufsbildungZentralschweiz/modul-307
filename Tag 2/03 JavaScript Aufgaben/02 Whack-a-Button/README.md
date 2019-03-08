@@ -5,7 +5,7 @@
 
 ## Aufgabenstellung
 
-Erstelle das Reaktionsspiel «Whack-a-Button» mit Hilfe von jQuery.
+Erstelle das Reaktionsspiel «Whack-a-Button» in JS.
 
 Ein Button verschiebt sich nach einer gewissen Zeit, nachdem man mit dem Mauscursor darüber fährt, an eine neue Stelle auf dem Bildschirm. Das Ziel das Spielers ist es, den Button möglichst oft anzuklicken.
 
@@ -24,28 +24,22 @@ Erstelle eine einfache HTML-Seite. Füge auf dieser Seite einen Button hinzu und
 <button id="button">Whack me!</button>
 ```
 
-Integriere jQuery via offiziellem CDN-Link in deinem Dokument:
-
-```html
-<script src="http://code.jquery.com/jquery.min.js"></script>
-```
-
-Erstelle danach ein Code-Block der ausgeführt wird, sobald das DOM `ready` ist:
+Erstelle ein Code-Block der ausgeführt wird, sobald das DOM `ready` ist:
 
 ```html
 <script>
-    $(function() {
-        // DOM ist ready
-    });
+    document.addEventListener('DOMContentLoaded', function() {
+    	// DOM ist ready!
+	});
 </script>
 ```
 
 #### Schritt 2
 
-Erstelle im Code-Block einen jQuery-Selector, der dein Button auswählt und speichere diesen in die Variable `$button`.
+Erstelle im Code-Block einen querySelector, der dein Button auswählt und speichere diesen in die Variable `button`.
 
 ```js
-var $button = ...;
+var button = document.querySelector('...');
 ```
 
 Erstelle ein Event-Listener für den `mouseenter` Event. Dieser wird ausgeführt, sobald der Mauszeiger sich über den Button bewegt.
@@ -53,7 +47,7 @@ Erstelle ein Event-Listener für den `mouseenter` Event. Dieser wird ausgeführt
 Vorübergehend soll eine Meldung in der Konsole ausgegeben werden, sobald der Event auftritt.
 
 ```js
-$button.on('mouseenter', function() {
+button.addEventListener('mouseenter', function() {
     // Wird ausgeführt, sobald die Maus sich
     // über den Button bewegt
     console.log('Maus ist darüber!');
@@ -64,9 +58,9 @@ Stelle sicher, dass in deiner Konsole nur die gewünschte Ausgabe erscheint und 
 
 #### Schritt 3
 
-Sorge dafür, dass der Button beim `mouseenter` Event automatisch an die Position `left: 10%` und `top: 15%` verschoben wird. Dies kannst Du mit Hilfe der `css`-Methode lösen.
+Sorge dafür, dass der Button beim `mouseenter` Event automatisch an die Position `left: 10%` und `top: 15%` verschoben wird. Dies kannst Du mit Hilfe der `style` Property lösen.
 
-[`jQuery.css()` auf w3schools.com](http://www.w3schools.com/jquery/jquery_css.asp)
+[`HTMLElement.style` auf MDN](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style)
 
 #### Schritt 4
 
@@ -82,16 +76,16 @@ Momentan ist der Button noch viel zu schnell um ihn überhaupt 1x anklicken zu k
 
 Sorge dafür, dass der Button sich erst 1 Sekunde nach dem `mouseenter` Event verschiebt.
 
-[`setTimeout()` auf w3schools.com](http://www.w3schools.com/jsref/met_win_settimeout.asp)
+[`setTimeout()` auf MDN](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)
 
 ##### Probleme mit `this`?
 
-`setTimeout` ändert die Bedeutung des `this` Schlüsselwortes. Wenn du also den Button vorhin über `$(this).css(...)` neu positioniert hast, wird dies innerhalb von `setTimeout` nicht mehr funktionieren, da `this` nicht mehr auf den Button verweist. Dieses Problem kannst du lösen, in dem du `this` vor dem `setTimeout` in eine Variable speicherst und diese verwendest:
+`setTimeout` ändert die Bedeutung des `this` Schlüsselwortes. Wenn du also den Button vorhin über `this.style` neu positioniert hast, wird dies innerhalb von `setTimeout` nicht mehr funktionieren, da `this` nicht mehr auf den Button verweist. Dieses Problem kannst du einfach lösen, in dem du `this` vor dem `setTimeout` in eine Variable speicherst und diese verwendest:
 
 ```js
 var that = this;
 setTimeout(function() {
-    $(that).css(...);
+    that.style...
 }, 500);
 ```
 
@@ -99,19 +93,19 @@ Alternativ kann mittels `bind` das `this` Schlüsselwort neu definiert werden.
 
 ```js
 setTimeout(function() {
-    $(this).css(...);
+    that.style...
 }.bind(this), 500);
 ```
 
-Moderne Browser unterstützen auch Pfeilfunktionen (arrow functions) was eine Kurzschreibweise für `.bind(this)` ist.
+Moderne Browser unterstützen auch Pfeilfunktionen (arrow functions) was eine Kurzschreibweise für `.bind(this)` ist. 
 
-Welche Browser-Versionen diese Funktion unterstützen findest du auf [caniuse.com](https://caniuse.com/#search=arrow%20functions).
+Ob du diese Funktion verwenden darfst ist abhängig davon, welche Browser du unterstützen möchtest. Welche Browser-Versionen diese Funktion unterstützen findest du auf [caniuse.com](https://caniuse.com/#search=arrow%20functions).
 
 
 
 ```js
 setTimeout(() => {
-    $(this).css(...);
+    that.style...
 }, 500);
 ```
 
