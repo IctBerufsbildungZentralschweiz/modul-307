@@ -59,6 +59,12 @@ Es ist von Vorteil, wenn der Editor deiner Wahl Plugins unterstützt.
 
 Wir empfehlen dir einen der folgenden Editoren zu benutzen und die weiter unten aufgeführten Plugins zu installieren.
 
+#### Visual Studio Code
+
+1. Installer von [code.visualstudio.com](https://code.visualstudio.com/) herunterladen
+2. Visual Studio Code installieren und starten
+3. Bei den Plugins nach unten erwähnten Plugins suchen
+
 #### Sublime Text
 
 1. Installer von [sublimetext.com](https://www.sublimetext.com/3) herunterladen
@@ -73,31 +79,12 @@ Um Plugins zu installieren, drücke die Tastenkombination `Ctrl + Shift + P` und
 
 #### Atom
 
-1. Installer vom Austausch-Laufwerk starten und das Setup ausführen.
+1. Installer von [atom.io](https://atom.io/) herunterladen und ausführen.
 2. Das Programm `Atom` starten.
 
-##### Plugins __installieren__
+##### Plugins installieren
 
 Um Plugins zu installieren, gehe im Menü auf `File -> Settings -> Install`. Du kannst jetzt den Namen eines Plugins eingeben und es über den «Install»-Button installieren.
-
-#### Brackets
-
-1. Installer vom Austausch-Laufwerk starten und das Setup ausführen.
-2. Das Programm `Brackets` starten.
-
-##### Plugins installieren
-
-Um Plugins zu installieren, gehe im Menü auf `Datei -> Erweiterungs-Verwaltung...`. Du kannst jetzt den Namen eines Plugins eingeben und es über den «Installieren»-Button installieren.
-
-#### NetBeans
-
-1. Installer von [netbeans.org](https://netbeans.org/downloads/) herunterladen: Wähle oben Sprache und Plattform, dann unter Bundle `PHP` - `Download x64` wählen.
-2. NetBeans installieren und starten
-
-##### Plugins installieren
-
-Um Plugins zu installieren, gehe im Menü `Tools -> Plugins` auf `Available Plugins`, wähle die gewünschten Plugins aus (`Search` rechts oben hilft) und klicke auf `Install`.
-
 
 ### Plugin-Empfehlungen
 
@@ -137,10 +124,9 @@ Autocomplete-Funktionen, die Dir bei der Eingabe von PHP-Code helfen, kannst Du 
 
 |    Editor    |      Plugin Name      |
 |--------------|-----------------------|
+| Visual Studio Code     | PHP IntelliSense        |
 | Sublime Text | PHP Completions Kit   |
 | Atom         | atom-autocomplete-php |
-| Brackets     | PHP SmartHints        |
-| NetBeans     | - (kann es sowieso)   |
 
 ##### Hinweis zu `atom-autocomplete-php`:
 
