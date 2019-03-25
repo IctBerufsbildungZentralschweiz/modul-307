@@ -117,7 +117,7 @@ echo demo();
 
 ## Aufgabe: Benutzerdefinierte Funktion mit Wert
 
-Erstelle eine Funktion, welche einen `$wert` ausgibt und die Script-Ausführung beendet (`dump($wert); die();`).
+Erstelle eine Funktion, welche einen `$wert` ausgibt und die Script-Ausführung beendet (`var_dump($wert); die();`).
 
 Lagere die Funktion in eine separate Datei `functions.php` aus und binde diese in die Datei `index.php` ein. Teste 
 die Funktionsweise indem du das Array `$vehicles` an die Funktion übergibst.
