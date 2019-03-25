@@ -131,7 +131,7 @@ die Funktionsweise indem du das Array `$vehicles` an die Funktion übergibst.
 Erstelle eine benutzerdefinierte Funktion mit folgenden Kriterien:
 
 * An die Funktion wird das assoziative Array `$car` mit den Attributen Marke, Farbe und Jahrgang übergeben.
-* Die Funktion überprüft das Auto ein Oldtimer ist.
+* Die Funktion überprüft, ob das Auto ein Oldtimer ist.
 * Oldtimer sind Autos, welche vor dem Jahr 1990 gebaut wurden.
 * Die Funktion gibt je nach Prüfergebnis ein `true` oder `false` zurück.
 * War das Prüfergebnis positiv, wird folgender String ausgegeben: "Beim *Renault* handelt es sich um einen Oldtimer."
