@@ -25,9 +25,9 @@ Solange die Callback-Funktion nicht `false` zurückgibt, wird das Formular nach 
 Um diesen Vorgang abzubrechen, muss die Funktion `false` zurückgeben.
 
 ```js
-document.querySelector('#formular').addEventListener('submit', function() {
+document.querySelector('#formular').addEventListener('submit', function(e) {
     // Formular kann nicht mehr abgesendet werden
-    return false;
+    e.preventDefault();
 });
 ```
 
@@ -64,26 +64,25 @@ Auch die Methode um Fehlermeldungen zu sammeln oder darzustellen ist dir überla
 
 ```js
 
-document.querySelector('#formular').addEventListener('submit', function() {
+document.querySelector('#formular').addEventListener('submit', function(e) {
 
     var errors  = [];
 
-    if(document.querySelector('#username').value === '') {
+    if (document.querySelector('#username').value === '') {
         errors.push('Bitte gib einen Benutzernamen ein.');
     }
 
-    if(document.querySelector('#password').value === '') {
+    if (document.querySelector('#password').value === '') {
         errors.push('Bitte gib ein Passwort ein.');
     }
 
     // Das Formular ist nur dann `valid` wenn 0 Fehler vorhanden sind.
     var isValid = errors.length < 1;
 
-    if( ! isValid) {
+    if ( ! isValid) {
         renderErrors(errors);
+        e.preventDefault();
     }
-
-    return isValid;
 });
 
 
