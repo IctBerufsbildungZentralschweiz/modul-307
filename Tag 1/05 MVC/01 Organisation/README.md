@@ -38,7 +38,7 @@ projekt/
 ## Schritt 2: Second-Level-Struktur
 
 ### app-Verzeichnis
-Erstelle nun im app-Verzeichnis für jede der drei MVC-Komponenten ein Ordner: `Moels`, `Views` und `Controllers`
+Erstelle nun im app-Verzeichnis für jede der drei MVC-Komponenten ein Ordner: `Models`, `Views` und `Controllers`
 
 ### public-Verzeichnis
 Erstelle nun im public-Verzeichnis für die Styles und Bilder je einen separaten Ordner: `css`, `images` und `js`
