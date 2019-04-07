@@ -51,9 +51,9 @@ Nun setzt Frau Maurer das Passwort auf das Standard-Passwort *123456* zurück un
 
 ## Vereinfachte MVC-Architektur für unser Projekt
 
-Da die Umsetzung einer MVC-Architektur ohne objektorientierten PHP-Code etwas umständlich ist, versuchen wir für unser Projekt eine vereinfachte Struktur zu erstellen, die sich aber an der MVC-Architektur orientiert.
+Da die Umsetzung einer MVC-Architektur ohne objektorientierten PHP-Code etwas umständlich ist, nutzen wir für unser Projekt eine vereinfachte Struktur, die sich aber an der MVC-Architektur orientiert. Diese Vorlage befindet sich im bereitgestellten MVC-Framework.
 
-Es sollen folgende Komponenten vorhanden sein.
+Es sind folgende Komponenten vorhanden:
 
 * Front-Controller
 * Router
