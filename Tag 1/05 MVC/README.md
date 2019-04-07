@@ -27,8 +27,6 @@ Diese drei Komponenten werden in der für Webapplikationen sehr beliebten MVC-Ar
 
 Als Front-Controller bezeichnen wir den «Einstiegspunkt» unserer Webapplikation. Über diesen wird **jeder** Seitenaufruf entgegengenommen und dann verarbeitet.
 
-In unserem Fall haben wir mit der `index.php` bereits einen Front-Controller erstellt. 
-
 ### Router
 
 Wenn der Front-Controller einen Request entgegennimmt, muss dieser herausfinden, was damit geschehen soll. Dafür wird oft ein `Router` erstellt. Dieser definiert, wie eine spezieifsche Anfrage/URL verarbeitet werden soll.
