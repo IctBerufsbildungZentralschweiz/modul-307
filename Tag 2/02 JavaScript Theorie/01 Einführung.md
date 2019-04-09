@@ -37,7 +37,7 @@ Mit der Entwicklung von JavaScript-Frameworks wie Angular, React oder Ember wurd
 
 ## Wie funktioniert JavaScript
 
-JavaScript wird in den meisten Fällen von einer «JavaScript Engine» ausgeführt. Je nach Browser wird eine andere Engine zur Ausführung von JavaScript verwendet. Daher ist es möglich, dass Code, der in Browser A funktioniert, in Browser B Fehler erzeugt.
+JavaScript wird in den meisten Fällen von einer «JavaScript Engine» ausgeführt. Je nach Browser wird eine andere Engine zur Ausführung von JavaScript verwendet. Daher ist es möglich, dass Code, der in Browser `A` funktioniert, in Browser `B` Fehler erzeugt.
 
 Die bekanntesten JavaScript Engines sind
 
