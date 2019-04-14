@@ -57,7 +57,7 @@ Erstelle nun ein Prepare-Statement, welches sämtliche Tasks aus der Datenbank a
 ## Aufgabe: Tasks ausgeben (Gemeinsam)
 Anstatt das Array mit dem `var_dump`-Konstrukt auszugeben, möchten wir diese an die View übergeben und in einer ungeordneten Liste angezeigen.
 
-```php
+```html
 - Für die Mathe-Prüfung lernen
 - PHP repetieren
 - JavaScript repetieren
