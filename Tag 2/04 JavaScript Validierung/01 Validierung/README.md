@@ -4,15 +4,27 @@ Die Validierung eines Formulars in JavaScript findet clientseitig statt.
 
 Wir möchten die Validierung also ausführen, bevor das Formular an den Server versendet wird.
 
+## Der `load` Event
+
+Mit dem `load` Event gehen wir sicher, dass der Code innerhalb dieser Funktion erst ausgeführt wird, wenn die komplette Seite vom Client geladen wurde:
+
+```js
+addEventListener("load", function(){
+    // Code wird erst ausgeführt, wenn Seite gelanden wurde.
+});
+```
+
 ## Der `submit` Event
 
 Wird ein Formular versendet, wird vom Browser ein `submit` Event für das abgesendete Formular ausgelöst.
 
-Wir können JavaScript verwenden, um eine Aktion für diesen Event zu definieren.
+Auf dieses Event können wir reagieren:
 
 ```js
-document.querySelector('#formular').addEventListener('submit', function() {
-    console.log('Formular wurde versendet.');
+addEventListener("load", function(){
+    document.querySelector('#formular').addEventListener('submit', function(evt) {
+      console.log('Formular wird jetzt versendet.');
+    });
 });
 ```
 
@@ -20,14 +32,15 @@ Der Event-Handler wird ausgeführt, bevor das Formular an den Server versendet w
 
 ### Den `submit`-Vorgang abbrechen
 
-Solange die Callback-Funktion nicht `false` zurückgibt, wird das Formular nach dem Ausführen der Funktion wie üblich an den Server versendet.
-
-Um diesen Vorgang abzubrechen, muss die Funktion `false` zurückgeben.
+Die übergebene Variable `evt` hat eine Methode `preventDefault`. Wenn diese Methode aufgerufen
+wird, verhindert dies das Absenden des Formulars.
 
 ```js
-document.querySelector('#formular').addEventListener('submit', function(e) {
-    // Formular kann nicht mehr abgesendet werden
-    e.preventDefault();
+addEventListener("load", function(){
+    document.querySelector('#formular').addEventListener('submit', function(evt) {
+      //Formular wird nicht mehr abgeschickt
+      evt.preventDefault();
+    });
 });
 ```
 
@@ -35,7 +48,7 @@ document.querySelector('#formular').addEventListener('submit', function(e) {
 
 Ähnlich wie in PHP, kannst du im `submit` Event deine Formular-Daten validieren.
 
-Falls Fehler vorhanden sind, kannst du mittels `return false` verhindern, dass das Formular an den Sever versendet wird.
+Falls Fehler vorhanden sind, kannst du mittels `evt.preventDefault()` verhindern, dass das Formular an den Sever versendet wird.
 
 Wie Du Fehlermeldungen ausgibst, ist dir überlassen. Diese können einfach als Liste am Formularanfang oder direkt «inline» bei den jeweiligen Formularfeldern dargestellt werden.
 
@@ -63,50 +76,97 @@ Auch die Methode um Fehlermeldungen zu sammeln oder darzustellen ist dir überla
 #### Ausgabe einer Fehlerliste
 
 ```js
+addEventListener("load", function(){
 
-document.querySelector('#formular').addEventListener('submit', function(e) {
+    document.querySelector('#listForm').addEventListener('submit', function(evt) {
 
-    var errors  = [];
+        var errors  = [];
 
-    if (document.querySelector('#username').value === '') {
-        errors.push('Bitte gib einen Benutzernamen ein.');
-    }
+        if(document.querySelector('#username').value === '') {
+            errors.push('Bitte gib einen Benutzernamen ein.');
+        }
 
-    if (document.querySelector('#password').value === '') {
-        errors.push('Bitte gib ein Passwort ein.');
-    }
+        if(document.querySelector('#password').value === '') {
+            errors.push('Bitte gib ein Passwort ein.');
+        }
 
-    // Das Formular ist nur dann `valid` wenn 0 Fehler vorhanden sind.
-    var isValid = errors.length < 1;
+        // Das Formular ist nur dann `valid` wenn 0 Fehler vorhanden sind.
+        var isValid = errors.length < 1;
 
-    if ( ! isValid) {
-        renderErrors(errors);
-        e.preventDefault();
-    }
-});
+        if( ! isValid) {
+            renderErrors(errors);
+            evt.preventDefault();
+        }
 
-
-/**
- * Wandelt das `errors` Array in eine
- * normale HTML-Liste um.
- *
- * @param array errors
- */
-function renderErrors(errors) {
-
-    var errorList = document.querySelector('#errorList');
-
-    // Bestehende Fehler entfernen
-    errorList.innerHTML = '';
-
-    errors.forEach(function(error) {
-        var li = document.createElement('li');
-        li.innerText = error;
-
-        errorList.appendChild(li)
     });
 
-    errorList.style.display = 'block';
-}
+
+    /**
+     * Wandelt das `errors` Array in eine
+     * normale HTML-Liste um.
+     *
+     * @param array errors
+     */
+    function renderErrors(errors) {
+
+        var errorList = document.querySelector('#errorList');
+
+        // Bestehende <li> entfernen
+        errorList.innerHTML = "";
+
+        errors.forEach(function(error) {
+            const errorMessage = document.createElement("li");
+            errorMessage.textContent = error;
+            errorList.append(errorMessage);
+        });
+
+        errorList.style.display = "block";
+    }
+
+});
+
+```
+
+#### Inline-Fehler
+
+
+```js
+addEventListener("load", function(){
+    document.querySelector('#inlineForm').addEventListener('submit', function(evt) {
+
+        // Bei einfachen Validierungen kann z. B. auch ein
+        // Array für die Felder und Fehlermeldungen
+        // verwendet werden. Dieses kann dann in einer forEach
+        // Schleife verarbeitet werden.
+        var fields = [
+            {id: 'username', message: 'Bitte gib einen Benutzernamen ein.'},
+            {id: 'password', message: 'Bitte gib ein Passwort ein.'},
+        ];
+        // Alle vorhandenen Fehlerklassen entfernen
+        document.querySelectorAll('.has-error').forEach(element => element.classList.remove('has-error'));
+        // Alle vorhandenen Fehlermeldungen entfernen
+        document.querySelectorAll('label .error-msg').forEach(element => element.remove());
+        fields.forEach(function(field) {
+            var fieldElement = document.querySelector('#' + field.id);
+            if(fieldElement.value === '') {
+                //Wir stoppen das Senden des Formulars durch den Browser, sobald wir einen Fehler entdecken.
+                evt.preventDefault();
+
+                // Eine Fehlermeldung generieren
+                var errorMessage = document.createElement("span");
+                errorMessage.classList.add("error-msg");
+                errorMessage.textContent = field.message;
+
+                // Die .has-error Klasse kann in CSS z. B.
+                // rot formatiert werden, damit die fehlerhaften
+                // Felder direkt ersichtlich sind.
+                const formGroup = fieldElement.parentElement // .form-group
+                formGroup.classList.add('has-error') // Fehlerklasse hinzufügen
+                formGroup.querySelector('label') // Das <label> auswählen
+                    .append(errorMessage); // Fehlermeldung hinzufügen
+            }
+        });
+    });
+});
 
 ```
