@@ -31,7 +31,7 @@ Als kleine Illustration:
 
 Zur Repetition befindet sich unter folgendem Link ein kleines Cheatsheet zum Thema Formularfelder:
 
-[Übersicht der Formularfelder](https://offline.ch/ict/paper.css)
+[Übersicht der Formularfelder](https://offline.ch/ict/formulare.html)
 
 ### 2. Formularfeld-Gruppen
 
