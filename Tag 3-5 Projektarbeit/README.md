@@ -7,7 +7,7 @@ Bis zum Ende des Kurses habt ihr nun Zeit um eines der folgendes Projekte zu rea
 
 
 ## 1. Konzeptionierung
-Während der Konzeptionierung des Projektes erhaltet ihr die projektspezifischen Informationen. Eure Aufgabe in diesem Arbeitschritt ist es, die notwenigen Vorbereitungsaufgaben für die Realisation vorzunehmen. Das Konzept muss um 15.00 Uhr (Zeit kann durch Kursleiter angepasst werden) des letzten Kurstages abegeben werden. Das abgegebene Dokument ist die Bewertungsgrundlage für den Punkt Konzeptionierung.
+Während der Konzeptionierung des Projektes erhaltet ihr die projektspezifischen Informationen. Eure Aufgabe in diesem Arbeitschritt ist es, die notwenigen Vorbereitungsaufgaben für die Realisation vorzunehmen. Der Kursleiter definiert, wann das Konzept abgegeben werden muss. Das abgegebene Dokument ist die Bewertungsgrundlage für den Punkt Konzeptionierung.
 
 Folgende Bestandteile muss das Projekt mindestens enthalten:
 
