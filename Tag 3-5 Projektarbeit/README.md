@@ -29,7 +29,7 @@ In diesem Schritt sollt ihr euch überlegen, wie die oben definierten Formularfe
 (Doppelte Formularfelder müssen nur einmal aufgeführt werden.)
 
 ### Datenbank
-Neben der Dateingabe soll auch die Datenspeicherung bereits in diesem Schritt definiert werden. Aus diesem Grund gehört auch die Definition der Datenbank-Tabelle und der dazugehörigen Tabellen-Felder zur Konzeptionierung des Projektes. Folgende Informationen werden dazu gefordert:
+Neben der Dateeingabe soll auch die Datenspeicherung bereits in diesem Schritt definiert werden. Aus diesem Grund gehört auch die Definition der Datenbank-Tabelle und der dazugehörigen Tabellen-Felder zur Konzeptionierung des Projektes. Folgende Informationen werden dazu gefordert:
 
 * Feld-Bezeichnungen
 * Feld-Typ-Definition
