@@ -23,7 +23,7 @@ include 'echo.php';
 
 Erstelle die Datei `index.view.php`. Trenne nun das HTML-Gerüst (`index.view.php`) von der PHP-Logik (`index.php`) mit Hilfe der PHP-Script-Einbindung.
 
-Das Ziel ist es, dass in der Datei `index.php` Deine Variable definiert wird und in der `index.view.php` nur noch folgender Code ist:
+Das Ziel ist es, dass in der Datei `index.php` deine Variable definiert wird und in der `index.view.php` nur noch folgender Code ist:
 
 ```html
 <!DOCTYPE html>
