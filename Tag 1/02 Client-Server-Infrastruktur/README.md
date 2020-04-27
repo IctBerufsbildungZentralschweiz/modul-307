@@ -86,4 +86,4 @@ Das gleiche passiert nach der Übertragung zum __Client__ durch den JavaScript-I
 
 ![Szene 8](res/08.jpg)
 
-Die umhergereichten Daten können beispielsweise mit dem Tool [Web-Sniffer](http://web-sniffer.net/) betrachtet werden.
+Die umhergereichten Daten können beispielsweise im Browser in den Developer Tools (F12) unter "Network" betrachtet werden.
