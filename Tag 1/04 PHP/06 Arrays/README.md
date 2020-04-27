@@ -90,7 +90,7 @@ print_r($wochentage);
 
 ## Array-Funktionen
 
-Für die Arbeit mit Arrays gibt es viele sehr nützliche Funktionen: [https://www.php.net/manual/en/ref.array.php]
+Für die Arbeit mit Arrays gibt es viele sehr nützliche [Array Funktionen](https://www.php.net/manual/de/ref.array.php).
 
 ## Aufgabe: Array
 
