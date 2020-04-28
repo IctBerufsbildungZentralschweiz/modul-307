@@ -88,6 +88,10 @@ print_r($wochentage);
 
 ```
 
+## Array-Funktionen
+
+Für die Arbeit mit Arrays gibt es viele sehr nützliche [Array Funktionen](https://www.php.net/manual/de/ref.array.php).
+
 ## Aufgabe: Array
 
 Kommentiere in der Datei `index.php` die Script-Einbindung der Datei `index.view.php` aus.

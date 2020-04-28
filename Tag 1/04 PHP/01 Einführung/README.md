@@ -28,11 +28,11 @@ Und natürlich die grossen CMS...
 
 * Wordpress
 * Drupal
-* Typo
+* Typo3
 * Joomla
 * ...
 
-> PHP wird auf etwa 244 Millionen Websites eingesetzt (Stand: Januar 2013), wird auf über 82 % aller Websites als serverseitige Programmiersprache verwendet (Stand: Januar 2015) und ist damit die am häufigsten verwendete Sprache zum Erstellen von Websites - Tendenz steigend. Die Programmiersprache ist sie bei den meisten Webhostern vorinstalliert.
+> PHP wird auf etwa 244 Millionen Websites eingesetzt (Stand: Januar 2013), wird auf über 78 % aller Websites als serverseitige Programmiersprache verwendet (Stand: [April 2020](https://w3techs.com/technologies/overview/programming_language)) und ist damit die am häufigsten verwendete Sprache zum Erstellen von Websites - Tendenz steigend. Die Programmiersprache ist sie bei den meisten Webhostern vorinstalliert.
 
 ## Was genau ist PHP?
 
@@ -77,7 +77,7 @@ Hier ein Beispiel eines PHP-Scripts, wie es auf dem Server abgespeichert ist. Mi
 ```
 
 
-Wir rufen das Script über den Link `http://localhost/script.php` im Browser auf. Es wird nun vom PHP-Modul verarbeitet.
+Wir rufen das Script über den Link `http://localhost/modul-307/script.php` im Browser auf. Es wird nun vom PHP-Modul verarbeitet.
 
 Nach der Verarbeitung wird das Dokument ohne den ursprünglichen PHP-Code an den Browser gesendet. Nur dessen Ausgabe ist noch vorhanden.
 

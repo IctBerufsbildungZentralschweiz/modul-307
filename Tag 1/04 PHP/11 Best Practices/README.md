@@ -2,14 +2,14 @@
 
 ## PHP Standards Recommendations
 
-Seit 2009 gibt es die [Framework Interoperability Group](http://www.php-fig.org/) (kurz PHP-FIG) die PHP Standards Recommendations (kurz PSRs) erarbeitet und veröffentlicht.
+Seit 2009 gibt es die [Framework Interoperability Group](https://www.php-fig.org/) (kurz PHP-FIG) die PHP Standards Recommendations (kurz PSRs) erarbeitet und veröffentlicht.
 
 In diesen PSRs werden Empfehlung für das Arbeiten mit PHP definiert.
 Ziel der PHP-FIG ist es, einmal erstellte PHP-Komponenten in verschiedenen Projekten und Frameworks wiederverwendbar zu machen. Dazu ist es wichtig, dass der Code nach einheitlichen Regeln geschrieben wird.
 
 
-* In [PSR-1](http://www.php-fig.org/psr/psr-1/) werden die «Basic Coding Standards» definiert. Es wird zum Beispiel festgelegt, welche PHP-Tags verwendet werden oder wie Variablen benannt werden sollen. (ÜK-Relevant: 1. und 2.)
-* [PSR-2](http://www.php-fig.org/psr/psr-2/) ist der «Coding Style Guide». Hier wird definiert, wie Code formatiert werden soll. (ÜK-Relevant: 1., 2. und 5.)
+* In [PSR-1](https://www.php-fig.org/psr/psr-1/) werden die «Basic Coding Standards» definiert. Es wird zum Beispiel festgelegt, welche PHP-Tags verwendet werden oder wie Variablen benannt werden sollen. (ÜK-Relevant: 1. und 2.)
+* [PSR-2](https://www.php-fig.org/psr/psr-2/) ist der «Coding Style Guide». Hier wird definiert, wie Code formatiert werden soll. (ÜK-Relevant: 1., 2. und 5.)
 
 ## Grundsätzliches
 

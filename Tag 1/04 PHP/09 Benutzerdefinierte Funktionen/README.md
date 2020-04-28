@@ -18,6 +18,8 @@ Für die Funktionsnamen gelten die gleichen Regeln wie für Variablennamen.
 
 Einer Funktion können Argumente mitgegeben werden, auf die innerhalb der Funktion zugegriffen werden können.
 
+## Optionale Argumente
+
 Einem Argument kann ein Standardwert zugewiesen werden. Somit ist die Eingabe dieses Arguments optional.
 
 ```php
@@ -117,13 +119,13 @@ echo demo();
 
 ## Aufgabe: Benutzerdefinierte Funktion mit Wert
 
-Erstelle eine Funktion, welche einen `$wert` ausgibt und die Script-Ausführung beendet (`var_dump($wert); die();`).
+Erstelle eine Funktion `dumpAndDie`, welche einen `$wert` ausgibt und die Script-Ausführung beendet (`var_dump($wert); die();`).
 
 Lagere die Funktion in eine separate Datei `functions.php` aus und binde diese in die Datei `index.php` ein. Teste 
 die Funktionsweise indem du das Array `$vehicles` an die Funktion übergibst.
 
 ```php
-    dieAndDump($vehicles);
+    dumpAndDie($vehicles);
 ```
 
 ## Aufgabe: Benutzerdefinierte Funktion mit Array

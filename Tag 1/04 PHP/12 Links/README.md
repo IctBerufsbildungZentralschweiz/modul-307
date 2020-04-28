@@ -1,8 +1,8 @@
 ## Links
 
 * [Offizielle PHP-Dokumentation](https://secure.php.net/manual/de/)
-* [PHP: The Right Way](http://www.phptherightway.com): Enthält die besten Verfahren, anerkannte Code-Standards und Links zu massgeblichen Anleitungen im Web. (Auch auf [deutsch](https://rwetzlmayr.github.io/php-the-right-way/) vorhanden, jedoch nicht komplett up-to-date).
-* [PHP Essentials](http://www.techotopia.com/index.php/PHP_Essentials): Techotopia Wiki
+* [PHP: The Right Way](https://phptherightway.com/): Enthält die besten Verfahren, anerkannte Code-Standards und Links zu massgeblichen Anleitungen im Web. (Auch auf [deutsch](https://rwetzlmayr.github.io/php-the-right-way/) vorhanden, jedoch nicht komplett up-to-date).
+* [PHP Essentials](https://www.techotopia.com/index.php/PHP_Essentials): Techotopia Wiki
 
 ## Weiterführende Links (nicht ÜK relevant)
 
@@ -16,32 +16,32 @@ Wenn du dich selber weiter mit PHP befassen möchtest, findest du hier einige in
 ### Datenbanken
 
 * Es gibt viele Tutorials im Internet, die noch die veraltete und unsichere `mysql`-Erweiterung von PHP verwenden. Ignoriere Tutorials, in denen die `mysql_*`-Funktionen verwendet werden. Verwende für Datenbankzugriffe nur noch die [`mysqli_*`](https://secure.php.net/manual/de/book.mysqli.php)-Funktionen oder [`PDO`](https://secure.php.net/manual/de/class.pdo.php).
-* [«PHP: The Right Way» Kapitel zu Datenbanken](http://www.phptherightway.com/#databases)
-* [PDO-Tutorial von Peter Kropff](http://www.peterkropff.de/site/php/pdo.htm).
+* [«PHP: The Right Way» Kapitel zu Datenbanken](https://phptherightway.com/#databases)
+* [PDO-Tutorial von Peter Kropff](https://www.peterkropff.de/site/php/pdo.htm).
 
 ### Tutorials
 
 * [PHP auf Codecademy](https://www.codecademy.com/learn/php): Kompletter Kurs von den Basics bis zu Objektorientierter Programmierung
 * [Neuerungen PHP 7 auf laracasts](https://laracasts.com/series/php7-up-and-running): 7-teilige Videoserie zu Neuerungen in PHP 7
-* [How to Use PHP Namespaces](http://www.sitepoint.com/php-53-namespaces-basics/): Seit PHP 5.3 verfügt PHP über sogenannte «Namespaces». Heute wird dieses Konzept in allen modernen PHP-Projekten verwendet.
+* [How to Use PHP Namespaces](https://www.sitepoint.com/php-53-namespaces-basics/): Seit PHP 5.3 verfügt PHP über sogenannte «Namespaces». Heute wird dieses Konzept in allen modernen PHP-Projekten verwendet.
 
 ### Tools
 
-* [Composer](https://getcomposer.org/): Dependency Manager für PHP. Ermöglicht es, fremde Bibliotheken (z. B. von github.com) einfach in einem eigenen Projekt zu verwenden und hält diese Abhängigkeiten automatisch auf dem neusten Stand. (Tutorials: [PHP Dependencies Made Easy with Composer](http://www.sitepoint.com/watch-php-dependencies-made-easy-with-composer/) und [A short & simple Composer tutorial](http://www.dev-metal.com/composer-tutorial/))
+* [Composer](https://getcomposer.org/): Dependency Manager für PHP. Ermöglicht es, fremde Bibliotheken (z. B. von github.com) einfach in einem eigenen Projekt zu verwenden und hält diese Abhängigkeiten automatisch auf dem neusten Stand. (Tutorials: [PHP Dependencies Made Easy with Composer](https://www.sitepoint.com/watch-php-dependencies-made-easy-with-composer/) und [A short & simple Composer tutorial](https://www.dev-metal.com/composer-tutorial/))
 * [PhpStorm](https://www.jetbrains.com/phpstorm/): PHP IDE<br />
   Tutorials zur Anwendung auf laracasts.com: [Be Awesome in PhpStorm](https://laracasts.com/series/how-to-be-awesome-in-phpstorm)
 * [Vagrant](https://www.vagrantup.com/): Einfache Entwicklungsumgebungen in virtuellen Maschinen erstellen (eine professionellere Alternative zu XAMPP).
-* [Xdebug](http://xdebug.org/): Debug-Extension für PHP
+* [Xdebug](https://xdebug.org/): Debug-Extension für PHP
 
 ### Testing-Frameworks
 
 * [PHPUnit](https://phpunit.de/): Unit Tests
-* [Codeception](http://codeception.com/): Acceptance, Functional und Unit Tests
+* [Codeception](https://codeception.com/): Acceptance, Functional und Unit Tests
 * [phpspec](https://phpspec.readthedocs.org/en/latest/): Behavior driven development (BDD)
 
 ### PHP-Frameworks
 
-* [Laravel](http://laravel.com/)
-* [Slim](http://www.slimframework.com/)
+* [Laravel](https://laravel.com/)
+* [Slim](https://www.slimframework.com/)
 * [Symfony](https://symfony.com/)
-* [CakePHP](http://cakephp.org/)
+* [CakePHP](https://cakephp.org/)

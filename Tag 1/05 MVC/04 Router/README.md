@@ -99,9 +99,6 @@ Nun können wir die statische Einbindung in unserem Front-Controller durch unser
 ```php
 require 'core/bootstrap.php';
 
-// Ein neuer Router wird erstellt.
-$router = new Router();         
-
 // Die Routes werden registriert/definiert.
 require 'routes.php';           
 

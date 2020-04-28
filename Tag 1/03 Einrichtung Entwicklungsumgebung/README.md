@@ -36,9 +36,9 @@ Unter `C:\xampp\htdocs` befindet sich der so genannte `DocumentRoot` deines Serv
 
 1. Lösche alle mitgelieferten Dateien im `htdocs` Verzeichnis.
 2. Lade [`http://localhost`](http://localhost) in Deinem Browser neu - du solltest nun eine Fehlermeldung erhalten.
-3. Erstelle den Ordner `url-test` und darin die Datei `test.txt`.
+3. Erstelle den Ordner `modul-307` und darin die Datei `test.txt`.
 4. Schreibe etwas in die Textdatei.
-5. Du kannst diese Datei nun via `http://localhost/url-test/test.txt` aufrufen.
+5. Du kannst diese Datei nun via `http://localhost/modul-307/test.txt` aufrufen.
 
 #### `DirectoryIndex`
 
@@ -46,7 +46,7 @@ Wenn Du über die URL ein Verzeichnis aufrufst, ohne eine Datei anzugeben, wird 
 
 > **index.php** index.pl index.cgi index.asp index.shtml **index.html** **index.htm** default.php default.pl default.cgi default.asp default.shtml default.html default.htm home.php home.pl home.cgi home.asp home.shtml home.html home.htm
 
-Benenne Deine `test.txt` in `index.html` um und rufe im Browser `http://localhost/url-test/` auf. Die `index.html` wird jetzt automatisch geladen.
+Benenne Deine `test.txt` in `index.html` um und rufe im Browser `http://localhost/modul-307/` auf. Die `index.html` wird jetzt automatisch geladen.
 
 
 ## Editor
@@ -93,6 +93,8 @@ Folgende Plugins kannst du installieren, um dir das Arbeiten etwas zu vereinfach
 #### Emmet
 
 Emmet ermöglicht es dir, einen CSS-Selektor via TAB-Taste in die entsprechende HTML-Struktur umzuwandeln.
+
+Emmet ist bei Visual Studio Code bereits installiert und muss nicht extra hinzugefügt werden.
 
 ```
 a  -> TAB-Drücken
@@ -141,3 +143,12 @@ Starte Atom anschliessend neu.
 Du wirst jetzt zwar immer noch eine Fehlermeldung erhalten, jedoch funktioniert die Autovervollständigung trotzdem.
 
 `¯\_(ツ)_/¯`
+
+#### Weitere Plugins
+
+* `Live Share Extension Pack` (für Zusammenarbeit)
+* `Bracket Pair Colorizer 2`
+* `Live Server` oder `Open In Web` (für schnelle Anzeige im Browser)
+* `ftp-sync` (für direkten FTP-Upload)
+* `HTML CSS Support` und `Color Highlight` (fürs Styling)
+* Siehe auch [My Favorite VS Code Extensions](https://youtu.be/rH1RTwaAeGc)
