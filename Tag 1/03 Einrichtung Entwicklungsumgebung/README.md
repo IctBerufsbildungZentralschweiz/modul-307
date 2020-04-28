@@ -148,7 +148,7 @@ Du wirst jetzt zwar immer noch eine Fehlermeldung erhalten, jedoch funktioniert 
 
 * `Live Share Extension Pack` (für Zusammenarbeit)
 * `Bracket Pair Colorizer 2`
-* `HTML CSS Support` und `Color Highlight`
 * `Live Server` oder `Open In Web` (für schnelle Anzeige im Browser)
 * `ftp-sync` (für direkten FTP-Upload)
+* `HTML CSS Support` und `Color Highlight` (fürs Styling)
 * Siehe auch [My Favorite VS Code Extensions](https://youtu.be/rH1RTwaAeGc)
