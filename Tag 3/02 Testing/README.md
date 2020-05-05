@@ -58,7 +58,7 @@ test('Addiert negative Zahlen korrekt',
 
 Beim Integrationstest wird überprüft, ob die Zusammenarbeit voneinander abhängiger Komponenten (`Units`) wie erwünscht funktioniert.
 
-Integrationstests können in PHP mit einem Testing Framework wie [Codeception](codeception.com) umgesetzt werden.
+Integrationstests können in PHP mit einem Testing Framework wie [Codeception](https://codeception.com/) umgesetzt werden.
 
 
 #### Beispiel

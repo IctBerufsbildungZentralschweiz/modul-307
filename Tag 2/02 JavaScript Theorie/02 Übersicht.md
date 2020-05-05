@@ -349,7 +349,7 @@ i++;
 console.log(i);
 // 2
 
-i--
+i--;
 console.log(i);
 // 1
 ```

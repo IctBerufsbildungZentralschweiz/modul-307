@@ -11,6 +11,9 @@ Während der Konzeptionierung des Projektes erhaltet ihr die projektspezifischen
 
 Folgende Bestandteile muss das Projekt mindestens enthalten:
 
+### Sitemap
+Sämtliche im Projekt enthaltenen Seiten mit URL sollen angegeben werden, als Liste oder Tabelle: Titel, Route (URL), Inhalt / Zweck in 1 Satz.
+
 ### Formulare
 Sämtliche im Projekt benötigten Formulare sollen skizziert und beschrieben werden. Folgende W-Fragen sind dabei für die Dokumentation zentral:
 
@@ -70,6 +73,13 @@ Kurzpräsentation (max. 10 Minuten pro Gruppe) der Projekte mit folgenden Inhalt
 * Grösste Schwierigkeiten
 * Wichtigste Learnings
 * Was würde ich das nächste Mal anders machen?
+
+# Hinweise zum Vorgehen
+* Nutzt das gegebene [_Framework.zip](_Framework/_Framework.zip)
+* Entwickelt so, dass ihr immer möglichst rasch Feedback bekommt zu dem, was schon funktioniert, z.B. zuerst leeren Controller und View erstellen, testen; dann in Controller Testdaten an View schicken und testen; dann Model implementieren, echte Daten holen und testen.
+* Strebt möglichst einheitliche Programmierrichtlinien an (Grossklein-Schreibung, Einrückung etc.), siehe dazu [Tag 1/04 PHP/11 Best Practices](../Tag%201/04%20PHP/11%20Best%20Practices/README.md)
+* Erstellt für die lokale Entwicklung eine lokale Datenbank [localhost/phpmyadmin](http://localhost/phpmyadmin/)
+* Beim Publizieren auf dem gemeinsamen Kursserver brauchst du die FTP-Zugänge in Moodle. Klärt mit der Kursleitung ab, welche Datenbank ihr für euer Projekt nutzen könnt. Die Datenbank kannst du mittels Export / Import in phpMyAdmin auf den gemeinsamen Server deployen. 
 
 # Bewertungsraster
 ## Konzept
