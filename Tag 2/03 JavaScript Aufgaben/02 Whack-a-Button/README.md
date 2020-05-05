@@ -121,6 +121,36 @@ Gib den aktuellen Wert von `delay` zusammen mit dem Punktestand in der Konsole a
 
 #### Schritt 9 (Zusatzaufgabe)
 
+Anstatt den Spielstand in der Konsole auszugeben, füge einen Status-Block in die View ein und setze die aktuellen Werte mit JS: 
+
+```html
+    ....
+    <style>
+		#status {
+			position: fixed;
+			top: 10px;
+			right: 10px;
+		}
+    </style>
+</head>
+<body>
+    <div id="status">
+        Dein Punktestand: <span id="status-points">0</span><br>
+        Aktuelle Verzögerung: <span id="status-delay">1000</span>ms<br>
+        <span id="status-game"></span>
+    </div>
+    ....
+```
+
+```js
+    document.querySelector('#status-points').innerHtml = ....
+    etc.
+```
+
+Wenn das Spiel fertig ist, zeige im <span id="status-game"></span> "GAME OVER!" an (auch mittels ´innerHtml´)
+
+#### Schritt 10 (Zusatzaufgabe)
+
 Uns wurde ein Bug im Spiel gemeldet!
 
 Wenn der Spieler den Mauszeiger innerhalb einer Sekunde mehrmals über den Button und wieder davon weg bewegt, verschiebt sich der Button anschliessend mehrere Male. 
