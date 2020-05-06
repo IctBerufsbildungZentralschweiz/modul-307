@@ -59,7 +59,7 @@ Beide Controller führen immer noch ähnliche Interaktionen aus:
 Der Code ist jedoch jetzt zentral im Model hinterlegt und muss nicht doppelt geschrieben werden. Ebenfalls müssen sich die beiden Controller nicht mehr um die Zwischenspeicherung der Daten kümmern. Dazu kommt noch, dass standardisierte Abläufe (Überprüfung des Warenbestands für den Status) zentral hinterlegt werden können.
 
 ## Aufgabe: Refactoring Task-Liste (Gemeinsam)
-Erstelle nun das Model `Task.php` und binde dieses in deinen Bootstrapper ein. Erstelle darin die Klasse `Task`. Unser Ziel ist es nun, dass wir den Code in den einzelnen Controller lesbarer machen und fast die komplette Datenbank-Kommunikation in das Model `Task` auslagern.
+Erstelle nun das Model `Task.php` und binde dieses in deinen Bootstrapper ein. Erstelle darin die Klasse `Task`. Unser Ziel ist es nun, dass wir den Code in den einzelnen Controller lesbarer machen, Wiederholungen vermeiden (DRY) und fast die komplette Datenbank-Kommunikation in das Model `Task` auslagern. 
 
 ### Konstruktor
 Als erstes Erstellen wir einen Konstruktor für die Klasse. Dieser soll sämtliche Attribute bei der Instanzierung einer Klasse entgegennehmen und im erstellten Objekt abspeichern.

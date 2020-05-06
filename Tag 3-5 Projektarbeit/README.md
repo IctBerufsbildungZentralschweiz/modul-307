@@ -11,6 +11,9 @@ Während der Konzeptionierung des Projektes erhaltet ihr die projektspezifischen
 
 Folgende Bestandteile muss das Projekt mindestens enthalten:
 
+### Titel & Team
+Titel gemäss [Projekt-Liste](https://github.com/IctBerufsbildungZentralschweiz/modul-307/tree/master/Tag%203-5%20Projektarbeit/Projekte) und eure(n) Namen.
+
 ### Sitemap
 Sämtliche im Projekt enthaltenen Seiten mit URL sollen angegeben werden, als Liste oder Tabelle: Titel, Route (URL), Inhalt / Zweck in 1 Satz.
 
