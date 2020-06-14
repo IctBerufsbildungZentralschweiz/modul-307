@@ -9,10 +9,13 @@ Wir möchten die Validierung also ausführen, bevor das Formular an den Server v
 Mit dem `load` Event gehen wir sicher, dass der Code innerhalb dieser Funktion erst ausgeführt wird, wenn die komplette Seite vom Client geladen wurde:
 
 ```js
-addEventListener("load", function(){
+window.addEventListener("load", function(){
     // Code wird erst ausgeführt, wenn Seite gelanden wurde.
 });
 ```
+
+Die Unterschiede zwischen verschiedenen Load-Events sind auf [https://javascript.info/onload-ondomcontentloaded] gut beschrieben. Hauptsächlich geht es darum, ob nur das HTML-Dokument geladen sein muss oder auch alle zusätzlichen Dateien (Bilder, JS, CSS etc.).
+
 
 ## Der `submit` Event
 
@@ -21,7 +24,7 @@ Wird ein Formular versendet, wird vom Browser ein `submit` Event für das abgese
 Auf dieses Event können wir reagieren:
 
 ```js
-addEventListener("load", function(){
+window.addEventListener("load", function(){
     document.querySelector('#formular').addEventListener('submit', function(evt) {
       console.log('Formular wird jetzt versendet.');
     });
@@ -36,7 +39,7 @@ Die übergebene Variable `evt` hat eine Methode `preventDefault`. Wenn diese Met
 wird, verhindert dies das Absenden des Formulars.
 
 ```js
-addEventListener("load", function(){
+window.addEventListener("load", function(){
     document.querySelector('#formular').addEventListener('submit', function(evt) {
       //Formular wird nicht mehr abgeschickt
       evt.preventDefault();
@@ -76,7 +79,7 @@ Auch die Methode um Fehlermeldungen zu sammeln oder darzustellen ist dir überla
 #### Ausgabe einer Fehlerliste
 
 ```js
-addEventListener("load", function(){
+window.addEventListener("load", function(){
 
     document.querySelector('#listForm').addEventListener('submit', function(evt) {
 
@@ -131,7 +134,7 @@ addEventListener("load", function(){
 
 
 ```js
-addEventListener("load", function(){
+window.addEventListener("load", function(){
     document.querySelector('#inlineForm').addEventListener('submit', function(evt) {
 
         // Bei einfachen Validierungen kann z. B. auch ein

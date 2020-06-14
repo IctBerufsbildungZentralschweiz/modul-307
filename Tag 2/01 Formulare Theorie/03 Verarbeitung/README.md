@@ -52,11 +52,8 @@ Um Daten aus einem HTTP-Request in PHP zu empfangen, können die Superglobals `$
 
 ```php
 function validate() : bool {
-
-    // global $_GET; // nicht nötig!
-
-    $name = $_GET['name']; // funktioniert ohne `global`
-
+    $name = $_GET['name']; // funktioniert ohne `global $_GET`;
+    return strlen($name) >= 2;
 }
 ```
 

@@ -88,5 +88,6 @@ projekt/
  | public/images/
  | public/js/
  |
+ | .htaccess
  | index.php
 ```

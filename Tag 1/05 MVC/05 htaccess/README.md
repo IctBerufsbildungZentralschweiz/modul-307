@@ -16,7 +16,7 @@ Optisch ist dies jedoch eine etwas unschöne Lösung, viel schöner wäre folgen
 
 Wir brauchen also etwas, um die Anfrage `http://www.meinprojekt.ch/about` in dieses Format umzuwandeln: `http://www.meinprojekt.ch/index.php?uri=about`
 
-Dies können wir über die `.htaccess` Datei machen. Erstelle dazu die Datei `.htaccess` mit folgendem Inhalt:
+Dies können wir über die `.htaccess` Datei machen. Erstelle dazu die Datei `.htaccess` im Root-Verzeichnis deines Projekts (da wo die index.php mit FrontController ist) mit folgendem Inhalt:
 
 ##### .htaccess
 ```txt

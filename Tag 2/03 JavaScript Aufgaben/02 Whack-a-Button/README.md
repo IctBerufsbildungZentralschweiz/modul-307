@@ -30,7 +30,7 @@ Erstelle ein Code-Block der ausgeführt wird, sobald das DOM `ready` ist:
 <script>
     document.addEventListener('DOMContentLoaded', function() {
     	// DOM ist ready!
-	});
+    });
 </script>
 ```
 
@@ -83,9 +83,9 @@ Sorge dafür, dass der Button sich erst 1 Sekunde nach dem `mouseenter` Event ve
 `setTimeout` ändert die Bedeutung des `this` Schlüsselwortes. Wenn du also den Button vorhin über `this.style` neu positioniert hast, wird dies innerhalb von `setTimeout` nicht mehr funktionieren, da `this` nicht mehr auf den Button verweist. Dieses Problem kannst du einfach lösen, in dem du `this` vor dem `setTimeout` in eine Variable speicherst und diese verwendest:
 
 ```js
-var that = this;
+var button = this;
 setTimeout(function() {
-    that.style...
+    button.style...
 }, 500);
 ```
 
@@ -93,20 +93,8 @@ Alternativ kann mittels `bind` das `this` Schlüsselwort neu definiert werden.
 
 ```js
 setTimeout(function() {
-    that.style...
+    this.style...
 }.bind(this), 500);
-```
-
-Moderne Browser unterstützen auch Pfeilfunktionen (arrow functions) was eine Kurzschreibweise für `.bind(this)` ist. 
-
-Ob du diese Funktion verwenden darfst ist abhängig davon, welche Browser du unterstützen möchtest. Welche Browser-Versionen diese Funktion unterstützen findest du auf [caniuse.com](https://caniuse.com/#search=arrow%20functions).
-
-
-
-```js
-setTimeout(() => {
-    that.style...
-}, 500);
 ```
 
 #### Schritt 6
@@ -132,6 +120,36 @@ Reduziere `delay` nach jedem Klick auf den Button um 25 Millisekunden.
 Gib den aktuellen Wert von `delay` zusammen mit dem Punktestand in der Konsole aus.  
 
 #### Schritt 9 (Zusatzaufgabe)
+
+Anstatt den Spielstand in der Konsole auszugeben, füge einen Status-Block in die View ein und setze die aktuellen Werte mit JS: 
+
+```html
+    ....
+    <style>
+		#status {
+			position: fixed;
+			top: 10px;
+			right: 10px;
+		}
+    </style>
+</head>
+<body>
+    <div id="status">
+        Dein Punktestand: <span id="status-points">0</span><br>
+        Aktuelle Verzögerung: <span id="status-delay">1000</span>ms<br>
+        <span id="status-game"></span>
+    </div>
+    ....
+```
+
+```js
+    document.querySelector('#status-points').innerHtml = ....
+    etc.
+```
+
+Wenn das Spiel fertig ist, zeige im <span id="status-game"></span> "GAME OVER!" an (auch mittels ´innerHtml´)
+
+#### Schritt 10 (Zusatzaufgabe)
 
 Uns wurde ein Bug im Spiel gemeldet!
 
