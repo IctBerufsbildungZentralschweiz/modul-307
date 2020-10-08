@@ -1,9 +1,9 @@
 <?php
-
 require 'core/bootstrap.php';
 
-require 'routes.php';
+$routes = [
+	'/hallo/welt' => 'WelcomeController@index',
+];
 
-$uri = $_GET['uri'] ?? '';
-
-require $router->parse($uri);
+$router = new Router($routes);
+$router->run($_GET['uri'] ?? '');
