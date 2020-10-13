@@ -17,7 +17,7 @@ class Example
 		$statement->execute();
 
 		$result = $statement->fetch();
-		if (!$result) {
+		if ( ! $result) {
 			return null;
 		}
 
