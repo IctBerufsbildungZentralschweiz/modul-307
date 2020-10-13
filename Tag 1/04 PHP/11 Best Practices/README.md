@@ -9,11 +9,11 @@ Ziel der PHP-FIG ist es, einmal erstellte PHP-Komponenten in verschiedenen Proje
 
 
 * In [PSR-1](https://www.php-fig.org/psr/psr-1/) werden die «Basic Coding Standards» definiert. Es wird zum Beispiel festgelegt, welche PHP-Tags verwendet werden oder wie Variablen benannt werden sollen. (ÜK-Relevant: 1. und 2.)
-* [PSR-2](https://www.php-fig.org/psr/psr-2/) ist der «Coding Style Guide». Hier wird definiert, wie Code formatiert werden soll. (ÜK-Relevant: 1., 2. und 5.)
+* [PSR-2](https://www.php-fig.org/psr/psr-2/) ist der «Coding Style Guide». Hier wird definiert, wie Code formatiert werden soll. (ÜK-Relevant: 1., 2. und 5.). [PSR-12](https://www.php-fig.org/psr/psr-12/) definiert den «Extended Coding Style» und erweitert bzw. ersetzt einzelne Vorgaben aus PSR-2.
 
 ## Grundsätzliches
 
-* Schreibe sauberen Code (Formatierung, Namensgebung, Verständlichkeit). Versuche PSR-1 und PSR-2 zu beachten.
+* Schreibe sauberen Code (Formatierung, Namensgebung, Verständlichkeit). Versuche PSR-1 und PSR-2/12 zu beachten.
 * Versuche redundanten Code auf einem absoluten Minimum zu halten ([DRY-Prinzip](https://de.wikipedia.org/wiki/Don%E2%80%99t_repeat_yourself)). Nutze wenn möglich Funktionen.
 * Achte auf deine Ordnerstruktur. Benenne deine Dateien und Ordner auf eine verständliche Art und Weise.
 * Trenne immer Logik und Darstellung im Code.

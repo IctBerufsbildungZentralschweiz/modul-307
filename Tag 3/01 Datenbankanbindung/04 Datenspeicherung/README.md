@@ -25,7 +25,7 @@ $statement->execute();
 ## Aufgabe: Task speichern (Gemeinsam)
 Als nächstes wollen wir eine neue Task erfassen und in die Datenbank speichern. Erstelle dazu ein Formular mit dem Feld `title` in deiner Task-View. 
 
-Erstelle den neuen Controller `AddTaskController.php` und schaue via Routes-Eintrag, dass dieser bei der URI `addtask` aufgerufen wird. Die Daten aus deinem Formular sollen per POST übergeben werden und als Ziel den Controller `AddTaskController` haben.
+Erstelle die neue Controller-Methode `TaskController@create` und schaue via Routes-Eintrag, dass dieser bei der URL `/tasks/create` aufgerufen wird. Die Daten aus deinem Formular sollen per POST übergeben werden und als Ziel die `/tasks/create` URL haben.
 
 Erstelle nun in deinem neuen Controller eine Überprüfung, ob Daten per POST gesendet wurden. Sofern Daten vorhanden sind, soll eine Datenbankverbindung hergestellt und die Daten per Prepare-Statement in die Datenbank gespeichert werden.
 

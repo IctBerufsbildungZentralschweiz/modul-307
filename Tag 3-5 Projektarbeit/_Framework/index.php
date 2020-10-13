@@ -6,4 +6,4 @@ $routes = [
 ];
 
 $router = new Router($routes);
-$router->run($_GET['uri'] ?? '');
+$router->run($_GET['url'] ?? '');

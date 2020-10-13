@@ -5,6 +5,7 @@ Selbst mit unserem relativ einfachen Tool wird sehr schnell klar, dass beim Plat
 Die Strukturierung einer Webapplikation ist ein wichtiger Bestandteil und sollte nicht vernachlässigt werden. Wie du die Applikation strukturierst, ist dir überlassen. Es gibt jedoch klare Komponenten, die jede Webapplikation besitzt und die irgendwo untergebracht werden müssen.
 
 ## Das MVC-Konzept
+
 ![Szene 1](res/09.jpg)
 
 ([Zum schrittweisen Aufbau der Applikations-Struktur](res))
@@ -31,32 +32,51 @@ Als Front-Controller bezeichnen wir den «Einstiegspunkt» unserer Webapplikatio
 
 Wenn der Front-Controller einen Request entgegennimmt, muss dieser herausfinden, was damit geschehen soll. Dafür wird oft ein `Router` erstellt. Dieser definiert, wie eine spezieifsche Anfrage/URL verarbeitet werden soll.
 
-### Templates
+## Das ÜK-Framework
 
-Ein Template ist die Grundlage für die Darstellung einer Webpage. Diese kann sich aus verschiedenen Views zusammensetzen. Oft wird zwischen Template und View gar nicht unterschieden. Einfachheitshalber wird alles als View bezeichnet.
+### index.php
 
-## Eine kleine Geschichte dazu
+Die `index.php` ist der Einstiegspunkt für alle Anfragen an unser Framework. Hier wird das Framework geladen (`core/bootstrap.php`), `$routes` werden definiert und anschliessend ausgeführt.
 
-Peter Pichler hat nach den Ferien das Passwort seines Computers in der Firma vergessen. 
+### Routes definieren
 
-Er ruft bei seinem IT-Spezialisten auf die Support-Hotline an und stellt eine Anfrage zur Wiederherstellung des Passworts `(Benutzer-Interaktion)`. 
+Über die `$routes` Variable in der `index.php` lassen sich beliebig viele Routes definieren:
 
-Der nette Herr Müller vom Support nimmt die Anfrage entgegen (`Front-Controller`) und schaut im System (`Routes`) nach, wer für das Projekt zuständig ist. 
+```php
+$routes = [
+	'/hallo/welt' => 'WelcomeController@index',
+];
+```
 
-Nach kurzer Recherche leitet er die Anfrage von Herrn Müller weiter (`Router`) und Frau Maurer (`Controller`) nimmt sie entgegen. 
+Im obenstehenden Beispiel wird beim Aufruf von `http://localhost/dein-framework/hallo/welt` die `index` Methode auf dem `WelcomeController` ausgeführt.
 
-Diese öffnet das Kundendaten-Tool, gibt die Kundennummer von Herrn Pichler ein und erhält das Admin-Passwort für die Installation von Herrn Pichler (`Model`).
+Die `Controller@Methode` Schreibweise ist vom Framework vorgegeben. Der `Router` kann anhand dieser Schreibweise entscheiden, welche Controller-Methode aufgerufen werden soll.
 
-Nun setzt Frau Maurer das Passwort auf das Standard-Passwort *123456* zurück und schreibt ihm eine Email mit allen nötigen Daten (`View`).
+### Controller 
 
-## Vereinfachte MVC-Architektur für unser Projekt
+Im Ordner `app/Controllers` werden alle Controller-Klassen abgelegt. In den einzelnen Methoden können Variablen definiert werden. Am Ende einer Controller-Methode wird üblicherweise via `require` eine View geladen.
 
-Da die Umsetzung einer MVC-Architektur ohne objektorientierten PHP-Code etwas umständlich ist, nutzen wir für unser Projekt eine vereinfachte Struktur, die sich aber an der MVC-Architektur orientiert. Diese Vorlage befindet sich im bereitgestellten MVC-Framework.
+```php
+<?php
+class WelcomeController
+{
+	public function index()
+	{
+		$hello = 'Viel Spass beim Programmieren!';
+		
+		require 'app/Views/welcome.view.php';
+	}
+}
+```
 
-Es sind folgende Komponenten vorhanden:
+### Views
 
-* Front-Controller
-* Router
-* Model
-* Controller
-* Views
+Im `app/Views` Ordner können einzelne View-Dateien abgelegt werden. In diesen sollte nur noch sehr wenig PHP-Code vorhanden sein! Es sollten lediglich einfache `if` und `foreach` Statements verwendet werden. Aufwändigere Logik gehört in den Controller oder separate Klassen.
+
+### Helpers
+
+In der Datei `core/helpers.php` gibt es ein paar nützliche Funktionen. Schaue diese an und versuche sie zu verstehen!
+
+### Public
+
+Alle CSS, JS und Bild-Dateien gehören in den `public` Ordner.
