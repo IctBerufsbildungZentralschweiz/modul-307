@@ -2,34 +2,71 @@
 
 class Router
 {
-    public $routes = [];
+    /**
+     * Enthält alle definierten Routes.
+     */
+    protected array $routes = [];
 
     /**
-     * Initialisiert die definierten Routes
-     * in der Datei routes.php.
-     *
-     * @param $routes
+     * Initialisiert die definierten Routes.
      */
-    public function define($routes)
+    public function __construct(array $routes)
     {
-        $this->routes = $routes;
+        array_walk($routes, function ($value, $key) {
+            // Normalisiere alle definierten Routes.
+            $this->routes[$this->cleanUrl($key)] = $value;    
+        });
     }
 
     /**
-     * Sucht zu einer übergebenen URI ($uri) den dazugehörigen
-     * Dateipfad zum Controller.
-     *
-     * @param $uri
-     * @return mixed
+     * Führt die Controller-Action für eine URL aus.
      */
-    public function parse($uri)
+    public function run(string $url)
     {
-        if (array_key_exists($uri, $this->routes)) {
-            return $this->routes[$uri];
+        $url = $this->cleanUrl($url);
+
+        if ( ! array_key_exists($url, $this->routes)) {
+            http_response_code(404);
+            die('Keine Route für diese URL gefunden.');
         }
 
-        http_response_code(404);
-        die('Keine Route für diese URI gefunden.');
+        // Teile die Definition in Controller- und Methoden-Namen auf.
+        [$controller, $method] = explode('@', $this->routes[$url]);
+        if ( ! $controller || ! $method) {
+            http_response_code(500);
+            die('Route-Actions müssen im Format "Controller@Methode" definiert sein.');
+        }
+
+        // Stelle sicher, dass die definierte Controller-Datei existiert.
+        $path = __DIR__ . "/../app/Controllers/$controller.php";
+        if ( ! file_exists($path)) {
+            http_response_code(500);
+            die("Controller '$controller' existiert nicht");
+        }
+
+        // Lade die Controller-Datei.
+        require_once $path;
+
+        if ( ! class_exists($controller)) {
+            http_response_code(500);
+            die("Controller '$controller' ist keine gültige Klasse");
+        }
+
+        // Überprüfe, ob die definierte Methode existiert. Wenn ja, rufe sie auf.
+        $handler = new $controller;
+        if ( ! method_exists($controller, $method)) {
+            http_response_code(500);
+            die("Methode '$controller@$method' existiert nicht");
+        }
+
+        return $handler->$method();
     }
 
+    /**
+     * Entfernt / am Anfang und Ende eines Strings, konvertiert einen String zu Kleinbuchstaben.
+     */
+    protected function cleanUrl(string $url) : string
+    {
+        return strtolower(trim($url, '/'));
+    }
 }

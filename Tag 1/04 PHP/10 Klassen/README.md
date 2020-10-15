@@ -20,7 +20,7 @@ Eine Klasse kann wie folgt definiert werden:
 class SimpleClass
 {
     // Deklaration einer Variable
-    public $var = 'ein Standardwert';
+    public string $var = 'ein Standardwert';
 
     // Deklaration einer Methode
     public function displayVar()
@@ -39,7 +39,7 @@ $instanz = new SimpleClass();
 
 ## Eigenschaften
 
-Innerhalb einer Klasse können Eigenschaften definiert und methodenübergreifend genutzt werden. Diese werden definiert, indem man eines der Schlüsselwörter `public`, `protected` oder `private` gefolgt von einer regulären Variablen-Deklaration verwendet.
+Innerhalb einer Klasse können Eigenschaften definiert und methodenübergreifend genutzt werden. Diese werden definiert, indem man eines der Schlüsselwörter `public`, `protected` oder `private` gefolgt von einer optionalen Typen-Deklaration verwendet. Zuletzt folgt der Name der Eigenschaft.
 
 Auf die Eigenschaft kann ausserhalb der instanzierten Klasse mit dem Objekt und dem Pfeiloperator `->` zugegriffen werden (sofern sichtbar). Innerhalb der Klasse ist es möglich mit dem Ausdruck `$this` und dem Pfeiloperator `->` auf eine definierte Variable zuzugreifen.
 
@@ -47,9 +47,9 @@ Auf die Eigenschaft kann ausserhalb der instanzierten Klasse mit dem Objekt und 
 class SimpleClass
 {
     // Deklaration einer Variable
-    public $var1    = 'Hallo Welt';
-    private $var2   = 'Hallo ich';
-    protected $var3 = ['Affe', 'Kuh'];
+    public    string $var1 = 'Hallo Welt';
+    private   string $var2 = 'Hallo ich';
+    protected array  $var3 = ['Affe', 'Kuh'];
     
     // ...
     public function displayVar()
@@ -111,10 +111,10 @@ PHP erlaubt es Entwicklern, Konstruktormethoden für Klassen zu deklarieren. Kla
 ```php
 class BaseClass
 {
-   protected $var1;
-   protected $var2;
+   protected string $var1;
+   protected string $var2;
    
-   public function __construct($var1, $var2)
+   public function __construct(string $var1, string $var2)
    {
        $this->var1 = $var1;
        $this->var2 = $var2;
@@ -126,8 +126,21 @@ $firstClass = new BaseClass('Erbse', 'Baum');
 
 // Gibt einen Fehler, da nicht alle benötigten Variablen übergeben wurden.
 // Die Klasse wird nicht instanziert.
- $secondClass = new BaseClass('Erbse'); 
+$secondClass = new BaseClass('Erbse'); 
 
+```
+### Constructor property promotion (ab PHP 8)
+
+Ab PHP 8 gibt es neu eine Kurzschreibweise für Konstruktoren, mit der Eigenschaften direkt im Konstruktor definiert und gesetzt werden können.
+
+```php
+class BaseClass
+{
+   // AB PHP 8: Die Definition und Zuweisung der Eigenschaften kann 
+   // optional direkt im Konstruktor vorgenommen werden. Dieses
+   // Codebeispiel ist gleichbedeutend mit dem vorherigen:
+   public function __construct(protected string $var1, protected string $var2) {}
+}
 ```
 
 ## Aufgabe: Auto-Objekt

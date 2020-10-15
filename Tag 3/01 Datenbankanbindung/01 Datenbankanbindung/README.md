@@ -8,7 +8,8 @@ new PDO();
 Die von PHP zur Verfügung gestellte PDO-Klasse stellt ein einheitliches Interface zur Anbindung unterschiedlicher Datenbanktypen bereit.
 
 ## Aufgabe: Projekt-Setup (Gemeinsam)
-Erstelle den neuen Controller `TaskController.php` und schaue via Routes-Eintrag, dass diese bei der URI `task` aufgerufen wird. Ebenfalls kannst du die neue View `task.view.php` erstellen, welche am Schluss des neuen Controllers geladen wird.
+
+Erstelle den neuen Controller `TaskController.php` und schaue via Routes-Eintrag, dass diese bei der URL `/tasks` aufgerufen wird. Ebenfalls kannst du die neue View `task.view.php` erstellen, welche am Schluss des neuen Controllers geladen wird.
 
 Rufe anschliessend phpMyAdmin über folgende URL auf.
 
