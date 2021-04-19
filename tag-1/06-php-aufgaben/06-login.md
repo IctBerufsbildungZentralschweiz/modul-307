@@ -12,6 +12,10 @@ Die registrierten Benutzer werden jeweils aus der Datei `src/users.php` geladen.
 
 Bearbeite ausschliesslich die Funktion `login` in der Datei `login.php` in diesem Verzeichnis.
 
+{% embed url="https://github.com/IctBerufsbildungZentralschweiz/modul-307/tree/master/Tag%201/06%20PHP%20Aufgaben/06%20Login/src" caption="Startertemplate" %}
+
+{% embed url="https://github.com/IctBerufsbildungZentralschweiz/modul-307/tree/master/Tag%201/06%20PHP%20Aufgaben/06%20Login/tests" caption="Tests" %}
+
 ### Zielumgebung
 
 Überprüfe nach jeder Änderung mit Hilfe der Testfälle, ob alle Bedingungen immer noch fehlerfrei erfüllt werden.
