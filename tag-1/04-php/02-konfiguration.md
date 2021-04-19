@@ -1,4 +1,4 @@
-# PHP Konfiguration
+# 02 PHP Konfiguration
 
 ## `phpinfo()`
 

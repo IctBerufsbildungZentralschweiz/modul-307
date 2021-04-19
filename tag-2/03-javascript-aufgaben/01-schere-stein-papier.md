@@ -1,4 +1,4 @@
-# Schere, Stein, Papier
+# 01 Schere, Stein, Papier
 
 ## Aufgabenstellung
 

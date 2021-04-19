@@ -1,4 +1,4 @@
-# Models
+# 07 Refactoring
 
 Im Moment werden sämtliche Aufgaben des Tools von den Controllern und den Views ausgeführt. Die Logik ist zwar von der Darstellung getrennt, jedoch ist die Datenverarbeitung noch ein integrativer Bestandteil der Logik, beziehungsweise des Controllers.
 

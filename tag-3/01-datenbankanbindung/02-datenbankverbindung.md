@@ -1,4 +1,4 @@
-# Datenbankverbindung
+# 02 Datenbankverbindung
 
 Verbindungen werden durch das Erstellen von Instanzen der PDO-Basisklasse erzeugt. Der Konstruktor der PDO-Klasse erwartet dabei Parameter zur Angabe der Datenbankquelle, den Benutzer und das Passwort \(falls vorhanden\).
 

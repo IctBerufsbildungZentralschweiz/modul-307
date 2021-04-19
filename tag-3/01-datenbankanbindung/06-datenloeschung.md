@@ -1,4 +1,4 @@
-# Delete
+# 06 Datenlöschung
 
 Um gespeicherte Daten in der Datenbank zu löschen, wird die instanzierte Datenbankverbindung \(PDO\) verwendet.
 

@@ -1,4 +1,4 @@
-# Interne Funktionen
+# 08 Interne Funktionen
 
 In PHP steht eine grosse Auswahl an internen Funktionen zur Verfügung. Eine komplette nach Thema gegliederte Liste befindet sich in der PHP-Dokumentation:
 

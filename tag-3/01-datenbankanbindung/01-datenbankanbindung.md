@@ -1,4 +1,4 @@
-# Datenbankanbindung
+# 01 Datenbankanbindung
 
 Um mit PHP auf eine Datenbank zuzugreifen, verwenden wir [`PHP Data Objects`](http://php.net/book.pdo) \(kurz PDO\).
 

@@ -1,4 +1,4 @@
-# Design- und Strukturgrundlagen
+# 02 Design- und Strukturgrundlagen
 
 Zum Einstieg ein kleines Video wieso User Experience und User Design wichtig sind: [User Experience beim SBB-Automaten.](https://www.youtube.com/watch?v=2HdIflrLSLg)
 

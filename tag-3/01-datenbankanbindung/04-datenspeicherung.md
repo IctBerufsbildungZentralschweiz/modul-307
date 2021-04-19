@@ -1,4 +1,4 @@
-# Insert
+# 04 Datenspeicherung
 
 Um Daten in die Datenbank über ein Formular zu speichern, können wir wiederum die instanzierte Datenbankverbindung \(PDO\) nutzen.
 

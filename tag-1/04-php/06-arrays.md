@@ -1,4 +1,4 @@
-# Arrays
+# 06 Arrays
 
 In einem Array können mehrere Werte in einer Variable gespeichert werden. Um ein Array zu definieren, verwenden wir die eckigen Klammern `[...]`.
 

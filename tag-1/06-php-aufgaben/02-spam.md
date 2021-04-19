@@ -1,4 +1,4 @@
-# Einfacher Spamfilter
+# 02 Einfacher Spamfilter
 
 ## Aufgabenstellung
 

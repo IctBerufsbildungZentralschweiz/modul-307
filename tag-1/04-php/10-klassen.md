@@ -1,4 +1,4 @@
-# Klassen
+# 10 Klassen
 
 Klassen können grob als "Bauplan" angesehen werden, mit dem Bauplan selbst kann nichts gemacht werden, aber der Bauplan kann genutzt werden, um etwas herzustellen. Klassen können also nicht direkt benutzt werden, aber aus den Klassen können wir Objekte erzeugen, welche wir anschliessend nutzen können.
 

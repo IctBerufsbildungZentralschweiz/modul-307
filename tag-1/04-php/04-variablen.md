@@ -1,4 +1,4 @@
-# Variablen
+# 04 Variablen
 
 Eine Variable wird in PHP durch das Dollar-Zeichen `$` gefolgt vom Namen der Variablen dargestellt. Bei Variablen-Namen wird zwischen Gross- und Kleinschreibung unterschieden \(case-sensitive\).
 

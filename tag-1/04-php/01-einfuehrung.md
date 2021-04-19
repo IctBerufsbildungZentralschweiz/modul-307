@@ -1,12 +1,14 @@
-# PHP
+# 01 Einführung
 
-> PHP \(rekursives Akronym und Backronym für «PHP: Hypertext Preprocessor», ursprünglich «Personal Home Page Tools»\) ist eine Skriptsprache mit einer an C und Perl angelehnten Syntax, die hauptsächlich zur Erstellung dynamischer Webseiten oder Webanwendungen verwendet wird.
->
-> PHP wurde erstmals 1995 von seinem Entwickler, Rasmus Lerdorf, veröffentlicht.
+PHP \(rekursives Akronym und Backronym für «PHP: Hypertext Preprocessor», ursprünglich «Personal Home Page Tools»\) ist eine Skriptsprache mit einer an C und Perl angelehnten Syntax, die hauptsächlich zur Erstellung dynamischer Webseiten oder Webanwendungen verwendet wird.
 
-[Wikipedia](https://de.wikipedia.org/wiki/PHP)
+PHP wurde erstmals 1995 von seinem Entwickler, Rasmus Lerdorf, veröffentlicht.
 
-Aktuell ist PHP als Version 7 verfügbar.
+{% hint style="info" %}
+Mehr Infos gibts bei [Wikipedia](https://de.wikipedia.org/wiki/PHP)
+{% endhint %}
+
+Aktuell ist PHP als Version 8 verfügbar.
 
 ## Wer nutzt PHP?
 
@@ -32,11 +34,11 @@ Und natürlich die grossen CMS...
 * Joomla
 * ...
 
-> PHP wird auf etwa 244 Millionen Websites eingesetzt \(Stand: Januar 2013\), wird auf über 78 % aller Websites als serverseitige Programmiersprache verwendet \(Stand: [April 2020](https://w3techs.com/technologies/overview/programming_language)\) und ist damit die am häufigsten verwendete Sprache zum Erstellen von Websites - Tendenz steigend. Die Programmiersprache ist sie bei den meisten Webhostern vorinstalliert.
+PHP wird auf etwa 244 Millionen Websites eingesetzt \(Stand: Januar 2013\), wird auf über **79%** aller Websites als serverseitige Programmiersprache verwendet \(Stand: [April 202](https://w3techs.com/technologies/overview/programming_language)1\) und ist damit die am häufigsten verwendete Sprache zum Erstellen von Websites - Tendenz steigend. Die Programmiersprache ist sie bei den meisten Webhostern vorinstalliert.
 
 ## Was genau ist PHP?
 
-PHP ist eine serverseitige Scriptsprache und erlaubt dem Entwickler Logik in seine Webpages zu integrieren.
+PHP ist eine serverseitige **Scriptsprache** und erlaubt dem Entwickler Logik in seine Webpages zu integrieren.
 
 Mit PHP können Daten von verschiedensten Quellen verarbeitet werden:
 

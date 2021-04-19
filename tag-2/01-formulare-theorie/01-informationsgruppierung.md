@@ -1,4 +1,4 @@
-# Informationsgruppierung
+# 01 Informationsgruppierung
 
 Die Übertragung von Informationen mit Hilfe eines Formularfeldes folgt klaren Regeln und Strukturen. Somit lassen sich Formularelemente grundsätzlich in drei hierarchische Stufen unterteilen:
 

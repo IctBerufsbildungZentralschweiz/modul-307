@@ -1,4 +1,4 @@
-# Früchte-Dörrung
+# 06 Früchte Dörrung
 
 Die Firma «FruttiTutti» hat sich auf die Herstellung von Dörrfrüchten für Drittfirmen spezialisiert. Die Firma ist an eure Webagentur herangetreten und möchte die Verwaltung des Früchte-Dörrprozess vereinfachen. Dazu soll ein Verwaltungs-Webtool entwickelt werden, mit dem Früchte-Dörrungen für Drittanbieter verwaltet werden können. Das Tool wird nur von internen Mitarbeitern verwendet. Es muss kein Login- oder Registrierungssystem vorhanden sein da das Tool vorerst nicht direkt vom Kunden verwendet wird.
 
