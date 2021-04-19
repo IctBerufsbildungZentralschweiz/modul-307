@@ -1,5 +1,11 @@
 # Tag 3-5 Projektarabeit
 
+{% hint style="info" %}
+Das Startertemplate findest du hier:
+
+[https://github.com/IctBerufsbildungZentralschweiz/modul-307/tree/master/Tag%203-5%20Projektarbeit/\_Framework](https://github.com/IctBerufsbildungZentralschweiz/modul-307/tree/master/Tag%203-5%20Projektarbeit/_Framework)
+{% endhint %}
+
 ## Projektarbeit
 
 Bis zum Ende des Kurses habt ihr nun Zeit um eines der folgendes Projekte zu realisieren. Das Projekt ist gleichzeitig auch die Bewertungsgrundlage für diesen Kurs. Das Projekt besteht aus drei Teilen mit folgender Gewichtung:
