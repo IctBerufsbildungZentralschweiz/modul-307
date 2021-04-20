@@ -56,7 +56,7 @@ Der Webserver \(in unserem Fall Apache\) verfügt über ein PHP-Modul. Dieses Mo
 
 Beim Aufruf einer Webpage durch den Besucher lädt der Webserver das gewünschte Script und schickt es an das PHP-Modul. Dort wird der PHP-Code verarbeitet. Dabei können Script-Ausgaben entstehen. Diese Ausgaben werden in die aufgerufene Seite eingefügt und anschliessend an den Browser des Besuchers gesendet.
 
-![Szene 8](https://raw.githubusercontent.com/IctBerufsbildungZentralschweiz/modul-307/master/Tag%201/02%20Client-Server-Infrastruktur/res/08.jpg)
+![](../../.gitbook/assets/08.jpg)
 
 ### Aufruf über Webserver
 
