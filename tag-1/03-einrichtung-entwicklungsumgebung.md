@@ -6,6 +6,8 @@ Als Webserver verwenden wir Apache mit PHP 7. Um die Installation zu vereinfache
 
 XAMPP ist ein Software-Paket, welches die Installation von Apache mit PHP auf Linux, Mac und Windows vereinfacht. XAMPP sollte nur für Entwicklungszwecke und nicht für den produktiven Betrieb verwendet werden.
 
+{% embed url="https://www.apachefriends.org/download.html" %}
+
 ### Installation von XAMPP
 
 1. Führe das XAMPP-Setup aus. Du findest den Installer auf dem Austausch-Laufwerk.
