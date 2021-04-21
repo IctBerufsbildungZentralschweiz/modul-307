@@ -85,8 +85,8 @@ function demo() {
 
 echo demo();
 // PHP Notice:  Undefined variable: zahl
-
-
+```
+```php
 function demo() {
     $zahl = 20; // In Funktion, aber nicht zurückgegeben via return
     echo $zahl;
