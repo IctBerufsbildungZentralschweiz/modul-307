@@ -10,7 +10,7 @@ Mit dem `load` Event gehen wir sicher, dass der Code innerhalb dieser Funktion e
 
 ```javascript
 window.addEventListener("load", function(){
-    // Code wird erst ausgeführt, wenn Seite gelanden wurde.
+    // Code wird erst ausgeführt, wenn Seite geladen wurde.
 });
 ```
 
