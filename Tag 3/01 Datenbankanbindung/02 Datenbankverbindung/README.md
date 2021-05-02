@@ -12,6 +12,7 @@ $pdo = new PDO('mysql:host=localhost;dbname=meinedatenbank', 'root', 'ADfk3lox!4
     PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',
 ]);
 ```
+
 ## Datenbankquelle / Connection-String / DSN
 Die Datenbankquelle besteht aus einem definierten Connection-String. Darin wird angegeben, was für eine Art Quelle wir ansprechen möchten (`mysql`), was der Host dieser Datenbank ist (`host=localhost`) und wie die Datenbank heisst (`meinedatenbank`):
 
@@ -44,6 +45,12 @@ Mit dem Wert `PDO::ERRMODE_EXCEPTION` für `PDO::ATTR_ERRMODE` wird sichergestel
 ### `PDO::MYSQL_ATTR_INIT_COMMAND`
  
 Der unter dieser Option aufgeführte Befehl wird bei jedem Verbindungsaufbau zur Datenbank ausgeführt. Mit `SET NAMES utf8;` teilen wir dem Server mit, dass unsere Kommunikation im `utf8` Zeichensatz erfolgen wird.
+
+## Verbindung schliessen
+
+Im Gegensatz zu anderen Datenbank-Zugriffsarten (z.B. mysqli) werden mit PDO die Datenbankverbindungen **automatisch** geschlossen, sobald das Connection-Objekt gelöscht wird. Dies geschieht automatisch, wenn die Funktion oder das Script, welches das PDO-Objekt erstellt hat, fertig abgearbeitet ist und verlassen wird, oder wenn der PDO-Referenz auf ´null´ gesetzt wird. 
+
+Siehe auch [pdo.connections.php](https://www.php.net/manual/en/pdo.connections.php#example-1059)
 
 ## Aufgabe: Datenbankverbindung einrichten (Gemeinsam)
 Als erstes richten wir in unserem Controller `TaskController.php` die Verbindung zur eben erstellen Datenbank ein:
