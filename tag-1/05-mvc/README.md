@@ -34,6 +34,12 @@ Wenn der Front-Controller einen Request entgegennimmt, muss dieser herausfinden,
 
 ## Das ÜK-Framework
 
+Für den ÜK steht ein einfaches MVC-Framework zur Verfügung: 
+
+1. Lade das [Framework](.gitbook/assets/../../../../.gitbook/assets/_Framework.zip) herunter.
+2. Erstelle einen Ordner `aufgaben` in `C:\xampp\htdocs\modul-307\` und extrahiere das Framework da. 
+3. Ergänze später je Aufgabe die benötigten Routes-Einträge in `index.php`, sowie die nötigen Controller, Models und Views. 
+
 ### index.php
 
 Die `index.php` ist der Einstiegspunkt für alle Anfragen an unser Framework. Hier wird das Framework geladen \(`core/bootstrap.php`\), `$routes` werden definiert und anschliessend ausgeführt.
@@ -48,7 +54,7 @@ $routes = [
 ];
 ```
 
-Im obenstehenden Beispiel wird beim Aufruf von `http://localhost/dein-framework/hallo/welt` die `index` Methode auf dem `WelcomeController` ausgeführt.
+Im obenstehenden Beispiel wird beim Aufruf von `http://localhost/modul-307/aufgaben/hallo/welt` die `index` Methode auf dem `WelcomeController` ausgeführt.
 
 Die `Controller@Methode` Schreibweise ist vom Framework vorgegeben. Der `Router` kann anhand dieser Schreibweise entscheiden, welche Controller-Methode aufgerufen werden soll.
 
