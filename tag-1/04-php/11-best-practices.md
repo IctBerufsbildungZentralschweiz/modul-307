@@ -2,7 +2,7 @@
 
 ## PHP Standards Recommendations
 
-Seit 2009 gibt es die [Framework Interoperability Group](https://www.php-fig.org/) \(kurz PHP-FIG\) die PHP Standards Recommendations \(kurz PSRs\) erarbeitet und veröffentlicht.
+Seit 2009 gibt es die [Framework Interoperability Group](https://www.php-fig.org/) \(kurz PHP-FIG\), die PHP Standards Recommendations \(kurz PSRs\) erarbeitet und veröffentlicht.
 
 In diesen PSRs werden Empfehlung für das Arbeiten mit PHP definiert. Ziel der PHP-FIG ist es, einmal erstellte PHP-Komponenten in verschiedenen Projekten und Frameworks wiederverwendbar zu machen. Dazu ist es wichtig, dass der Code nach einheitlichen Regeln geschrieben wird.
 

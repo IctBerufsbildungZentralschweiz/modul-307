@@ -14,7 +14,7 @@ funktionsname('Hallo', 'Welt');
 // Hallo Welt
 ```
 
-Für die Funktionsnamen gelten die gleichen Regeln wie für Variablennamen.
+Für die Funktionsnamen gelten die gleichen Regeln wie für [Variablennamen](04-variablen.md).
 
 Einer Funktion können Argumente mitgegeben werden, auf die innerhalb der Funktion zugegriffen werden können.
 

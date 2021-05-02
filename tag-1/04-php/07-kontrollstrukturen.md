@@ -37,7 +37,7 @@ Um zwei Werte in PHP zu vergleichen, gibt es die Vergleichsoperatoren `==` und `
 
 **Typenschwache und typenstarke Vergleiche**
 
-In PHP können typenschwache oder typenstarke Vergleiche durchgeführt werden. Bei typenschwachen Vergleichen \(`==`\) wird der Wert der Variablen unabhängig von ihren Typen verglichen. Bei typenstarken Vergleichen \(`===`\) müssen Wert und Typ beider Variablen identisch sein.
+In PHP können typenschwache oder typenstarke Vergleiche durchgeführt werden. Bei typenschwachen Vergleichen \(`==`, `!=`\) wird der Wert der Variablen unabhängig von ihren Typen verglichen. Bei typenstarken Vergleichen \(`===`, `!==`\) müssen Wert und Typ beider Variablen identisch sein.
 
 ```php
 $a = 1;     // Integer
@@ -59,6 +59,16 @@ var_dump($a == $b);       // 1 == true
 
 var_dump($a === $b);      // 1 === true
 // false
+```
+
+Der typenstarke Ungleich-Operator \(`!==`\) ist wahr, wenn der Wert **oder** der Typ unterschiedlich ist. So kann z.B. unterschieden werden, ob ein Teil-String in einem Text am Anfang (die Funktion `strpos()` liefert `0`) oder gar nicht (`strpos()` liefert `false`) vorkommt. 
+
+```php
+var_dump(strpos('hallo welt', 'hallo') != false); // 0 != false
+// false
+
+var_dump(strpos('hallo welt', 'hallo') !== false); // 0 !== false
+// true
 ```
 
 [Tabelle zu Typenvergleichen in PHP](https://secure.php.net/manual/de/types.comparisons.php)
