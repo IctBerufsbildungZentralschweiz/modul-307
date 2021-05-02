@@ -19,11 +19,11 @@ echo $edelmetalle[0];  // Gold
 echo $edelmetalle[1];  // Platin
 ```
 
-## Array-Schlüssel
+## Array-Schlüssel und Assoziatives Array
 
 Zusätzlich zu jedem Wert, kann ein spezifischer Schlüssel vergeben werden.
 
-Wird kein eigener Schlüssel angegeben, vergibt PHP automatisch einen `Integer` als Schlüssel \(wie in vorherigem Beispiel\).
+Wird kein eigener Schlüssel angegeben, vergibt PHP automatisch einen `Integer` als Schlüssel \(wie in vorherigem Beispiel\). Wird ein `String` als schlüssel angegeben, so erhält man ein Assoziatives Array: 
 
 ```php
 $wochentage = [

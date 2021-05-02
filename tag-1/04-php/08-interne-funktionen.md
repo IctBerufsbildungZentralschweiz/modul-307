@@ -47,6 +47,12 @@ echo strtolower($string);
 echo strlen($string);
 // 5
 
+echo substr($string, 2, 2);
+// ll
+
+echo strpos($string, 'll');
+// 2
+
 echo strrev($string);
 // ollaH
 ```

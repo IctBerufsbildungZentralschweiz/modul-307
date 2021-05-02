@@ -2,7 +2,7 @@
 
 Klassen können grob als "Bauplan" angesehen werden, mit dem Bauplan selbst kann nichts gemacht werden, aber der Bauplan kann genutzt werden, um etwas herzustellen. Klassen können also nicht direkt benutzt werden, aber aus den Klassen können wir Objekte erzeugen, welche wir anschliessend nutzen können.
 
-Stell dir vor, du hast eine Klasse `Auto` \(einen Bauplan für ein Auto\). Nun kannst du mit der Klasse ein konkretes Objekt erzeugen. Also könntest du zum Beispiel sagen: Klasse `Auto`, gib mir einen `Renault Clio`.
+Stell dir vor, du hast eine Klasse `Auto` \(einen Bauplan für ein Auto\). Nun kannst du mit der Klasse ein konkretes Objekt erzeugen. Also könntest du zum Beispiel sagen: Klasse `Auto`, bau mir einen `Renault Clio` mit der Fahrzeug-Identifikationsnummer `VF1CB1N0501402066`.
 
 * Wir brauchen Klassen \(Baupläne\) um Objekte \(Gegenstände\) zu erzeugen
 * Mit Klassen selbst können wir nichts machen, nur mit Objekten
@@ -13,7 +13,9 @@ Stell dir vor, du hast eine Klasse `Auto` \(einen Bauplan für ein Auto\). Nun k
 
 Einfache Klassendefinitionen beginnen mit dem Schlüsselwort `class`, gefolgt von einem Klassennamen, gefolgt von einem Paar geschweifter Klammern, welche die Definitionen der Eigenschaften und Methoden der Klasse enthalten.
 
-Eine Klasse besteht aus ihren eigenen Konstanten, Variablen und Funktionen \(Funktionen werden innerhalb einer Klasse auch "Methoden" genannt\).
+Eine Klasse besteht aus ihren eigenen Konstanten, Variablen und Funktionen. Variablen werden innerhalb einer Klasse auch "Eigenschaften" genannt, Funktionen auch "Methoden".
+
+Für Klassennamen gelten die gleichen Regeln wie für [Variablennamen](04-variablen.md). Für Klassennamen wird "UpperCamelCase" benutzt, für Eigenschaften (Variabeln) und Methoden (Funktionen) "lowerCamelCase".
 
 Eine Klasse kann wie folgt definiert werden:
 
