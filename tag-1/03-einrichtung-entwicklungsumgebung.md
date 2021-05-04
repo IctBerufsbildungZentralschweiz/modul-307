@@ -11,7 +11,7 @@ XAMPP ist ein Software-Paket, welches die Installation von Apache mit PHP auf Li
 ### Installation von XAMPP
 
 1. Führe das XAMPP-Setup aus. Du findest den Installer auf dem Austausch-Laufwerk.
-2. Es reicht aus, dass Du nur die folgenden Komponenten installierst: Apache, PHP.
+2. Es reicht aus, dass Du nur die folgenden Komponenten installierst: Apache, PHP, MySQL.
 3. Installiere XAMPP ins Verzeichnis `C:\xampp`
 4. **Deaktiviere die Option «Learn more about Bitnami for XAMPP»**
 
