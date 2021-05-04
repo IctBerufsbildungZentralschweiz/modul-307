@@ -12,16 +12,16 @@ Die Formularfelder sind die kleinsten Elemente innerhalb eines Formulars. Die ve
 
 ```markup
 <label for="firstname">Vorname</label>
-<input type="text" id="firstname">
+<input type="text" id="firstname" name="firstname">
 
 <label for="lastname">Nachname</label>
-<input type="text" id="lastname">
+<input type="text" id="lastname" name="lastname">
 
 <label for="work">Beruf</label>
-<input type="text" id="work">
+<input type="text" id="work" name="work">
 
 <label for="workplace">Arbeitgeber</label>
-<input type="text" id="workplace">
+<input type="text" id="workplace" name="workplace">
 ```
 
 Als kleine Illustration:
@@ -44,10 +44,10 @@ Die Formularfeld-Gruppen erleichtern zum einen die Navigation innerhalb des Doku
     <legend>Informationen zur Person</legend>
 
     <label for="firstname">Vorname</label>
-    <input type="text" id="firstname">
+    <input type="text" id="firstname" name="firstname">
 
     <label for="lastname">Nachname</label>
-    <input type="text" id="lastname">
+    <input type="text" id="lastname" name="lastname">
 
 </fieldset>
 
@@ -56,10 +56,10 @@ Die Formularfeld-Gruppen erleichtern zum einen die Navigation innerhalb des Doku
     <legend>Informationen zum Beruf</legend>
 
     <label for="work">Beruf</label>
-    <input type="text" id="work">
+    <input type="text" id="work" name="work">
 
     <label for="workplace">Arbeitgeber</label>
-    <input type="text" id="workplace">
+    <input type="text" id="workplace" name="workplace">
 
 </fieldset>
 ```
@@ -86,10 +86,10 @@ Das `form` Tag ist auf der höchsten strukturellen Ebene eines Formulars und bei
         <legend>Informationen zur Person</legend>
 
         <label for="firstname">Vorname</label>
-        <input type="text" id="firstname">
+        <input type="text" id="firstname" name="firstname">
 
         <label for="lastname">Nachname</label>
-        <input type="text" id="lastname">
+        <input type="text" id="lastname" name="lastname">
 
     </fieldset>
 
@@ -98,10 +98,10 @@ Das `form` Tag ist auf der höchsten strukturellen Ebene eines Formulars und bei
         <legend>Informationen zum Beruf</legend>
 
         <label for="work">Beruf</label>
-        <input type="text" id="work">
+        <input type="text" id="work" name="work">
 
         <label for="workplace">Arbeitgeber</label>
-        <input type="text" id="workplace">
+        <input type="text" id="workplace" name="workplace">
 
     </fieldset>
 
@@ -140,28 +140,28 @@ Erstelle in der Datei `form.view.php` ein HTML-Grundgerüst und kopiere folgende
 
 ```markup
     Wir möchten den Shuttle-Bus-Service beanspruchen: 
-    <input value="1" type="checkbox"><br>
+    <input value="1" type="checkbox" name="shuttlebus"><br>
 
     Name: <input type="text"><br>
 
     Wie viele Personen werden von Ihrer Firma teilnehmen?:
-    <input min="0" type="number"><br>
+    <input min="0" type="number" name="num_persons"><br>
 
-    Telefon: <input type="text"><br>
+    Telefon: <input type="text" name="phone"><br>
 
     Haben Sie sonst noch einen Wunsch oder eine Bemerkung?
     <textarea name="note" id="note" rows="3"></textarea><br>
 
     In welchem Hotel möchten Sie übernachten?
-    <input type="radio" value="InterContinental Davos">
-    <input type="radio" value="Steinberger Grandhotel Belvédère"><br>
+    <input type="radio" name="hotel" value="InterContinental Davos">
+    <input type="radio" name="hotel" value="Steinberger Grandhotel Belvédère"><br>
 
     Email: <input type="email"><br>
 
-    <input type="submit" value="Anmelden">
+    <input type="submit" name="submit" value="Anmelden">
 
     Was möchten Sie am Abend unternehmen?
-    <select>
+    <select name="activity">
         <option value="">Kein Abendprogramm</option>
         <option value="Billardturnier">Billardturnier</option>
         <option value="Bowlingturnier">Bowlingturnier</option>
