@@ -8,33 +8,63 @@ Erstelle eine Startseite für deine Übungen für alle deine Routes-Einträge ei
 
 #### Schritt 1
 
-Erstelle einen Controller `NavigationController` und eine Methode `home()` und eine View `home.view.php` dazu. Füge einen neuen Routes-Eintrag mit Pfad "/" ein. 
+Füge einen neuen Routes-Eintrag mit Pfad "/" ein:
 
-Erst mal kannst du in der View eine Liste mit allen bisherigen Routes-Einträge manuell / statisch als HTML-Links einfügen. 
+```php
+$routes = [
+  '/' => 'NavigationController@home', /* NEU */
+  '/aufgabe/spam' => 'AufgabenController@spam',
+  // ... alle weiteren bestehenden Routes ...
+];
+```
+
+Erstelle einen Controller `NavigationController` und eine Methode `home()` und eine View `home.view.php` dazu. Erstelle erst mal manuell ein Array `$navigation` mit allen bisherigen Links, die du als Menü haben willst: 
+
+```php
+class NavigationController {
+  public function home() {
+    $navigation = [
+      '/'             => 'Navigation - Home',
+      '/aufgabe/spam' => 'Aufgaben - Spam',
+      // ... weitere Menüpunkte
+    ];
+  }
+}
+```
+
+Gib alle Links als Liste in `home.view.php` aus: 
 
 ```html
 <ul>
-  <li><a href="./">Home</a></li>
-  <li><a href="./aufgabe/spam">Aufgabe Spam</a></li>
-  <li><a href="./aufgabe/xy">Aufgabe XY...</a></li>
+  <?php foreach($navigation as $url => $label) : ?>
+    <li><a href=".<?= $url ?>"><?= $label ?></a></li>
+  <?php endforeach; ?>
 </ul>
 ```
 
 #### Schritt 2
 
-Füge die Links dynamisch aus der Routes-Tabelle ein. Deklariere dazu in `NavigationController::home()` die $routes-Variable als global, dann hast du darauf Zugriff. Erstelle ein neues Array `$navigation` mit allen URLs als Key und lesbaren Menü-Beschriftungen als Value. 
-
-Die lesbaren Beschriftungen sollen mittels Stringfunktionen (z.B. `explode()` und `str_replace()`) aus der Routes-Tabelle automatisch erzeugt werden, z.B. aus den Keys (`/aufgabe/spam` wird zu 'Aufgabe Spam') oder aus den Values (`AufgabenController@spam` wird zu `Aufgaben - Spam`). 
+Fülle nun das Array `$navigation` dynamisch aus der Routes-Tabelle. Für lesbare Beschriftungen kannst du z.B. die Stringfunktionen `explode()`, `str_replace()` und `ucfirst()` benutzen. 
 
 ```php
-$navigation = [ /* Dieses Array soll automatisch erzeugt werden! */
-  '/' => 'Navigation - Home',
-  '/aufgabe/spam' => 'Aufgaben - Spam',
-];
+class NavigationController {
+
+  public function home() {
+
+    global $routes;
+    $navigation = [];
+
+    foreach ($routes as $url => $ControllerMethod) {
+      // Aus $ControllerMethod ein lesbares Link-Label erzeugen.
+      // Aus 'AufgabenController@spam' soll z.B. 'Aufgaben - Spam' werden.
+      $navigationLabel = '...';
+
+      $navigation[$url] = $navigationLabel;
+    }
+  }
 ```
 
-Ersetze in der View dann die statische Liste mit den Einträgen aus dem Array `$navigation`.
+#### Testing
 
-### Testing
-
-Füge einen neuen Routes-Eintrag hinzu und schau, ob das Menü korrekt erscheint und der Link funktioniert. 
+1. Prüfe nun in der View, ob die Links vernünftige Beschriftungen haben und die Links korrekt funktionieren. 
+2. Füge einen neuen Routes-Eintrag hinzu und schau, ob das neue Menü korrekt erscheint und funktioniert. 

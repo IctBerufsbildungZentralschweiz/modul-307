@@ -102,9 +102,11 @@ Klare Unterscheidung der Aktionen [www.hooklinemusic.de](http://www.hooklinemusi
 
 ## Aufgabe
 
-Tausche mit deinem Nachbar, deiner Nachbarin den Platz und schau sind/ihr Formular im Browser an (nicht den Code). Vergleiche es mit den obigen Tipps und gib ihm/ihr ein Feedback: 
+Tausche den Platz mit deinem/r Nachbar/in und schau sein/ihr Formular im Browser an (nicht den Code). Vergleiche es mit den obigen Empfehlungen und schreibe ein paar Feedback-Punkte auf: 
 
 * 2-3 Aspekte, die du benutzerfreundlich findest, die mit den Empfehlungen (oben) übereinstimmen.
 * 2-3 Empfehlungen, was noch verbessert werden kann.
 
-Zeit: ca. 5 Minuten
+Wenn du fertig bist, tauscht eure Feedbacks aus. 
+
+Zeit: 10 Minuten inkl. Austausch.
