@@ -65,7 +65,7 @@ if($name === '') {
     echo 'Bitte geben Sie einen Namen ein.';
 }
 
-if(strlen($email) < 1) {
+if(strlen($email) < 5) {
     echo 'Bitte geben Sie eine Email ein.';
 }
 ```
