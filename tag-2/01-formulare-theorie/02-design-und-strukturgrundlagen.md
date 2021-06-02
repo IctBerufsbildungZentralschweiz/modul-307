@@ -100,3 +100,11 @@ Klare Unterscheidung der Aktionen [www.hooklinemusic.de](http://www.hooklinemusi
 
 * **Aktionen benennen.** Aktionen wie «Submit» oder «Reset» sollten nach den eigentlichen Aktionen beschriftet werden. Beispielsweise «Registrieren», «Anfrage senden» etc.
 
+## Aufgabe
+
+Tausche mit deinem Nachbar, deiner Nachbarin den Platz und schau sind/ihr Formular im Browser an (nicht den Code). Vergleiche es mit den obigen Tipps und gib ihm/ihr ein Feedback: 
+
+* 2-3 Aspekte, die du benutzerfreundlich findest, die mit den Empfehlungen (oben) übereinstimmen.
+* 2-3 Empfehlungen, was noch verbessert werden kann.
+
+Zeit: ca. 5 Minuten
