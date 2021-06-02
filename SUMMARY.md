@@ -27,6 +27,8 @@
     * [04 Pixelgenerator](tag-1/06-php-aufgaben/04-pixel.md)
     * [05 Todo-Liste](tag-1/06-php-aufgaben/05-todo-liste.md)
     * [06 Login-Funktion](tag-1/06-php-aufgaben/06-login.md)
+    * [07 Navigation](tag-1/06-php-aufgaben/07-navigation.md)
+    * [08 Gemeinsames Template](tag-1/06-php-aufgaben/08-template.md)
 * [Tag 2](tag-2/README.md)
   * [01 Formulare Theorie](tag-2/01-formulare-theorie/README.md)
     * [01 Informationsgruppierung](tag-2/01-formulare-theorie/01-informationsgruppierung.md)
