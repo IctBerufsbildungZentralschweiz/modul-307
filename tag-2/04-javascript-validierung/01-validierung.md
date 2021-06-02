@@ -32,30 +32,15 @@ window.addEventListener("load", function(){
 
 Der Event-Handler wird ausgeführt, bevor das Formular an den Server versendet wird.
 
-### Den `submit`-Vorgang abbrechen
-
-Die übergebene Variable `evt` hat eine Methode `preventDefault`. Wenn diese Methode aufgerufen wird, verhindert dies das Absenden des Formulars.
-
-```javascript
-window.addEventListener("load", function(){
-    document.querySelector('#formular').addEventListener('submit', function(evt) {
-      //Formular wird nicht mehr abgeschickt
-      evt.preventDefault();
-    });
-});
-```
-
 ## Umsetzung einer Validierung
 
 Ähnlich wie in PHP, kannst du im `submit` Event deine Formular-Daten validieren.
-
-Falls Fehler vorhanden sind, kannst du mittels `evt.preventDefault()` verhindern, dass das Formular an den Sever versendet wird.
 
 Wie Du Fehlermeldungen ausgibst, ist dir überlassen. Diese können einfach als Liste am Formularanfang oder direkt «inline» bei den jeweiligen Formularfeldern dargestellt werden.
 
 Auch die Methode um Fehlermeldungen zu sammeln oder darzustellen ist dir überlassen. Hierfür gibt es zahlreiche Möglichkeiten.
 
-### Beispiele für Validierung
+### Formular mit Platzhalter für Fehlerliste
 
 ```markup
 <form action="submit.php" id="loginForm">
@@ -74,34 +59,48 @@ Auch die Methode um Fehlermeldungen zu sammeln oder darzustellen ist dir überla
 </form>
 ```
 
-#### Ausgabe einer Fehlerliste
+### Validierung und bei Fehler den `submit`-Vorgang abbrechen!
+
+Die übergebene Variable `evt` hat eine Methode `preventDefault`. Falls Fehler vorhanden sind, kannst du mittels `evt.preventDefault()` verhindern, dass das Formular an den Sever versendet wird. Siene Beispiel oben.
 
 ```javascript
 window.addEventListener("load", function(){
-
     document.querySelector('#listForm').addEventListener('submit', function(evt) {
 
         var errors  = [];
 
+        // Username validieren
         if(document.querySelector('#username').value === '') {
             errors.push('Bitte gib einen Benutzernamen ein.');
         }
 
-        if(document.querySelector('#password').value === '') {
-            errors.push('Bitte gib ein Passwort ein.');
+        // Passwort validieren
+        var password = document.querySelector('#password').value;
+        if(password.length < 6) {
+            errors.push('Bitte gib ein Passwort ein, welches mindestens 6 Zeichen lang ist.');
+        }
+        if(password == password.toLowerCase()) {
+            errors.push('Das Passwort muss mindestens einen Grossbuchstaben enthalten.');
         }
 
         // Das Formular ist nur dann `valid` wenn 0 Fehler vorhanden sind.
-        var isValid = errors.length < 1;
-
-        if( ! isValid) {
-            renderErrors(errors);
+        if(errors.length > 0) {
+            renderErrors(errors); /* Ausgabe: Siehe unten */
             evt.preventDefault();
+        }
+        else {
+            // Alles OK -> Error-Liste verstecken!
+            errorList.style.display = "none";
         }
 
     });
+```
 
+### Ausgabe der Fehlerliste
 
+Alle Fehler werden gebündelt im Platzhalter <ul id="errorList"></ul> ausgegeben: 
+
+```javascript
     /**
      * Wandelt das `errors` Array in eine
      * normale HTML-Liste um.
@@ -121,13 +120,18 @@ window.addEventListener("load", function(){
             errorList.append(errorMessage);
         });
 
+        // Versteckte Liste anzeigen
         errorList.style.display = "block";
     }
 
 });
 ```
 
-#### Inline-Fehler
+## Zusatz für Fortgeschrittene 
+
+### Inline-Fehler
+
+Folgendes Script gibt die Fehlermeldungen direkt beim zugehörigen Feld aus:
 
 ```javascript
 window.addEventListener("load", function(){
