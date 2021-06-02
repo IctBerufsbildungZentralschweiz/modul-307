@@ -6,7 +6,7 @@
 
 Erstelle ein PHP-Script, welches aufgrund der mitgegebenen GET-Variablen eine Tabelle zur Darstellung eines Pixelbildes generiert.
 
-{% embed url="../../.gitbook/assets/styles.css" caption="Stylesheet gibts hier" %}
+{% embed url="https://github.com/IctBerufsbildungZentralschweiz/modul-307/tree/master/.gitbook/assets/styles.css" caption="Stylesheet gibts hier" %}
 
 ### Zielumgebung
 
