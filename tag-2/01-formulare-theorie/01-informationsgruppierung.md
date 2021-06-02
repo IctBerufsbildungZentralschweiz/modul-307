@@ -167,12 +167,12 @@ Erstelle in der Datei `form.view.php` ein HTML-Grundgerüst und kopiere folgende
         <option value="Bowlingturnier">Bowlingturnier</option>
         <option value="Weindegustation">Weindegustation</option>
         <option value="Asiatischer Kochkurs">Asiatischer Kochkurs</option>
-        <option value="Tankzurs für Webentwickler">Tankzurs für Webentwickler</option>
+        <option value="Tanzkurs für Webentwickler">Tanzkurs für Webentwickler</option>
         <option value="Ying &amp; Yang Yoga Einsteigerkurs">Ying &amp; Yang Yoga Einsteigerkurs</option>
     </select><br>
 ```
 
-Ordne das Chaos, welches dein Chef verursacht hat mit den HTML-Tags `fieldset` und `label`. Kontrolliere ausserdem ob die Forumlar-Tags sämtliche nötigen Informationen enthalten.
+Ordne das Chaos, welches dein Chef verursacht hat mit den HTML-Tags `fieldset` und `label`. Kontrolliere ausserdem ob die Formular-Tags sämtliche nötigen Informationen enthalten.
 
 ## Aufgabe: Formular
 
