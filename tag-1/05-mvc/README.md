@@ -36,7 +36,7 @@ Wenn der Front-Controller einen Request entgegennimmt, muss dieser herausfinden,
 
 Für den ÜK steht ein einfaches MVC-Framework zur Verfügung: 
 
-1. Lade das [Framework](https://github.com/IctBerufsbildungZentralschweiz/modul-307/raw/master/.source/_Framework.zip) herunter.
+1. Lade das [Framework](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2FIctBerufsbildungZentralschweiz%2Fmodul-307-projekte%2Ftree%2Fmaster%2F_Framework) herunter.
 2. Erstelle einen Ordner `aufgaben` in `C:\xampp\htdocs\modul-307\` und extrahiere das Framework da. 
 3. Ergänze später je Aufgabe die benötigten Routes-Einträge in `index.php`, sowie die nötigen Controller, Models und Views. 
 
