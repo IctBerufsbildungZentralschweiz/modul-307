@@ -10,7 +10,7 @@ Die von PHP zur Verfügung gestellte PDO-Klasse stellt ein einheitliches Interfa
 
 ## Aufgabe: Projekt-Setup \(Gemeinsam\)
 
-Lade das [Framework](https://github.com/IctBerufsbildungZentralschweiz/modul-307/raw/master/.source/_Framework.zip) herunter.
+Lade das [Framework](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2FIctBerufsbildungZentralschweiz%2Fmodul-307-projekte%2Ftree%2Fmaster%2F_Framework) herunter.
    
 Erstelle den neuen Controller `TaskController.php` und schaue via Routes-Eintrag, dass diese bei der URL `/tasks` aufgerufen wird. Ebenfalls kannst du die neue View `task.view.php` erstellen, welche am Schluss des neuen Controllers geladen wird.
 
