@@ -22,7 +22,7 @@ Eine Klasse kann wie folgt definiert werden:
 ```php
 class SimpleClass
 {
-    // Deklaration einer Variable
+    // Deklaration einer Eigenschaft
     public string $var = 'ein Standardwert';
 
     // Deklaration einer Methode
@@ -50,7 +50,7 @@ Auf die Eigenschaft kann ausserhalb der instanzierten Klasse mit dem Objekt und 
 ```php
 class SimpleClass
 {
-    // Deklaration einer Variable
+    // Deklaration einer Eigenschaft
     public    string $var1 = 'Hallo Welt';
     private   string $var2 = 'Hallo ich';
     protected array  $var3 = ['Affe', 'Kuh'];
