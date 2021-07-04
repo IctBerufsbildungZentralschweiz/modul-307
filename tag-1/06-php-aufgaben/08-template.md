@@ -38,14 +38,16 @@ Erstelle eine neue Klasse `View` in `/core/view.php` und lade sie in `/core/boot
 Vor beiden Schritten solltest du testen, ob es die angegebene Datei auch gibt (`file_exists()`);
 
 ```php
-class View {
+class View
+{
   /**
    * Render a view and display the result with the given template
    * 
    * @param $template string - e.g. "app/Views/template.view.php"
    * @param $view string - e.g. "app/Views/spam.view.php"
    */
-  public function render(string $template, string $view) {
+  public function render(string $template, string $view)
+  {
     // Render given `$view` and don't send result to client, but store it into the variable `$content`. 
     // Dein Code hier...
 
@@ -53,6 +55,7 @@ class View {
     // Dein Code hier...
   }
 }
+```
 
 #### Schritt 3
 
@@ -62,13 +65,15 @@ Deine bestehenden Aufgaben entsprechend anpassen:
 2. Im Controller wird nun nicht mehr die View direkt eingefügt (`require ...`), sondern eine neue View erzeugt und die Methode `render()` aufgerufen: 
 
 ```php
-class XYController {
-  public function xy() {
+class XYController
+{
+  public function xy()
+  {
     // Do what ever needs to be done before loading the view..
 
     // Load view and render with template (replaces require 'app/Views/aufgabe-xy.view.php')
     $view = new View();
-    $view->render("app/Views/template.view.php", "app/Views/aufgabe-xy.view.php");
+    $view->render('app/Views/template.view.php', 'app/Views/aufgabe-xy.view.php');
   }
 }
 ```
