@@ -50,7 +50,7 @@ Beide Parameter sollen optional sein und einen Standard-Wert von 4 haben.
 
 | URL | Spalten | Zeilen |
 | :--- | :--- | :--- |
-| [http://localhost/pixel?uri=pixel](http://localhost/pixel) | 4 | 4 |
+| [http://localhost/pixel](http://localhost/pixel) | 4 | 4 |
 | [http://localhost/pixel?rows=2](http://localhost/pixel?rows=2) | 4 | 2 |
 | [http://localhost/pixel?cols=2](http://localhost/pixel?cols=2) | 2 | 4 |
 | [http://localhost/pixel?cols=2&rows=2](http://localhost/pixel?cols=2&rows=2) | 2 | 2 |
