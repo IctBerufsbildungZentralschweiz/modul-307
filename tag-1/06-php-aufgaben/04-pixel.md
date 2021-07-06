@@ -10,7 +10,7 @@ Erstelle ein PHP-Script, welches aufgrund der mitgegebenen GET-Variablen eine Ta
 
 ### Zielumgebung
 
-Nutze zur Strukturierung des Codes die erstellte MVC-Umgebung:
+Nutze zur Strukturierung des Codes die erstellte MVC-Umgebung. Erstelle die Route `/pixel`:
 
 `PixelController.php` =&gt; Logik `pixel.view.php` =&gt; Ausgabe
 
@@ -20,18 +20,17 @@ Entwickle das Script immer nur so weit, bis alle Komponenten des jeweiligen Schr
 
 #### Schritt 1
 
-Erstelle eine einfache HTML-Seite ohne PHP-Code. Auf der Seite soll eine Tabelle mit 4 Spalten und 4 Zeilen angezeigt werden.
+Erstelle eine einfache View ohne PHP-Code. Auf der View fügst Du eine Tabelle mit 4 Spalten und 4 Zeilen ein.
 
-Kopiere das Stylesheet `src/styles.css` in dein Verzeichnis und binde es in das Dokument ein.
+Kopiere den Inhalt [des vorgegebenen Stylesheets](https://github.com/IctBerufsbildungZentralschweiz/modul-307/tree/master/.source/styles.css) in deine `public/css/app.css` und binde diese in deiner View ein.
 
 Du solltest nun eine vertikal und horizontal zentrierte Tabelle erhalten.
 
 #### Schritt 2
 
-Erstelle am Anfang deines Scripts nun je eine Variable für die Anzahl Spalten \(`$cols`\) und die Anzahl Zeilen \(`$rows`\). Nutze PHP um die Tabelle dynamisch anhand der Werte der beiden Variablen zu generieren.
+Erstelle in deinem Controllernun je eine Variable für die Anzahl Spalten \(`$cols`\) und die Anzahl Zeilen \(`$rows`\). Nutze PHP um die Tabelle dynamisch anhand der Werte der beiden Variablen in deiner View zu generieren.
 
 ```php
-<?php
 // Tabelle 4x4 wird generiert
 $cols = 4;
 $rows = 4;
@@ -39,7 +38,6 @@ $rows = 4;
 // Tabelle 8x6 wird generiert
 $cols = 8;
 $rows = 6;
-?>
 ```
 
 #### Schritt 3
@@ -60,13 +58,11 @@ Beide Parameter sollen optional sein und einen Standard-Wert von 4 haben.
 Du kannst über die Superglobale `$_GET` auf Parameter aus der URL zugreifen.
 
 ```php
-<?php
 // script.php?x=1
 $x = $_GET['x'];
 
 // script.php?x=1&y=2
 $y = $_GET['y'];
-?>
 ```
 
 * Wie könntest du hier den Null Coalesce Operator verwenden?
