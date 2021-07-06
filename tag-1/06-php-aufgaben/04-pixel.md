@@ -65,7 +65,7 @@ $x = $_GET['x'];
 $y = $_GET['y'];
 ```
 
-* Wie könntest du hier den Null Coalesce Operator verwenden?
+* Wie könntest du hier den [Null Coalesce Operator](https://www.php.net/manual/en/migration70.new-features.php#migration70.new-features.null-coalesce-op) verwenden?
 
 #### Schritt 4
 
