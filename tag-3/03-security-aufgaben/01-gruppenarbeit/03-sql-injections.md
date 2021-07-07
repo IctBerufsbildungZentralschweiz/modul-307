@@ -7,7 +7,8 @@ Erstelle ein Login-Formular mit einer SQL-Injection Sicherheitslücke. Ein Angre
 Nutze als Basis für dein Proof of Concept den Inhalt der `sql.zip` Datei.
 
 {% hint style="info" %}
-[https://github.com/IctBerufsbildungZentralschweiz/modul-307/blob/master/Tag%203/03%20Security%20Aufgaben/01%20Gruppenarbeit/sql.zip](https://github.com/IctBerufsbildungZentralschweiz/modul-307/blob/master/Tag%203/03%20Security%20Aufgaben/01%20Gruppenarbeit/sql.zip)
+[sql.zip herunterladen](https://github.com/IctBerufsbildungZentralschweiz/modul-307/blob/master/.source/sql.zip?raw=true)
+
 {% endhint %}
 
 ## Lösungshilfe
