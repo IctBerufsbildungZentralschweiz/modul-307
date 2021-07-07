@@ -7,7 +7,7 @@ Erstelle ein Gästebuch mit einer XSS-Sicherheitslücke. Die Sicherheitslücke s
 Nutze als Basis für dein Proof of Concept den Inhalt der `xss.zip` Datei.
 
 {% hint style="info" %}
-[https://github.com/IctBerufsbildungZentralschweiz/modul-307/blob/master/Tag%203/03%20Security%20Aufgaben/01%20Gruppenarbeit/xss.zip](https://github.com/IctBerufsbildungZentralschweiz/modul-307/blob/master/Tag%203/03%20Security%20Aufgaben/01%20Gruppenarbeit/xss.zip)
+[xss.zip herunterladen](https://github.com/IctBerufsbildungZentralschweiz/modul-307/blob/master/.source/xss.zip?raw=true)
 {% endhint %}
 
 ## Lösungshilfe
