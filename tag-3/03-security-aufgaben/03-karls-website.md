@@ -6,7 +6,9 @@ Er bittet dich nun um ein Feedback dazu.
 
 ## Aufgabenstellung
 
-{% embed url="https://github.com/IctBerufsbildungZentralschweiz/modul-307/tree/master/Tag%203/03%20Security%20Aufgaben/03%20Karl\'s%20Website/src" caption="Ein Startertemplate findest du hier" %}
+{% hint style="info" %}
+[Karl's Website herunterladen](https://github.com/IctBerufsbildungZentralschweiz/modul-307/blob/master/.source/karl.zip?raw=true)
+{% endhint %}
 
 Kopiere den Code von Karl's Website auf deinen lokalen Webserver, damit die Website im Browser aufgerufen werden kann.
 
