@@ -7,8 +7,7 @@ Erstelle ein Login-Formular mit einer SQL-Injection Sicherheitslücke. Ein Angre
 Nutze als Basis für dein Proof of Concept den Inhalt der `sql.zip` Datei.
 
 {% hint style="info" %}
-[sql.zip herunterladen](https://github.com/IctBerufsbildungZentralschweiz/modul-307/blob/master/.source/sql.zip?raw=true)
-
+[sql.zip herunterladen](../../../.source/sql.zip)
 {% endhint %}
 
 ## Lösungshilfe
@@ -19,4 +18,3 @@ Nutze als Basis für dein Proof of Concept den Inhalt der `sql.zip` Datei.
 Finde heraus, was ein Angreifer in euer Formular eingeben müsste, um sich ohne korrektes Passwort als Admin anmelden zu können. Wie kannst du das Problem verhindern? Kriegst du es hin, dass sogar die komplette `users` Tabelle gelöscht werden kann?
 
 Du findest den für das Login zuständige Code in der Datei `LoginController.php`.
-

@@ -1,6 +1,6 @@
 # 04 Variablen
 
-Eine Variable wird in PHP durch das Dollar-Zeichen `$` gefolgt vom Namen der Variablen dargestellt. Bei Variablen-Namen wird zwischen Gross- und Kleinschreibung unterschieden \(case-sensitive\).
+Eine Variable wird in PHP durch das Dollar-Zeichen `$` gefolgt vom Namen der Variablen dargestellt. Bei Variablen-Namen wird zwischen Gross- und Kleinschreibung unterschieden (case-sensitive).
 
 Ein gültiger Variablen-Name beginnt mit einem Buchstaben oder einem Unterstrich, gefolgt von einer beliebigen Anzahl von Buchstaben, Zahlen oder Unterstrichen.
 
@@ -16,7 +16,7 @@ $variable_mit_umläut;   // Gültig, jedoch nicht empfohlen
 
 ### Booleans
 
-Dies ist der einfachste Typ. Ein boolean Ausdruck ist ein Wahrheitswert der entweder TRUE \(wahr\) oder FALSE \(falsch\) sein kann.
+Dies ist der einfachste Typ. Ein boolean Ausdruck ist ein Wahrheitswert der entweder TRUE (wahr) oder FALSE (falsch) sein kann.
 
 ```php
 $ichBinWahr = true;
@@ -51,7 +51,7 @@ echo "Ein einfacher String";
 
 #### Konkatenation
 
-Strings können konkateniert \(=verkettet\) werden. Dafür verwenden wir den `.` Operator.
+Strings können konkateniert (=verkettet) werden. Dafür verwenden wir den `.` Operator.
 
 ```php
 echo 'Ein' . ' verketteter ' . 'String';
@@ -137,5 +137,4 @@ echo $a;
 
 Gehe zur bereits erstellten Datei `index.php` zurück. Lagere das Fahrzeug `Auto` deines Echo-Konstrukts in eine Variable aus.
 
-Ersetze nun den Wert `Auto` mit einem anderen Fahrzeug \(`Velo|Bus|Roller|Töffli`\) und überprüfe, ob dein Echo-Konstrukt noch funktioniert.
-
+Ersetze nun den Wert `Auto` mit einem anderen Fahrzeug (`Velo|Bus|Roller|Töffli`) und überprüfe, ob dein Echo-Konstrukt noch funktioniert.

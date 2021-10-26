@@ -15,7 +15,7 @@ Erstelle eine Website, auf der via Local File Inclusion deine MySQL-Zugangsdaten
 
 * Die Inhaltsdateien mit den Texten sollen in einem Ordner `contents` abgelegt werden. Es existiert also folgende Verzeichnisstruktur:
 
-```text
+```
 / 
 |-- contents/
 |-- contents/home.txt
@@ -25,7 +25,7 @@ Erstelle eine Website, auf der via Local File Inclusion deine MySQL-Zugangsdaten
 
 Erstelle nun einen Ordner `geheim` und speichere deine MySQL-Zugangsdaten in die Datei `mysql.txt` ab.
 
-```text
+```
 / 
 |-- geheim/
 |-- geheim/mysql.txt
@@ -35,5 +35,4 @@ Erstelle nun einen Ordner `geheim` und speichere deine MySQL-Zugangsdaten in die
 |-- index.php
 ```
 
-Wie kann ein Angreifer nun an deine Zugangsdaten gelangen \(ohne sie direkt im Browser aufzurufen\)? Wie kannst du dieses Problem verhindern? Was kannst du über diese Lücke sonst noch anstellen? Welche Dateien auf deinem Computer müssen immer geheim bleiben?
-
+Wie kann ein Angreifer nun an deine Zugangsdaten gelangen (ohne sie direkt im Browser aufzurufen)? Wie kannst du dieses Problem verhindern? Was kannst du über diese Lücke sonst noch anstellen? Welche Dateien auf deinem Computer müssen immer geheim bleiben?

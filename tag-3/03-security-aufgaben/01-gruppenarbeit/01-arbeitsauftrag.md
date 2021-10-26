@@ -12,7 +12,6 @@ Macht euch in 2er Gruppen mit einer der untenstehenden Sicherheitslücken vertra
 
 ## Themen
 
-* [Cross-Site Scripting \(XSS\)](02-xss.md)
+* [Cross-Site Scripting (XSS)](02-xss.md)
 * [SQL-Injections](03-sql-injections.md)
 * [Local File Inclusion](04-local-file-inclusion.md)
-

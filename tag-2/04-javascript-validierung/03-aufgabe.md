@@ -6,5 +6,6 @@ Erweitere dein Formular mit einer clientseitigen Validierung.
 
 Tipp: Dies kann z.B. via Ajax und einem entsprechenden Controller und Eintrag in der Routing-Tabelle passieren.
 
-´´´js $\("form"\).on\('submit', function\(\){ $.ajax\({url: "seite\_xy/validator", // Funktion, welche den Submit entweder zulässt \(success:\) oder die zurückgegebenen Fehlermeldungen platziert \(error:\). }\); }\); ´´´
-
+```javascript
+$("form").on('submit', function(){ $.ajax({url: "seite_xy/validator", // Funktion, welche den Submit entweder zulässt (success:) oder die zurückgegebenen Fehlermeldungen platziert (error:). }); });
+```

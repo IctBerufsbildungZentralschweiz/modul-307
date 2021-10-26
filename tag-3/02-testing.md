@@ -34,11 +34,11 @@ Grundsätzlich können folgende Testarten unterschieden werden:
 
 Unittests dienen dem Testen einzelner abgrenzbarer Komponenten einer Software. Diese Komponenten werden dabei isoliert und unabhängig vom System in dem sie verwendet werden getestet.
 
-Das beliebteste Testing Framework für Unittests in PHP ist [phpunit](https://phpunit.de/).
+Das beliebteste Testing Framework für Unittests in PHP ist [phpunit](https://phpunit.de).
 
 **Beispiel**
 
-Testen einer PHP-Funktion \(die Funktion ist in diesem Fall eine `Unit`\).
+Testen einer PHP-Funktion (die Funktion ist in diesem Fall eine `Unit`).
 
 ```php
 function add($a, $b)
@@ -57,9 +57,9 @@ test('Addiert negative Zahlen korrekt',
 
 #### Integrationtests
 
-Beim Integrationstest wird überprüft, ob die Zusammenarbeit voneinander abhängiger Komponenten \(`Units`\) wie erwünscht funktioniert.
+Beim Integrationstest wird überprüft, ob die Zusammenarbeit voneinander abhängiger Komponenten (`Units`) wie erwünscht funktioniert.
 
-Integrationstests können in PHP mit einem Testing Framework wie [Codeception](https://codeception.com/) umgesetzt werden.
+Integrationstests können in PHP mit einem Testing Framework wie [Codeception](https://codeception.com) umgesetzt werden.
 
 **Beispiel**
 
@@ -90,7 +90,7 @@ function testInvoiceMailer()
 
 #### Systemtest
 
-Bei Systemtests wird überprüft, ob unser System im Ganzen funktioniert. Sie unterscheiden sich gegenüber den Integrationstests indem hier auch externe Systeme miteinbezogen werden. Dafür wird meistens eine Testumgebung mit Testdaten verwendet. Die Testumgebung sollte immer die Zielumgebung 1:1 simulieren \(gleiche Software-Versionen, etc\).
+Bei Systemtests wird überprüft, ob unser System im Ganzen funktioniert. Sie unterscheiden sich gegenüber den Integrationstests indem hier auch externe Systeme miteinbezogen werden. Dafür wird meistens eine Testumgebung mit Testdaten verwendet. Die Testumgebung sollte immer die Zielumgebung 1:1 simulieren (gleiche Software-Versionen, etc).
 
 Systemtests können in PHP mit einem Testing Framework wie [Codeception](https://github.com/IctBerufsbildungZentralschweiz/modul-307/tree/a7ffb3b379a75c7c306b125e512297895b0f829d/Tag%203/02%20Testing/codeception.com) umgesetzt werden.
 
@@ -128,7 +128,7 @@ Dazu werden Test-Szenarien definiert, die die genaue Funktionsweise der Software
 
 Für die Definition eines Test-Szenarios können verschiedene Methoden verwendet werden. Eine gängige Methode ist die `Given - When - Then` Schreibweise.
 
-```text
+```
 GIVEN   I am logged in as an administrator
 WHEN    I delete a user
 THEN    the user is removed from the database
@@ -143,7 +143,7 @@ Da in den meisten Testing Frameworks solche `Given - When - Then` Szenarios auto
 
 Im Deutschen gibt es keinen offiziellen Standard diese Schreibweise anzuwenden. Dennoch spricht nichts dagegen, die Szenarien sinngemäss auf Deutsch zu übersetzen:
 
-```text
+```
 GEGEBEN SEI   Ich bin als Administrator eingeloggt
 WENN          ich einen Benutzer lösche
 DANN          wird dieser Benutzer aus der Datenbank gelöscht
@@ -167,7 +167,7 @@ Der Nachteil gegenüber dem manuellen Testing ist, dass alle Tests, zusätzlich 
 
 Testing Frameworks wie PHPUnit oder Codeception vereinfachen diese Arbeit bei der Entwicklung mit PHP.
 
-#### Test-Driven-Development \(TDD\)
+#### Test-Driven-Development (TDD)
 
 Eine weit verbreitete Art der Entwicklung ist das so genannte «Test-Driven-Development». Dabei wird vor der Entwicklung eines neuen Features ein Test definiert, der dieses noch nicht existierende Feature überprüft und darum fehlschlägt.
 
@@ -179,17 +179,16 @@ Mit dieser Methode kann theoretisch sichergestellt werden, dass keine Funktion e
 
 Hier einige Wörter, die im Zusammenhang mit Testing verwendet werden:
 
-| Wort | Bedeutung |
-| :--- | :--- |
-| Test case | **Testfall**: Kann mehrere Tests enthalten. Ist unabhängig von anderen Testfällen. |
+| Wort      | Bedeutung                                                                                                                                                                                   |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Test case | **Testfall**: Kann mehrere Tests enthalten. Ist unabhängig von anderen Testfällen.                                                                                                          |
 | Assertion | **Aussage/Annahme**: Dient dazu zu überprüfen, ob ein Test fehlschlägt. Dabei wir das Ergebnis aus einem Test mit einem erwarteten Ergebnis verglichen. Beispiel: `assert(sum(1, 2) === 3)` |
-| Szenario | Wir besonders bei Akzeptanztests verwendet. Das Szenario definiert die Situation, in der die Software getestet werden soll. |
+| Szenario  | Wir besonders bei Akzeptanztests verwendet. Das Szenario definiert die Situation, in der die Software getestet werden soll.                                                                 |
 
-## Aufgabe: Testing \(Partnerarbeit\)
+## Aufgabe: Testing (Partnerarbeit)
 
 Schreibe für dein Task-Listen-Projekt mindestens 6 Testfälle eines «Acceptance Test» auf.
 
 Gib die Liste anschliessend einem Kameraden, welcher dein Tool nach den vorgegeben Tests überprüft.
 
 Zum Schluss gebt ihr euch gegenseitig eine Rückmeldung über die Testresultate und die Verständlichkeit der Tests.
-

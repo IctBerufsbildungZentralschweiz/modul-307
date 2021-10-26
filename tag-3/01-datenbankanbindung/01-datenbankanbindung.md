@@ -1,6 +1,6 @@
 # 01 Datenbankanbindung
 
-Um mit PHP auf eine Datenbank zuzugreifen, verwenden wir [`PHP Data Objects`](http://php.net/book.pdo) \(kurz PDO\).
+Um mit PHP auf eine Datenbank zuzugreifen, verwenden wir [`PHP Data Objects`](http://php.net/book.pdo) (kurz PDO).
 
 ```php
 new PDO();
@@ -8,15 +8,15 @@ new PDO();
 
 Die von PHP zur Verfügung gestellte PDO-Klasse stellt ein einheitliches Interface zur Anbindung unterschiedlicher Datenbanktypen bereit.
 
-## Aufgabe: Projekt-Setup \(Gemeinsam\)
+## Aufgabe: Projekt-Setup (Gemeinsam)
 
-Lade das [Framework](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2FIctBerufsbildungZentralschweiz%2Fmodul-307-projekte%2Ftree%2Fmaster%2F_Framework) herunter.
-   
+Lade das [Framework](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2FIctBerufsbildungZentralschweiz%2Fmodul-307-projekte%2Ftree%2Fmaster%2F\_Framework) herunter.
+
 Erstelle den neuen Controller `TaskController.php` und schaue via Routes-Eintrag, dass diese bei der URL `/tasks` aufgerufen wird. Ebenfalls kannst du die neue View `task.view.php` erstellen, welche am Schluss des neuen Controllers geladen wird.
 
 Rufe anschliessend phpMyAdmin über folgende URL auf.
 
-```text
+```
 http://localhost/phpmyadmin/
 ```
 
@@ -25,4 +25,3 @@ Erstelle eine Datenbank mit dem Namen `tasklist`. Darin wiederum legst du die Ta
 Über den Reiter `Einfügen` im phpMyAdmin, kannst du manuell 2-3 Aufgaben erfassen.
 
 Nun sind wir bereit, um mit dem Projekt `Task-Liste` zu starten.
-

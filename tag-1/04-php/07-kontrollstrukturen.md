@@ -24,20 +24,20 @@ if($a > $b) {
 
 Um zwei Werte in PHP zu vergleichen, gibt es die Vergleichsoperatoren `==` und `===`. Ein Vergleichs-Ausdruck gibt immer einen boolschen Wert von `true` oder `false` zurück.
 
-| Beispiel | Name | Ergebnis |  |
-| :--- | :--- | :--- | :--- |
-| $a == $b | Gleich | Gibt `true` zurück, wenn $a gleich $b ist. |  |
-| $a === $b | Identisch | Gibt `true` zurück, wenn $a gleich $b ist und beide vom gleichen Typ sind. |  |
-| $a != $b | Ungleich | Gibt `true` zurück, wenn $a ungleich $b ist. |  |
-| $a !== $b | Nicht identisch | Gibt `true` zurück, wenn $a ungleich $b ist oder nicht vom gleichen Typ sind. |  |
-| $a &lt; $b | Kleiner als | Gibt `true` zurück, wenn $a kleiner als $b ist. |  |
-| $a &gt; $b | Grösser als | Gibt `true` zurück, wenn $a grösser als $b ist. |  |
-| $a &lt;= $b | Kleiner Gleich | Gibt `true` zurück, wenn $a kleiner oder gleich $b ist. |  |
-| $a &gt;= $b | Grösser Gleich | Gibt `true` zurück, wenn $a grösser oder gleich $b ist. |  |
+| Beispiel  | Name            | Ergebnis                                                                      |   |
+| --------- | --------------- | ----------------------------------------------------------------------------- | - |
+| $a == $b  | Gleich          | Gibt `true` zurück, wenn $a gleich $b ist.                                    |   |
+| $a === $b | Identisch       | Gibt `true` zurück, wenn $a gleich $b ist und beide vom gleichen Typ sind.    |   |
+| $a != $b  | Ungleich        | Gibt `true` zurück, wenn $a ungleich $b ist.                                  |   |
+| $a !== $b | Nicht identisch | Gibt `true` zurück, wenn $a ungleich $b ist oder nicht vom gleichen Typ sind. |   |
+| $a < $b   | Kleiner als     | Gibt `true` zurück, wenn $a kleiner als $b ist.                               |   |
+| $a > $b   | Grösser als     | Gibt `true` zurück, wenn $a grösser als $b ist.                               |   |
+| $a <= $b  | Kleiner Gleich  | Gibt `true` zurück, wenn $a kleiner oder gleich $b ist.                       |   |
+| $a >= $b  | Grösser Gleich  | Gibt `true` zurück, wenn $a grösser oder gleich $b ist.                       |   |
 
 **Typenschwache und typenstarke Vergleiche**
 
-In PHP können typenschwache oder typenstarke Vergleiche durchgeführt werden. Bei typenschwachen Vergleichen \(`==`, `!=`\) wird der Wert der Variablen unabhängig von ihren Typen verglichen. Bei typenstarken Vergleichen \(`===`, `!==`\) müssen Wert und Typ beider Variablen identisch sein.
+In PHP können typenschwache oder typenstarke Vergleiche durchgeführt werden. Bei typenschwachen Vergleichen (`==`, `!=`) wird der Wert der Variablen unabhängig von ihren Typen verglichen. Bei typenstarken Vergleichen (`===`, `!==`) müssen Wert und Typ beider Variablen identisch sein.
 
 ```php
 $a = 1;     // Integer
@@ -61,7 +61,7 @@ var_dump($a === $b);      // 1 === true
 // false
 ```
 
-Der typenstarke Ungleich-Operator \(`!==`\) ist wahr, wenn der Wert **oder** der Typ unterschiedlich ist. So kann z.B. unterschieden werden, ob ein Teil-String in einem Text am Anfang (die Funktion `strpos()` liefert `0`) oder gar nicht (`strpos()` liefert `false`) vorkommt. 
+Der typenstarke Ungleich-Operator (`!==`) ist wahr, wenn der Wert **oder** der Typ unterschiedlich ist. So kann z.B. unterschieden werden, ob ein Teil-String in einem Text am Anfang (die Funktion `strpos()` liefert `0`) oder gar nicht (`strpos()` liefert `false`) vorkommt.
 
 ```php
 var_dump(strpos('hallo welt', 'hallo') != false); // 0 != false
@@ -81,7 +81,7 @@ Um mehrere Vergleiche zu verbinden oder einen Vergleich umzukehren, können logi
 * or
 * xor
 * &&
-* \|\|
+* ||
 * !
 
 ```php
@@ -185,7 +185,7 @@ for ($i = 1; $i <= 10; $i++) {
 
 ## foreach
 
-Das `foreach`-Konstrukt bietet eine einfache Möglichkeit durch Arrays zu iterieren \(=schrittweise durchlaufen\).
+Das `foreach`-Konstrukt bietet eine einfache Möglichkeit durch Arrays zu iterieren (=schrittweise durchlaufen).
 
 ```php
 // Zahlen von 1 bis 10 ausgeben
@@ -263,4 +263,3 @@ Heute bin ich mit dem Auto gefahren.
 Heute bin ich mit dem Velo gefahren.
 Heute bin ich mit dem Bus gefahren.
 ```
-

@@ -17,14 +17,14 @@ include 'echo.php';
 
 ### Unterschiede zwischen `require` / `include`
 
-| Schlüsselwort | Bedeutung |
-| :--- | :--- |
-| include | Wenn die eingebundene Datei nicht existiert, wird ein E\_WARNING produziert. Die Skriptausführung läuft weiter. |
-| require | Wenn die eingebundene Datei nicht existiert, wird ein E\_COMPILE\_ERROR produziert. Die Skriptausführung stoppt. |
+| Schlüsselwort | Bedeutung                                                                                                        |
+| ------------- | ---------------------------------------------------------------------------------------------------------------- |
+| include       | Wenn die eingebundene Datei nicht existiert, wird ein E\_WARNING produziert. Die Skriptausführung läuft weiter.  |
+| require       | Wenn die eingebundene Datei nicht existiert, wird ein E\_COMPILE\_ERROR produziert. Die Skriptausführung stoppt. |
 
 ## Aufgabe: Script-Einbindung
 
-Erstelle die Datei `index.view.php`. Trenne nun das HTML-Gerüst \(`index.view.php`\) von der PHP-Logik \(`index.php`\) mit Hilfe der PHP-Script-Einbindung.
+Erstelle die Datei `index.view.php`. Trenne nun das HTML-Gerüst (`index.view.php`) von der PHP-Logik (`index.php`) mit Hilfe der PHP-Script-Einbindung.
 
 Das Ziel ist es, dass in der Datei `index.php` deine Variable definiert wird und in der `index.view.php` nur noch folgender Code ist:
 
@@ -40,4 +40,3 @@ Das Ziel ist es, dass in der Datei `index.php` deine Variable definiert wird und
     </body>
 </html>
 ```
-

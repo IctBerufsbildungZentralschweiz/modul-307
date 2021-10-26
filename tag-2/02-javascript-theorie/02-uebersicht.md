@@ -4,7 +4,7 @@
 
 Die Syntax ähnelt sehr jener von PHP. Daher wird diese Übersicht etwas kürzer gehalten.
 
-Wie in PHP werden alle Anweisungen durch ein Semikolon `;` beendet. Zeilenumbrüche und Leerzeichen sind nicht relevant. Die Gross- und Kleinschreibung wird in JavaScript berücksichtigt! \(Case-Sensitive\)
+Wie in PHP werden alle Anweisungen durch ein Semikolon `;` beendet. Zeilenumbrüche und Leerzeichen sind nicht relevant. Die Gross- und Kleinschreibung wird in JavaScript berücksichtigt! (Case-Sensitive)
 
 ### JavaScript in HTML
 
@@ -42,7 +42,7 @@ var name = 'Robert Pattinson';
 
 ### Performance
 
-Da das Ausführen von JS im Browser das Rendern der Website blockieren kann, sollte alles JS so weit wie möglich ans Ende des Dokuments verschoben werden \(optimalerweise direkt vor `</body>`\).
+Da das Ausführen von JS im Browser das Rendern der Website blockieren kann, sollte alles JS so weit wie möglich ans Ende des Dokuments verschoben werden (optimalerweise direkt vor `</body>`).
 
 So kann der Browser die Website zuerst rendern und muss sich erst dann mit der Ausführung des JS-Codes befassen.
 
@@ -70,11 +70,11 @@ var alter = 17;
 let istLernender = true;
 ```
 
-Da die `let`/`const` Keywords noch nicht in allen Browsern unterstützt werden \(Stand November 2015\), werden wir in unseren Beispielen einfachheitshalber immer das `var` Keyword verwenden.
+Da die `let`/`const` Keywords noch nicht in allen Browsern unterstützt werden (Stand November 2015), werden wir in unseren Beispielen einfachheitshalber immer das `var` Keyword verwenden.
 
 Mit `let` definierte Variablen haben einen andern Geltungsbereich wie mit `var` definierte. Siehe «Geltungsbereich von Variablen» weiter unten.
 
-Mit `const` definierte Variablen können nach ihrer Definition nicht mehr geändert werden \(=Konstante\).
+Mit `const` definierte Variablen können nach ihrer Definition nicht mehr geändert werden (=Konstante).
 
 ### Booleans
 
@@ -125,7 +125,7 @@ var korrektIst = 'Ein String über'
                + 'mehrere Zeilen';
 ```
 
-Seit ES6 gibt es zudem die sogenannten `Template-Strings` mit deren Hilfe mehrzeilige Strings einfacher deklariert werden können. Zur Deklaration verwendet man hier Backticks \(\`\).
+Seit ES6 gibt es zudem die sogenannten `Template-Strings` mit deren Hilfe mehrzeilige Strings einfacher deklariert werden können. Zur Deklaration verwendet man hier Backticks (\`).
 
 ```javascript
 var mehrzeilig = `Ein String
@@ -134,7 +134,7 @@ mehrere
 Zeilen`;
 ```
 
-[Browser-Support für Template-Strings](https://kangax.github.io/compat-table/es6/#test-template_strings)
+[Browser-Support für Template-Strings](https://kangax.github.io/compat-table/es6/#test-template\_strings)
 
 #### Parsing von Variablen
 
@@ -224,7 +224,7 @@ sagwas('Hallo');
 
 Deklarierte Variablen sind immer in dem Kontext gültig, in dem sie deklariert wurden.
 
-Global definierte Variablen stehen also überall \(auch in untergeordneten Funktionen\) zur Verfügung.
+Global definierte Variablen stehen also überall (auch in untergeordneten Funktionen) zur Verfügung.
 
 ```javascript
 var zahl = 20;
@@ -250,7 +250,7 @@ console.log(zahl)
 // undefined
 ```
 
-Wir eine Variable global definiert \(via `var`\) und in einer Funktion verändert, ist die Variable im globalen Geltungsbereich ebenfalls angepasst.
+Wir eine Variable global definiert (via `var`) und in einer Funktion verändert, ist die Variable im globalen Geltungsbereich ebenfalls angepasst.
 
 ```javascript
 var zahl;
@@ -372,7 +372,7 @@ if(a > b) {
 Es stehen die gleichen logischen Operatoren wie in PHP zur Verfügung. Die Schreibweisen `or`, `and` und `xor` existieren jedoch nicht.
 
 * &&
-* \|\|
+* ||
 * !
 
 ```javascript
@@ -411,7 +411,7 @@ while(zahl <= 10) {
 
 #### forEach
 
-`forEach` steht in JS seit ES5.1 zur Verfügung und ist somit in allen modernern Browsern und IE &gt;= 9 vorhanden.
+`forEach` steht in JS seit ES5.1 zur Verfügung und ist somit in allen modernern Browsern und IE >= 9 vorhanden.
 
 `forEach` wird als Methode auf einem Array-Objekt ausgeführt. Dabei muss eine sogenannte `callback` Funktion definiert werden, die für jedes Element aufgerufen wird.
 
@@ -465,4 +465,3 @@ var button = document.querySelector('.submit');
 // Wähle alle Buttons aus
 var buttons = document.querySelectorAll('button');
 ```
-

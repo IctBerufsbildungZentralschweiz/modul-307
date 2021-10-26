@@ -64,4 +64,3 @@ Ersetze die Funktion `print_r` in der Datei `index.php` mit der Funktion `var_du
 Umschliesse nun noch die `var_dump` Funktion mit der internen Funktion `die` und beobachte was passiert: `die(var_dump($vehicles));`
 
 Überlege dir, für was ein solches Konstrukt nützlich sein könnte.
-

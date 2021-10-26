@@ -1,6 +1,6 @@
 # 01 Einführung
 
-PHP \(rekursives Akronym und Backronym für «PHP: Hypertext Preprocessor», ursprünglich «Personal Home Page Tools»\) ist eine Skriptsprache mit einer an C und Perl angelehnten Syntax, die hauptsächlich zur Erstellung dynamischer Webseiten oder Webanwendungen verwendet wird.
+PHP (rekursives Akronym und Backronym für «PHP: Hypertext Preprocessor», ursprünglich «Personal Home Page Tools») ist eine Skriptsprache mit einer an C und Perl angelehnten Syntax, die hauptsächlich zur Erstellung dynamischer Webseiten oder Webanwendungen verwendet wird.
 
 PHP wurde erstmals 1995 von seinem Entwickler, Rasmus Lerdorf, veröffentlicht.
 
@@ -14,8 +14,8 @@ Aktuell ist PHP als Version 8 verfügbar.
 
 Einige der grössten Websites der Welt...
 
-* Facebook \(HHVM\)
-* Wikipedia \(HHVM\)
+* Facebook (HHVM)
+* Wikipedia (HHVM)
 * Flickr
 * Tumblr
 * Yahoo
@@ -34,7 +34,7 @@ Und natürlich die grossen CMS...
 * Joomla
 * ...
 
-PHP wird auf etwa 244 Millionen Websites eingesetzt \(Stand: Januar 2013\), wird auf über **79%** aller Websites als serverseitige Programmiersprache verwendet \(Stand: [April 202](https://w3techs.com/technologies/overview/programming_language)1\) und ist damit die am häufigsten verwendete Sprache zum Erstellen von Websites - Tendenz steigend. Die Programmiersprache ist sie bei den meisten Webhostern vorinstalliert.
+PHP wird auf etwa 244 Millionen Websites eingesetzt (Stand: Januar 2013), wird auf über **79%** aller Websites als serverseitige Programmiersprache verwendet (Stand: [April 202](https://w3techs.com/technologies/overview/programming\_language)1) und ist damit die am häufigsten verwendete Sprache zum Erstellen von Websites - Tendenz steigend. Die Programmiersprache ist sie bei den meisten Webhostern vorinstalliert.
 
 ## Was genau ist PHP?
 
@@ -52,7 +52,7 @@ Mit PHP können Daten von verschiedensten Quellen verarbeitet werden:
 
 PHP setzt sich aus der Scriptsprache und dem dazugehörigen Interpreter zusammen.
 
-Der Webserver \(in unserem Fall Apache\) verfügt über ein PHP-Modul. Dieses Modul versteht PHP-Code, es kann ihn also interpretieren.
+Der Webserver (in unserem Fall Apache) verfügt über ein PHP-Modul. Dieses Modul versteht PHP-Code, es kann ihn also interpretieren.
 
 Beim Aufruf einer Webpage durch den Besucher lädt der Webserver das gewünschte Script und schickt es an das PHP-Modul. Dort wird der PHP-Code verarbeitet. Dabei können Script-Ausgaben entstehen. Diese Ausgaben werden in die aufgerufene Seite eingefügt und anschliessend an den Browser des Besuchers gesendet.
 
@@ -99,4 +99,3 @@ Nach der Verarbeitung wird das Dokument ohne den ursprünglichen PHP-Code an den
 Das resultierende Dokument wird vom Browser also wie normales HTML behandelt. Dass darin einmal PHP-Code vorhanden war, weiss dieser nicht.
 
 PHP ermöglicht es, die Ausgabe von HTML-Code an Bedingungen zu knüpfen. So können dynamische Dokumente erstellt werden.
-

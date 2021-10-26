@@ -86,6 +86,7 @@ function demo() {
 echo demo();
 // PHP Notice:  Undefined variable: zahl
 ```
+
 ```php
 function demo() {
     $zahl = 20; // In Funktion, aber nicht zurückgegeben via return
@@ -118,7 +119,7 @@ echo demo();
 
 ## Aufgabe: Benutzerdefinierte Funktion mit Wert
 
-Erstelle eine Funktion `dumpAndDie`, welche einen `$wert` ausgibt und die Script-Ausführung beendet \(`var_dump($wert); die();`\).
+Erstelle eine Funktion `dumpAndDie`, welche einen `$wert` ausgibt und die Script-Ausführung beendet (`var_dump($wert); die();`).
 
 Lagere die Funktion in eine separate Datei `functions.php` aus und binde diese in die Datei `index.php` ein. Teste die Funktionsweise indem du das Array `$vehicles` an die Funktion übergibst.
 
@@ -137,7 +138,7 @@ Erstelle eine benutzerdefinierte Funktion mit folgenden Kriterien:
 * War das Prüfergebnis positiv, wird folgender String ausgegeben: "Beim _Renault_ handelt es sich um einen Oldtimer."
 * War das Prüfergebnis negativ, wird folgender String ausgegeben: "Beim _Renault_ handelt es sich um keinen Oldtimer."
 
-\(Die Ausgaben können provisorisch in der Datei `index.php` ausgeführt werden und müssen nicht an die HTML-Datei übergeben werden.\)
+(Die Ausgaben können provisorisch in der Datei `index.php` ausgeführt werden und müssen nicht an die HTML-Datei übergeben werden.)
 
 ```php
 function isOldtimer(array $car): bool
@@ -151,4 +152,3 @@ if (isOldtimer($car)) {
     // ...
 }
 ```
-

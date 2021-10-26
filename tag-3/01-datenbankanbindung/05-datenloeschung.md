@@ -1,6 +1,6 @@
 # 05 Datenlöschung
 
-Um gespeicherte Daten in der Datenbank zu löschen, wird die instanzierte Datenbankverbindung \(PDO\) verwendet.
+Um gespeicherte Daten in der Datenbank zu löschen, wird die instanzierte Datenbankverbindung (PDO) verwendet.
 
 Aus Gründen der Sicherheit führen wir die Abfrage nie direkt aus, sondern bereiten diese zuerst mit der `prepare`-Methode vor.
 
@@ -22,15 +22,14 @@ Anschliessend kann das fertige Statement nur noch durch die `execute`-Methode au
 $statement->execute();
 ```
 
-## Aufgabe: Task löschen \(Einzelarbeit\)
+## Aufgabe: Task löschen (Einzelarbeit)
 
-Erstelle nun eigenständig einen Controller an dem eine Task-Id übergeben werden kann. Der Controller nimmt die Id entgegen und löscht den dazugehörigen Eintrag. Anschliessend wir der Benutzer wieder auf die Task-Übersicht umgeleitet.
+Erstelle nun eigenständig eine Methode im Controller `TaskController.php` an der eine Task-Id übergeben werden kann. Die Methode im Controller nimmt die Id entgegen und löscht den dazugehörigen Eintrag. Anschliessend wir der Benutzer wieder auf die Task-Übersicht umgeleitet.
 
 Sorge dafür, dass die Id nicht von Hand eingetragen werden muss. Neben dem Bearbeiten-Link soll somit ebenfalls noch ein Löschen-Link positioniert werden.
 
-```text
+```
 - Aufagbe 1 | bearbeiten | löschen
 - Aufgabe 2 | bearbeiten | löschen
 ...
 ```
-

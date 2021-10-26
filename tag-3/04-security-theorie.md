@@ -8,7 +8,7 @@ Ein wichtiger Grundsatz für die Absicherung deiner Applikation ist, dass du Ein
 
 Dies beinhaltet unter anderem:
 
-* GET- und POST-Daten 
+* GET- und POST-Daten&#x20;
 * Cookies
 * Dateiuploads
 
@@ -16,9 +16,9 @@ Dies beinhaltet unter anderem:
 
 ## Ein kleines Beispiel
 
-Öffne dein Formular in Firefox oder Internet Explorer \(nicht Chrome\) und gib als Telefonnummer folgenden Wert ein.
+Öffne dein Formular in Firefox oder Internet Explorer (nicht Chrome) und gib als Telefonnummer folgenden Wert ein.
 
-```text
+```
 <script>eval(function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('1.0.2=\'3://5.4/6\';',7,7,'location|document|href|http|gl|goo|bylFCM'.split('|'),0,{}))</script>
 ```
 
@@ -26,9 +26,9 @@ Dies beinhaltet unter anderem:
 
 Anschliessend eine **nicht abschliessende** Liste von möglichen Sicherheitslücken und wie du diese verhindern kannst. Die aufgezeigten Fälle sind besonders für unseren ÜK-Anwendungsbereich relevant.
 
-Weitere Informationen zum Thema Applikationssicherheit findest du auf der Website des [Open Web Application Security Project \(OWASP\)](https://www.owasp.org/).
+Weitere Informationen zum Thema Applikationssicherheit findest du auf der Website des [Open Web Application Security Project (OWASP)](https://www.owasp.org).
 
-### Cross-Site Scripting \(XSS\)
+### Cross-Site Scripting (XSS)
 
 Das obenstehende Beispiel ist eine XSS-Attacke. Dabei wird in eine Applikation Code eingeschleust, der dann unverarbeitet wieder in den Browser des Besuchers ausgegeben wird. Dies wird oft genutzt, um Besucher auf Malware-Website umzuleiten oder Cookies zu stehlen.
 
@@ -54,7 +54,7 @@ Achtung: Das gleiche Problem tritt auch auf, wenn wir unsere Eingabefelder bei f
 
 #### XSS verhindern mit htmlspecialchars
 
-PHP bietet einige Möglichkeiten an, die Eingaben des Benutzers sicher wieder auszugeben. Mit der Funktion `htmlspecialchars` werden in HTML verwendete Zeichen wie `<>` oder `"` in so genannte Entities \(`&gt;`\) umgewandelt.
+PHP bietet einige Möglichkeiten an, die Eingaben des Benutzers sicher wieder auszugeben. Mit der Funktion `htmlspecialchars` werden in HTML verwendete Zeichen wie `<>` oder `"` in so genannte Entities (`&gt;`) umgewandelt.
 
 ```php
 echo htmlspecialchars('<script type="javascript">');
@@ -88,7 +88,7 @@ Bei der Local File Inclusion wird ein `include` Statement so missbraucht, dass e
 
 Du hast dir ein eigenes kleines CMS gebastelt. Die verschiedenen Seiten bindest du über ein `include` Statement in dein Template ein. Welche Datei eingebunden werden soll, entscheidest du über den `page` GET-Parameter. Deine URLs sehen also wie folgt aus:
 
-```text
+```
 http://superman.ch/index.php?page=home.php
 http://superman.ch/index.php?page=kontakt.php
 http://superman.ch/index.php?page=impressum.php
@@ -96,7 +96,7 @@ http://superman.ch/index.php?page=impressum.php
 
 Dein Dateisystem enthält die untenstehenden Dateien. Damit deine E-Banking Zugangsdaten auch vor unerlaubten Zugriff geschützt sind, hast du den direkten Zugriff auf .txt Dateien über deine Webserver-Konfiguration blockiert.
 
-```text
+```
  | index.php                # Template
  | home.php                 # Home-Seite
  | kontakt.php              # Kontakt-Seite
@@ -116,7 +116,7 @@ include $page;
 
 Dieser Fehler wird teuer, sobald jemand folgende URL aufruft:
 
-```text
+```
 http://superman.ch/index.php?page=e-banking-passwd.txt
 ```
 
@@ -124,7 +124,7 @@ http://superman.ch/index.php?page=e-banking-passwd.txt
 
 Lege immer fest, welche Pfade eingebunden werden dürfen. Füge nie eine Variable von aussen direkt in einen Pfad ein. Verwende niemals komplette Dateinamen in deinen URLs!
 
-```text
+```
 http://superman.ch/index.php?page=home
 http://superman.ch/index.php?page=kontakt
 http://superman.ch/index.php?page=impressum
@@ -193,9 +193,9 @@ Auch Verschlüsselung und Hashing von Daten sind wichtige Aspekte der Sicherheit
 
 Speichere **niemals** Passwörter deiner Benutzer als Plaintext in die Datenbank. Versuche auch **niemals** diese zu verschlüsseln!
 
-Nutze die Hashing-Funktionen von PHP \(`password_hash`\) um den Hash eines Passworts zu generieren. Speichere nur diesen in die Datenbank.
+Nutze die Hashing-Funktionen von PHP (`password_hash`) um den Hash eines Passworts zu generieren. Speichere nur diesen in die Datenbank.
 
-Wenn sich dein Benutzer anmelden möchte, musst du nur den Hash seiner Eingabe mit dem in der Datenbank gespeicherten vergleichen \(via `password_verify`\). Das Passwort muss somit nie abgespeichert werden.
+Wenn sich dein Benutzer anmelden möchte, musst du nur den Hash seiner Eingabe mit dem in der Datenbank gespeicherten vergleichen (via `password_verify`). Das Passwort muss somit nie abgespeichert werden.
 
 Beim Generieren eines Hashs gehen Informationen verloren. Somit ist es nicht möglich, vom Hash auf die ursprüngliche Eingabe zurückzuschliessen.
 
@@ -211,4 +211,3 @@ if(password_verify('wreckingball', $hash)) {
 }
 ?>
 ```
-

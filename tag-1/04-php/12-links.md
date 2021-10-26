@@ -3,17 +3,17 @@
 ## Links
 
 * [Offizielle PHP-Dokumentation](https://secure.php.net/manual/de/)
-* [PHP: The Right Way](https://phptherightway.com/): Enthält die besten Verfahren, anerkannte Code-Standards und Links zu massgeblichen Anleitungen im Web. \(Auch auf [deutsch](https://rwetzlmayr.github.io/php-the-right-way/) vorhanden, jedoch nicht komplett up-to-date\).
-* [PHP Essentials](https://www.techotopia.com/index.php/PHP_Essentials): Techotopia Wiki
+* [PHP: The Right Way](https://phptherightway.com): Enthält die besten Verfahren, anerkannte Code-Standards und Links zu massgeblichen Anleitungen im Web. (Auch auf [deutsch](https://rwetzlmayr.github.io/php-the-right-way/) vorhanden, jedoch nicht komplett up-to-date).
+* [PHP Essentials](https://www.techotopia.com/index.php/PHP\_Essentials): Techotopia Wiki
 
-## Weiterführende Links \(nicht ÜK relevant\)
+## Weiterführende Links (nicht ÜK relevant)
 
 Wenn du dich selber weiter mit PHP befassen möchtest, findest du hier einige interessante Ressourcen zu weiterführenden Themen.
 
 ### Hostings
 
 * Shared-Hostings von cyon.ch oder hostpoint.ch ab ca. 10 Fr. im Monat
-* VPS \(Virtual Private Server mit Root-Zugang\) ab 5 USD im Monat bei digitalocean.com
+* VPS (Virtual Private Server mit Root-Zugang) ab 5 USD im Monat bei digitalocean.com
 
 ### Datenbanken
 
@@ -29,26 +29,24 @@ Wenn du dich selber weiter mit PHP befassen möchtest, findest du hier einige in
 
 ### Tools
 
-* [Composer](https://getcomposer.org/): Dependency Manager für PHP. Ermöglicht es, fremde Bibliotheken \(z. B. von github.com\) einfach in einem eigenen Projekt zu verwenden und hält diese Abhängigkeiten automatisch auf dem neusten Stand. \(Tutorials: [PHP Dependencies Made Easy with Composer](https://www.sitepoint.com/watch-php-dependencies-made-easy-with-composer/) und [A short & simple Composer tutorial](https://www.dev-metal.com/composer-tutorial/)\)
-* [PhpStorm](https://www.jetbrains.com/phpstorm/): PHP IDE  
+* [Composer](https://getcomposer.org): Dependency Manager für PHP. Ermöglicht es, fremde Bibliotheken (z. B. von github.com) einfach in einem eigenen Projekt zu verwenden und hält diese Abhängigkeiten automatisch auf dem neusten Stand. (Tutorials: [PHP Dependencies Made Easy with Composer](https://www.sitepoint.com/watch-php-dependencies-made-easy-with-composer/) und [A short & simple Composer tutorial](https://www.dev-metal.com/composer-tutorial/))
+* [PhpStorm](https://www.jetbrains.com/phpstorm/): PHP IDE &#x20;
 
+Tutorials zur Anwendung auf laracasts.com: [Be Awesome in PhpStorm](https://laracasts.com/series/how-to-be-awesome-in-phpstorm)
 
-  Tutorials zur Anwendung auf laracasts.com: [Be Awesome in PhpStorm](https://laracasts.com/series/how-to-be-awesome-in-phpstorm)
-
-* [Vagrant](https://www.vagrantup.com/): Einfache Entwicklungsumgebungen in virtuellen Maschinen erstellen \(eine professionellere Alternative zu XAMPP\).
+* [Vagrant](https://www.vagrantup.com): Einfache Entwicklungsumgebungen in virtuellen Maschinen erstellen (eine professionellere Alternative zu XAMPP).
 * [DDEV](https://www.ddev.com/ddev-local/): Moderne virtualisierte Entwicklungsumgebung auf Basis von [Docker](https://www.docker.com/products/docker-desktop).
-* [Xdebug](https://xdebug.org/): Debug-Extension für PHP
+* [Xdebug](https://xdebug.org): Debug-Extension für PHP
 
 ### Testing-Frameworks
 
-* [PHPUnit](https://phpunit.de/): Unit Tests
-* [Codeception](https://codeception.com/): Acceptance, Functional und Unit Tests
-* [phpspec](https://phpspec.readthedocs.org/en/latest/): Behavior driven development \(BDD\)
+* [PHPUnit](https://phpunit.de): Unit Tests
+* [Codeception](https://codeception.com): Acceptance, Functional und Unit Tests
+* [phpspec](https://phpspec.readthedocs.org/en/latest/): Behavior driven development (BDD)
 
 ### PHP-Frameworks
 
-* [Laravel](https://laravel.com/)
-* [Slim](https://www.slimframework.com/)
-* [Symfony](https://symfony.com/)
-* [CakePHP](https://cakephp.org/)
-
+* [Laravel](https://laravel.com)
+* [Slim](https://www.slimframework.com)
+* [Symfony](https://symfony.com)
+* [CakePHP](https://cakephp.org)

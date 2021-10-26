@@ -4,18 +4,18 @@ Im Moment werden sämtliche Aufgaben des Tools von den Controllern und den Views
 
 Dies führt früher oder später zu folgenden Problemen:
 
-* Einige Code-Elemente müssen doppelt aufgeführt werden \(DRY\)
-* Änderungen der Infrastruktur \(z. B. Datenbank-Technologie\) führenr zu einem grossen Umstrukturierungsaufwand.
+* Einige Code-Elemente müssen doppelt aufgeführt werden (DRY)
+* Änderungen der Infrastruktur (z. B. Datenbank-Technologie) führenr zu einem grossen Umstrukturierungsaufwand.
 * Die Code-Struktur im Controller wird unübersichtlich.
 * Der Code ist schlecht lesbar.
 
 Um genau diese Problemstellungen zu umgehen, wird mit einem Model gearbeitet. Das Model ist für die Entgegennahme, Bearbeitung und Speicherung der Daten zuständig. Für unser Beispiel, hat dies die folgenden Auswirkungen:
 
-## Aufgabe: Refactoring Task-Liste \(Gemeinsam\)
+## Aufgabe: Refactoring Task-Liste (Gemeinsam)
 
 Erstelle nun das Model `app/Models/Task.php` und binde dieses in der `bootstrap.php` ein.
 
-Erstelle die Klasse `Task`. Unser Ziel ist es nun, dass wir den Code in den einzelnen Controller lesbarer machen, Wiederholungen vermeiden \(DRY\) und fast die komplette Datenbank-Kommunikation in das Model `Task` auslagern.
+Erstelle die Klasse `Task`. Unser Ziel ist es nun, dass wir den Code in den einzelnen Controller lesbarer machen, Wiederholungen vermeiden (DRY) und fast die komplette Datenbank-Kommunikation in das Model `Task` auslagern.
 
 ### Konstruktor
 
@@ -53,7 +53,7 @@ $task->create();
 #### Refactoring: TaskController@edit
 
 ```php
-$task = (new Task)->getById($id);
+$task = (new Task)->find($id);
 ```
 
 #### Refactoring: TaskController@update
@@ -70,4 +70,3 @@ Versuche nun eigenständig noch die Logik und Datenverarbeitung für das Lösche
 ### Refactoring: DB-Helper
 
 Findest Du eine einfache Möglichkeit, den PDO-Verbindungsaufbau in eine einfache Helper-Funktion auszulagern?
-

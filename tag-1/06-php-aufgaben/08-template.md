@@ -1,8 +1,8 @@
-# 08 Basislayout mittels Template und Template-Klasse erstellen.
+# 08 Gemeinsames Template
 
 ## Aufgabenstellung
 
-Erstelle eine Template-Klasse und eine View dazu, und verwende das Template dann für alle Übungen. 
+Erstelle eine Template-Klasse und eine View dazu, und verwende das Template dann für alle Übungen.
 
 ### Lösungsschritte
 
@@ -10,7 +10,7 @@ Erstelle eine Template-Klasse und eine View dazu, und verwende das Template dann
 
 Erstelle eine neue View `/app/Views/template.view.php` mit einem HTML-Gerüst und Ausgabe der Variable `$content`:
 
-```html
+```markup
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -30,10 +30,10 @@ Erstelle eine neue View `/app/Views/template.view.php` mit einem HTML-Gerüst un
 
 #### Schritt 2
 
-Erstelle eine neue Klasse `View` in `/core/view.php` und lade sie in `/core/bootstrap.php`. Erstelle darin eine Methode `View::render($template, $view)`, welche folgendes tut: 
+Erstelle eine neue Klasse `View` in `/core/view.php` und lade sie in `/core/bootstrap.php`. Erstelle darin eine Methode `View::render($template, $view)`, welche folgendes tut:
 
-1. Content der View rendern und nicht direkt ausgeben, sondern in eine Variablen `$content` zwischenspeichern. Ein Beispiel, wie das geht, findest du z.B. auf https://stackoverflow.com/questions/8510532/using-include-within-ob-start#answer-8510592
-2. Die Template-View laden und von ihr den Content innerhalb des Templates ausgeben lassen. 
+1. Content der View rendern und nicht direkt ausgeben, sondern in eine Variablen `$content` zwischenspeichern. Ein Beispiel, wie das geht, findest du z.B. auf [https://stackoverflow.com/questions/8510532/using-include-within-ob-start#answer-8510592](https://stackoverflow.com/questions/8510532/using-include-within-ob-start#answer-8510592)
+2. Die Template-View laden und von ihr den Content innerhalb des Templates ausgeben lassen.&#x20;
 
 Vor beiden Schritten solltest du testen, ob es die angegebene Datei auch gibt (`file_exists()`);
 
@@ -59,10 +59,10 @@ class View
 
 #### Schritt 3
 
-Deine bestehenden Aufgaben entsprechend anpassen: 
+Deine bestehenden Aufgaben entsprechend anpassen:
 
-1. In den bisherigen Views kannst du alles rauslöschen, was nun in `template.view.php` vorhanden ist. 
-2. Im Controller wird nun nicht mehr die View direkt eingefügt (`require ...`), sondern eine neue View erzeugt und die Methode `render()` aufgerufen: 
+1. In den bisherigen Views kannst du alles rauslöschen, was nun in `template.view.php` vorhanden ist.&#x20;
+2. Im Controller wird nun nicht mehr die View direkt eingefügt (`require ...`), sondern eine neue View erzeugt und die Methode `render()` aufgerufen:&#x20;
 
 ```php
 class XYController
@@ -77,10 +77,11 @@ class XYController
   }
 }
 ```
+
 #### Schritt 4
 
-Füge in `template.view.php` VOR dem Content die Navigation aus Aufgabe 7 ein (horizontal). 
+Füge in `template.view.php` VOR dem Content die Navigation aus Aufgabe 7 ein (horizontal).
 
 ### Testing
 
-Klicke alle Aufgaben mal durch und schau, ob alles noch richtig funktioniert. 
+Klicke alle Aufgaben mal durch und schau, ob alles noch richtig funktioniert.

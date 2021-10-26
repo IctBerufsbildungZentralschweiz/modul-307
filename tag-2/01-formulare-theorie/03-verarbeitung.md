@@ -8,13 +8,13 @@ Daten können via `GET`- oder `POST`-Methode an einen Server versendet werden.
 
 Daten, die via `GET`-Methode gesendet werden, werden in der URL als «Query-String» abgebildet. Dazu wird der URL ein `?` angehängt, gefolgt von `variablenname=variablenwert`. Mehrere Parameter werden durch ein `&` voneinander getrennt.
 
-```text
+```
 http://www.web.com/script.php?var1=wert1&var2=wert2&var3=wert3
 ```
 
-Die `GET`-Methode verwenden wir, wenn wir von einem Server spezifische Daten beziehen \(= engl. `to get`\) möchten. So können wir zum Beispiel einem Script mitteilen, welche Datensatz-ID wir laden möchten:
+Die `GET`-Methode verwenden wir, wenn wir von einem Server spezifische Daten beziehen (= engl. `to get`) möchten. So können wir zum Beispiel einem Script mitteilen, welche Datensatz-ID wir laden möchten:
 
-```text
+```
 http://www.web.com/zeige-bild.php?id=4
 ```
 
@@ -24,7 +24,7 @@ Daten, die via `POST`-Methode gesendet werden, werden im Body des HTTP-Requests 
 
 **Dies ist besonders beim Versenden von vertraulichen Daten wie Passwörtern wichtig zu unterscheiden:** Via GET übermittelte Daten sind **Bestandteil der URL** und werden somit auch in Logfiles oder Besucherstatistiken geloggt. Werden die Daten via POST an den Server gesendet, bleibt die URL neutral und die Daten werden separat übermittelt.
 
-Die `POST`-Methode verwenden wir, wenn wir Daten an einen Server senden \(= engl. `to post`\) möchten. So können wir einem Script zum Beispiel den Benutzername und das Passwort für ein Login zusenden.
+Die `POST`-Methode verwenden wir, wenn wir Daten an einen Server senden (= engl. `to post`) möchten. So können wir einem Script zum Beispiel den Benutzername und das Passwort für ein Login zusenden.
 
 ```php
 # vom Browser generierter HTTP-Request
@@ -44,7 +44,7 @@ Gemäss HTML-Spezifikation werden nur die `GET`- und `POST`-Methoden für `<form
 
 ## Daten empfangen
 
-Um Daten aus einem HTTP-Request in PHP zu empfangen, können die Superglobals `$_GET` und `$_POST` verwendet werden. «Superglobals» sind von PHP vordefinierte Variablen, die immer und überall verfügbar sind \(also auch in Funktionen oder Klassen\).
+Um Daten aus einem HTTP-Request in PHP zu empfangen, können die Superglobals `$_GET` und `$_POST` verwendet werden. «Superglobals» sind von PHP vordefinierte Variablen, die immer und überall verfügbar sind (also auch in Funktionen oder Klassen).
 
 ```php
 function validate() : bool {
@@ -63,7 +63,7 @@ echo $suchbegriff;
 // One Direction
 ```
 
-Das «Decoding» der Daten übernimmt PHP automatisch \(in diesem Fall `+` durch `Leerzeichen` ersetzen\).
+Das «Decoding» der Daten übernimmt PHP automatisch (in diesem Fall `+` durch `Leerzeichen` ersetzen).
 
 ```php
 // Via POST gesendet
@@ -86,7 +86,7 @@ if(formular_abgesendet) {
 
 Um zu überprüfen, ob es sich beim Request um einen `POST`-Request handelt, können wir auf die `$_SERVER` Superglobale zurückgreifen. `$_SERVER` ist ein Array mit zahlreichen Informationen zu userem Script, unserem Server und auch dem eingehenden HTTP-Request.
 
-```text
+```
 <?php
 print_r($_SERVER);
 
@@ -127,7 +127,7 @@ Array
 )
 ```
 
-Für diese Abfrage relevant ist der `REQUEST_METHOD`-Schlüssel. Enthält dieser den Wert `POST` werden Daten \(z. B. über ein Formular\) an den Server gesendet.
+Für diese Abfrage relevant ist der `REQUEST_METHOD`-Schlüssel. Enthält dieser den Wert `POST` werden Daten (z. B. über ein Formular) an den Server gesendet.
 
 ```php
 <?php
@@ -139,13 +139,12 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 <form ... >
 ```
 
-## Aufgabe: Vearbeitung \(Einzelarbeit\)
+## Aufgabe: Verarbeitung (Einzelarbeit)
 
-Erstelle den neuen Controller `ValidationController.php` und schaue via Routes-Eintrag, dass diese bei der URI `validation` aufgerufen wird.
+Erstelle eine neue Methode im Controller `FormController.php` und schaue via Routes-Eintrag, dass diese bei der URI `validate`aufgerufen wird.
 
 Überprüfe nun im Controller ob POST-Daten gesendet wurden. Falls ja: Gib diese mit einem `var_dump`-Konstrukt aus. Falls nein: Leite den Besucher zurück zum Formular.
 
-## Aufgabe: Datenzugriff \(Einzelarbeit\)
+## Aufgabe: Datenzugriff (Einzelarbeit)
 
 Betrachte nun das oben ausgegebene assoziative Array und überlege dir, wie du den einzelnen Wert `name` mit einem `echo`-Konstrukt ausgeben kannst.
-

@@ -1,6 +1,6 @@
 # 06 Datenmanipulation
 
-Um gespeicherte Daten in der Datenbank zu ändern, wird ebenfalls die instanzierte Datenbankverbindung \(PDO\) verwendet.
+Um gespeicherte Daten in der Datenbank zu ändern, wird ebenfalls die instanzierte Datenbankverbindung (PDO) verwendet.
 
 Aus Gründen der Sicherheit führen wir die Abfrage nie direkt aus, sondern bereiten diese zuerst mit der `prepare`-Methode vor.
 
@@ -23,13 +23,13 @@ Anschliessend kann das fertige Statement nur noch durch die `execute`-Methode au
 $statement->execute();
 ```
 
-## Aufgabe: Task speichern \(Gemeinsam\)
+## Aufgabe: Task speichern (Gemeinsam)
 
 Als nächstes wollen wir eine einen bestehenden Task aus der Datenbank abrufen, ändern und speichern.
 
 ### Task abrufen und ändern
 
-Erstelle die neue Controller Action `TaskController@edit` und schaue via Routes-Eintrag, dass diese bei der URL `/tasks/edit` aufgerufen wird. Ebenfalls kannst du die neue View `edittask.view.php` erstellen, welche am Schluss des neuen Controllers geladen wird. In dieser View wollen wir den gewünschten Eintrag anpassen.
+Erstelle die neue Controller Action `TaskController@edit` und schaue via Routes-Eintrag, dass diese bei der URL `/edit` aufgerufen wird. Ebenfalls kannst du die neue View `edittask.view.php` erstellen, welche am Schluss des neuen Controllers geladen wird. In dieser View wollen wir den gewünschten Eintrag anpassen.
 
 Um die Daten zu bearbeiten benötigen wir wiederum ein Formular mit dem Feld `title` in der neuen Edit-Task-View `edittask.view.php`. In dieses Feld sollen die bestehenden Daten geladen werden, damit diese vom Benutzer bearbeitet werden können.
 
@@ -45,15 +45,14 @@ Erweitere nun deinen Controller `TaskController`, dass der zur Id passende Eintr
 
 Nachdem die Daten durch den Benutzer im Feld bearbeitet wurden, sollen diese in die Datenbank gespeichert werden.
 
-Dazu erstellen wir einen neuen Controller `TaskController@update` inkl. `/tasks/update` Route, welche wir gleich als Ziel für unser Formular eintragen. Sofern der neue Controller aufgerufen wird und Daten vorhanden sind, soll eine Datenbankverbindung hergestellt und die Daten per Prepare-Statement in die Datenbank übergeben werden.
+Dazu erstellen wir einen neuen Controller `TaskController@update` inkl. `/update` Route, welche wir gleich als Ziel für unser Formular eintragen. Sofern der neue Controller aufgerufen wird und Daten vorhanden sind, soll eine Datenbankverbindung hergestellt und die Daten per Prepare-Statement in die Datenbank übergeben werden.
 
-Nach der erfolgreichen Speicherung dse Eintrages, soll der Benutzer wieder zurück auf die Task-Liste gelangen.
+Nach der erfolgreichen Speicherung des Eintrages, soll der Benutzer wieder zurück auf die Task-Liste gelangen.
 
 ## Aufgabe: Benutzerfreundlichkeit
 
-Damit die Id nicht immer manuell eingegeben werden muss, erstelle einen Bearbeiten-Link hinter jeder Task auf der Taskübersicht, welche automatisch den einen Link zur URL `/tasks/edit?id=2` generiert.
+Damit die Id nicht immer manuell eingegeben werden muss, erstelle einen Bearbeiten-Link hinter jeder Task auf der Taskübersicht, welche automatisch den einen Link zur URL `/edit?id=2` generiert.
 
-## Aufgabe: Task erfüllt \(Einzelarbeit\)
+## Aufgabe: Task erfüllt (Einzelarbeit)
 
 Sorge nun dafür, dass nicht nur der Name der Aufgabe bearbeitet werden kann, sondern auch der Status `completed`.
-

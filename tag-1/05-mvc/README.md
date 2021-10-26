@@ -8,17 +8,17 @@ Die Strukturierung einer Webapplikation ist ein wichtiger Bestandteil und sollte
 
 ![Szene 1](../../.gitbook/assets/09.jpg)
 
-\([Zum schrittweisen Aufbau der Applikations-Struktur](res.md)\)
+([Zum schrittweisen Aufbau der Applikations-Struktur](res.md))
 
 ## Komponenten
 
-### Model, View, und Controller \(MVC\)
+### Model, View, und Controller (MVC)
 
-Ein Router delegiert eine Anfrage oft an einen `Controller`. Dieser verwaltet dann den Datenaustausch zwischen einem `Model` und einer `View`. Das Model dient als Schnittstelle zu einer Datenquelle \(z. B. einer Datenbank\). Die View dient zur Darstellung der Daten.
+Ein Router delegiert eine Anfrage oft an einen `Controller`. Dieser verwaltet dann den Datenaustausch zwischen einem `Model` und einer `View`. Das Model dient als Schnittstelle zu einer Datenquelle (z. B. einer Datenbank). Die View dient zur Darstellung der Daten.
 
 * Ein Benutzer interagiert mit einer `View` - in dem er auf einen Link klickt oder ein Formular absendet.
 * Ein `Controller` bearbeitet den Benutzer-Input und übersetzt die Daten für das Model.
-* Das `Model` empfängt die Daten, verändert diese \(schreibt sie in eine Datenbank, macht eine Kalkulation oder löscht etwas\).
+* Das `Model` empfängt die Daten, verändert diese (schreibt sie in eine Datenbank, macht eine Kalkulation oder löscht etwas).
 * Der `Controller` nimmt die Daten wieder entgegen und gibt diese falls nötig an eine `View` weiter.
 * Die `View` wartet wiederum für die nächste Interaktion mit dem Benutzer.
 
@@ -34,15 +34,15 @@ Wenn der Front-Controller einen Request entgegennimmt, muss dieser herausfinden,
 
 ## Das ÜK-Framework
 
-Für den ÜK steht ein einfaches MVC-Framework zur Verfügung: 
+Für den ÜK steht ein einfaches MVC-Framework zur Verfügung:
 
-1. Lade das [Framework](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2FIctBerufsbildungZentralschweiz%2Fmodul-307-projekte%2Ftree%2Fmaster%2F_Framework) herunter.
-2. Erstelle einen Ordner `aufgaben` in `C:\xampp\htdocs\modul-307\` und extrahiere das Framework da. 
-3. Ergänze später je Aufgabe die benötigten Routes-Einträge in `index.php`, sowie die nötigen Controller, Models und Views. 
+1. Lade das [Framework](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2FIctBerufsbildungZentralschweiz%2Fmodul-307-projekte%2Ftree%2Fmaster%2F\_Framework) herunter.
+2. Erstelle einen Ordner `aufgaben` in `C:\xampp\htdocs\modul-307\` und extrahiere das Framework da.&#x20;
+3. Ergänze später je Aufgabe die benötigten Routes-Einträge in `index.php`, sowie die nötigen Controller, Models und Views.&#x20;
 
 ### index.php
 
-Die `index.php` ist der Einstiegspunkt für alle Anfragen an unser Framework. Hier wird das Framework geladen \(`core/bootstrap.php`\), `$routes` werden definiert und anschliessend ausgeführt.
+Die `index.php` ist der Einstiegspunkt für alle Anfragen an unser Framework. Hier wird das Framework geladen (`core/bootstrap.php`), `$routes` werden definiert und anschliessend ausgeführt.
 
 ### Routes definieren
 
@@ -86,4 +86,3 @@ In der Datei `core/helpers.php` gibt es ein paar nützliche Funktionen. Schaue d
 ### Public
 
 Alle CSS, JS und Bild-Dateien gehören in den `public` Ordner.
-

@@ -1,8 +1,8 @@
-# 07 Startseite mit Links zu allen Übungen
+# 07 Navigation
 
 ## Aufgabenstellung
 
-Erstelle eine Startseite für deine Übungen für alle deine Routes-Einträge eine gemeinsame Navigation. 
+Erstelle eine Startseite für deine Übungen für alle deine Routes-Einträge eine gemeinsame Navigation.
 
 ### Lösungsschritte
 
@@ -18,7 +18,7 @@ $routes = [
 ];
 ```
 
-Erstelle einen Controller `NavigationController` und eine Methode `home()` und eine View `home.view.php` dazu. Erstelle erst mal manuell ein Array `$navigation` mit allen bisherigen Links, die du als Menü haben willst: 
+Erstelle einen Controller `NavigationController` und eine Methode `home()` und eine View `home.view.php` dazu. Erstelle erst mal manuell ein Array `$navigation` mit allen bisherigen Links, die du als Menü haben willst:
 
 ```php
 class NavigationController {
@@ -32,9 +32,9 @@ class NavigationController {
 }
 ```
 
-Gib alle Links als Liste in `home.view.php` aus: 
+Gib alle Links als Liste in `home.view.php` aus:
 
-```html
+```markup
 <ul>
   <?php foreach($navigation as $url => $label) : ?>
     <li><a href=".<?= $url ?>"><?= $label ?></a></li>
@@ -44,7 +44,7 @@ Gib alle Links als Liste in `home.view.php` aus:
 
 #### Schritt 2
 
-Fülle nun das Array `$navigation` dynamisch aus der Routes-Tabelle. Für lesbare Beschriftungen kannst du z.B. die Stringfunktionen `explode()`, `str_replace()` und `ucfirst()` benutzen. 
+Fülle nun das Array `$navigation` dynamisch aus der Routes-Tabelle. Für lesbare Beschriftungen kannst du z.B. die Stringfunktionen `explode()`, `str_replace()` und `ucfirst()` benutzen.
 
 ```php
 class NavigationController {
@@ -66,5 +66,5 @@ class NavigationController {
 
 #### Testing
 
-1. Prüfe nun in der View, ob die Links vernünftige Beschriftungen haben und die Links korrekt funktionieren. 
-2. Füge einen neuen Routes-Eintrag hinzu und schau, ob das neue Menü korrekt erscheint und funktioniert. 
+1. Prüfe nun in der View, ob die Links vernünftige Beschriftungen haben und die Links korrekt funktionieren.&#x20;
+2. Füge einen neuen Routes-Eintrag hinzu und schau, ob das neue Menü korrekt erscheint und funktioniert.&#x20;

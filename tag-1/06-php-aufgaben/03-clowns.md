@@ -10,7 +10,7 @@ Generiere auf Basis eines PHP-Arrays eine HTML-Liste.
 
 Nutze zur Strukturierung des Codes die erstellte MVC-Umgebung:
 
-`ClownController.php` =&gt; Logik `clown.view.php` =&gt; Ausgabe
+`ClownController.php` => Logik `clown.view.php` => Ausgabe
 
 ### Lösungsschritte
 
@@ -74,4 +74,3 @@ Vergib die `.markiert` Klasse nun allen `li` Elementen, die einen Namen enthalte
 Mögliche Lösungen zu den Aufgaben werden dir vom Kursleiter bereitgestellt. Natürlich ist die Ausgabe des Scripts entscheidend, nicht der Code dazu.
 
 Es sind also mehrere Lösungen möglich, solange durch die richtige Logik die gewünschte Ausgabe erzeugt wird.
-

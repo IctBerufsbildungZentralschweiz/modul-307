@@ -17,4 +17,3 @@ Die clientseitige Validierung ist primär für Usability-Zwecke gut. Sie gibt de
 Für Sicherheit sorgt die clientseitige Validierung nicht, da diese sehr einfach durch das Deaktivieren von JS umgangen werden kann.
 
 Für eine POST-Anfrage werden eigentlich weder das Formular noch ein Browser benötigt. Eine Anfrage mit nicht validierten Daten kann von diversen Quellen kommen und sollte daher **immer** mindestens serverseitig validiert werden.
-

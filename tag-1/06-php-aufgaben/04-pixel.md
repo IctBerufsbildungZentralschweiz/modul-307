@@ -12,7 +12,7 @@ Erstelle ein PHP-Script, welches aufgrund der mitgegebenen GET-Variablen eine Ta
 
 Nutze zur Strukturierung des Codes die erstellte MVC-Umgebung. Erstelle die Route `/pixel`:
 
-`PixelController.php` =&gt; Logik `pixel.view.php` =&gt; Ausgabe
+`PixelController.php` => Logik `pixel.view.php` => Ausgabe
 
 ### Lösungsschritte
 
@@ -28,7 +28,7 @@ Du solltest nun eine vertikal und horizontal zentrierte Tabelle erhalten.
 
 #### Schritt 2
 
-Erstelle in deinem Controllernun je eine Variable für die Anzahl Spalten \(`$cols`\) und die Anzahl Zeilen \(`$rows`\). Nutze PHP um die Tabelle dynamisch anhand der Werte der beiden Variablen in deiner View zu generieren.
+Erstelle in deinem Controllernun je eine Variable für die Anzahl Spalten (`$cols`) und die Anzahl Zeilen (`$rows`). Nutze PHP um die Tabelle dynamisch anhand der Werte der beiden Variablen in deiner View zu generieren.
 
 ```php
 // Tabelle 4x4 wird generiert
@@ -48,12 +48,12 @@ Beide Parameter sollen optional sein und einen Standard-Wert von 4 haben.
 
 **Testfälle**
 
-| URL | Spalten | Zeilen |
-| :--- | :--- | :--- |
-| [http://localhost/pixel](http://localhost/pixel) | 4 | 4 |
-| [http://localhost/pixel?rows=2](http://localhost/pixel?rows=2) | 4 | 2 |
-| [http://localhost/pixel?cols=2](http://localhost/pixel?cols=2) | 2 | 4 |
-| [http://localhost/pixel?cols=2&rows=2](http://localhost/pixel?cols=2&rows=2) | 2 | 2 |
+| URL                                                                            | Spalten | Zeilen |
+| ------------------------------------------------------------------------------ | ------- | ------ |
+| [http://localhost/pixel](http://localhost/pixel)                               | 4       | 4      |
+| [http://localhost/pixel?rows=2](http://localhost/pixel?rows=2)                 | 4       | 2      |
+| [http://localhost/pixel?cols=2](http://localhost/pixel?cols=2)                 | 2       | 4      |
+| [http://localhost/pixel?cols=2\&rows=2](http://localhost/pixel?cols=2\&rows=2) | 2       | 2      |
 
 Du kannst über die Superglobale `$_GET` auf Parameter aus der URL zugreifen.
 
@@ -75,7 +75,7 @@ Stelle sicher, dass die folgenden Regeln erfüllt werden.
 
 **Regeln**
 
-* `$cols` und `$rows` sollen **immer** ein Integer sein \(siehe [Type Casting](https://secure.php.net/manual/de/language.types.type-juggling.php#language.types.typecasting)\)
+* `$cols` und `$rows` sollen **immer** ein Integer sein (siehe [Type Casting](https://secure.php.net/manual/de/language.types.type-juggling.php#language.types.typecasting))
 * Die maximale Anzahl von Spalten oder Zeilen soll `60` sein.
 * Die minimale Anzahl von Spalten oder Zeilen soll `1` sein.
 
@@ -93,17 +93,17 @@ Die Pixel-Koordinaten werden als String im Format `x|y` definiert. Möchten wir 
 
 Da wir mehrere Koordinaten an das PHP-Script übergeben möchten, können wir den GET-Parameter `pixels` als Array übergeben. Dies geschieht, indem `[]` an den Parametername angehängt wird.
 
-```text
+```
 http://localhost/pixels/index.php?pixels[]=1|2&pixels[]=2|1
 ```
 
 Erweitere das PHP-Script so, dass über folgende Query-Strings die korrekten Pixel markiert werden:
 
-| Query-String | Output |
-| :--- | :--- |
-| ?rows=2&cols=2&pixels\[\]=2\|1&pixels\[\]=2\|2 | ![](../../.gitbook/assets/out3.png) |
-| ?rows=3&cols=3&pixels\[\]=3\|1&pixels\[\]=1\|3 | ![](../../.gitbook/assets/out1.png) |
-| ?rows=3&cols=3&pixels\[\]=1\|1&pixels\[\]=2\|2&pixels\[\]=3\|3 | ![](../../.gitbook/assets/out2.png) |
+| Query-String                                                    | Output                              |
+| --------------------------------------------------------------- | ----------------------------------- |
+| ?rows=2\&cols=2\&pixels\[]=2\|1\&pixels\[]=2\|2                 | ![](../../.gitbook/assets/out3.png) |
+| ?rows=3\&cols=3\&pixels\[]=3\|1\&pixels\[]=1\|3                 | ![](../../.gitbook/assets/out1.png) |
+| ?rows=3\&cols=3\&pixels\[]=1\|1\&pixels\[]=2\|2\&pixels\[]=3\|3 | ![](../../.gitbook/assets/out2.png) |
 
 **Schritt 6**
 
@@ -116,4 +116,3 @@ Mit welchem Query-String erhältst du diesen Output?
 Mögliche Lösungen zu den Aufgaben werden dir vom Kursleiter bereitgestellt. Natürlich ist die Ausgabe des Scripts entscheidend, nicht der Code dazu.
 
 Es sind also mehrere Lösungen möglich, solange durch die richtige Logik die gewünschte Ausgabe erzeugt wird.
-

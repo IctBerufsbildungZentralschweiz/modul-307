@@ -33,7 +33,7 @@ $smartphone = [
 
 Nutze zur Strukturierung des Codes die erstellte MVC-Umgebung:
 
-`TodoController.php` =&gt; Logik `todo.view.php` =&gt; Ausgabe
+`TodoController.php` => Logik `todo.view.php` => Ausgabe
 
 ### Lösungsschritte
 
@@ -68,7 +68,7 @@ Unveränderte Aufgaben:
 
 #### Schritt 3
 
-Du hast jetzt vermutlich redundanten \(wiederholenden\) Code für die Ausgabe der Aufgaben in deinem Script. Da für alle drei Ausgaben die gleiche Logik \(Titel + Liste\) besteht, bietet sich eine Funktion als Lösung an.
+Du hast jetzt vermutlich redundanten (wiederholenden) Code für die Ausgabe der Aufgaben in deinem Script. Da für alle drei Ausgaben die gleiche Logik (Titel + Liste) besteht, bietet sich eine Funktion als Lösung an.
 
 Erstelle die Funktion `printTasks` die über folgende drei Aufrufe die gleiche Ausgabe wie in Schritt 2 erzeugt.
 
@@ -83,4 +83,3 @@ echo printTasks('Unveränderte Aufgaben', $unbearbeitet);
 Mögliche Lösungen zu den Aufgaben werden dir vom Kursleiter bereitgestellt. Natürlich ist die Ausgabe des Scripts entscheidend, nicht der Code dazu.
 
 Es sind also mehrere Lösungen möglich, solange durch die richtige Logik die gewünschte Ausgabe erzeugt wird.
-

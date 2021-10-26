@@ -81,7 +81,7 @@ Da der PHP-Code immer auf dem Server und nie vom Client verarbeitet wird, erzeug
 </html>
 ```
 
-## Aufgabe: Echo-Konstrukt \(Gemeinsam\)
+## Aufgabe: Echo-Konstrukt (Gemeinsam)
 
 Erstelle ein neues Projekt in deinem `htdocs`-Ordner und erstelle darin die Datei `index.php`.
 
@@ -90,4 +90,3 @@ Erstelle in der Datei `index.php` ein HTML-Gerüst. Im Body-Bereich soll die Dat
 ```php
 Heute bin ich mit dem Auto gefahren.
 ```
-

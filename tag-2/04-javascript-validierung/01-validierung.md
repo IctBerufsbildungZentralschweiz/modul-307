@@ -14,7 +14,7 @@ window.addEventListener("load", function(){
 });
 ```
 
-Die Unterschiede zwischen verschiedenen Load-Events sind auf \[[https://javascript.info/onload-ondomcontentloaded](https://javascript.info/onload-ondomcontentloaded)\] gut beschrieben. Hauptsächlich geht es darum, ob nur das HTML-Dokument geladen sein muss oder auch alle zusätzlichen Dateien \(Bilder, JS, CSS etc.\).
+Die Unterschiede zwischen verschiedenen Load-Events sind auf \[[https://javascript.info/onload-ondomcontentloaded](https://javascript.info/onload-ondomcontentloaded)] gut beschrieben. Hauptsächlich geht es darum, ob nur das HTML-Dokument geladen sein muss oder auch alle zusätzlichen Dateien (Bilder, JS, CSS etc.).
 
 ## Der `submit` Event
 
@@ -98,7 +98,7 @@ window.addEventListener("load", function(){
 
 ### Ausgabe der Fehlerliste
 
-Alle Fehler werden gebündelt im Platzhalter <ul id="errorList"></ul> ausgegeben: 
+Alle Fehler werden gebündelt im Platzhalter  ausgegeben:
 
 ```javascript
     /**
@@ -127,7 +127,7 @@ Alle Fehler werden gebündelt im Platzhalter <ul id="errorList"></ul> ausgegeben
 });
 ```
 
-## Zusatz für Fortgeschrittene 
+## Zusatz für Fortgeschrittene
 
 ### Inline-Fehler
 
@@ -172,4 +172,3 @@ window.addEventListener("load", function(){
     });
 });
 ```
-

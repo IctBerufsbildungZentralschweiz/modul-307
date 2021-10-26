@@ -61,7 +61,7 @@ Wir empfehlen dir einen der folgenden Editoren zu benutzen und die weiter unten 
 
 #### Visual Studio Code
 
-1. Installer von [code.visualstudio.com](https://code.visualstudio.com/) herunterladen
+1. Installer von [code.visualstudio.com](https://code.visualstudio.com) herunterladen
 2. Visual Studio Code installieren und starten
 3. Bei den Plugins nach unten erwähnten Plugins suchen
 
@@ -84,7 +84,7 @@ Um Plugins zu installieren, drücke die Tastenkombination `Ctrl + Shift + P` und
 
 #### Atom
 
-1. Installer von [atom.io](https://atom.io/) herunterladen und ausführen.
+1. Installer von [atom.io](https://atom.io) herunterladen und ausführen.
 2. Das Programm `Atom` starten.
 
 **Plugins installieren**
@@ -101,7 +101,7 @@ Emmet ermöglicht es dir, einen CSS-Selektor via TAB-Taste in die entsprechende 
 
 Emmet ist bei Visual Studio Code bereits installiert und muss nicht extra hinzugefügt werden.
 
-```text
+```
 a  -> TAB-Drücken
 
 // ergibt:
@@ -129,17 +129,17 @@ ul>li{Punkt $}*3  -> TAB-Drücken
 
 Autocomplete-Funktionen, die Dir bei der Eingabe von PHP-Code helfen, kannst Du über folgende Plugins erhalten:
 
-| Editor | Plugin Name |
-| :--- | :--- |
-| Visual Studio Code | PHP IntelliSense |
-| Sublime Text | PHP Completions Kit |
-| Atom | atom-autocomplete-php |
+| Editor             | Plugin Name           |
+| ------------------ | --------------------- |
+| Visual Studio Code | PHP IntelliSense      |
+| Sublime Text       | PHP Completions Kit   |
+| Atom               | atom-autocomplete-php |
 
 **Hinweis zu atom-autocomplete-php:**
 
 Wird bei der Installation ein Fehler ausgeben, gehe nach der Installation in die Plugin-Einstellungen und gib unter `Command php` folgenden Wert ein:
 
-```text
+```
 c:\xampp\php\php.exe
 ```
 
@@ -151,10 +151,9 @@ Du wirst jetzt zwar immer noch eine Fehlermeldung erhalten, jedoch funktioniert 
 
 #### Weitere Plugins
 
-* `Live Share Extension Pack` \(für Zusammenarbeit\)
+* `Live Share Extension Pack` (für Zusammenarbeit)
 * `Bracket Pair Colorizer 2`
-* `Live Server` oder `Open In Web` \(für schnelle Anzeige im Browser\)
-* `ftp-sync` \(für direkten FTP-Upload\)
-* `HTML CSS Support` und `Color Highlight` \(fürs Styling\)
+* `Live Server` oder `Open In Web` (für schnelle Anzeige im Browser)
+* `ftp-sync` (für direkten FTP-Upload)
+* `HTML CSS Support` und `Color Highlight` (fürs Styling)
 * Siehe auch [My Favorite VS Code Extensions](https://youtu.be/rH1RTwaAeGc)
-

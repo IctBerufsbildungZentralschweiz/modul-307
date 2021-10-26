@@ -12,9 +12,13 @@ Die registrierten Benutzer werden jeweils aus der Datei `src/users.php` geladen.
 
 Bearbeite ausschliesslich die Funktion `login` in der Datei `login.php` in diesem Verzeichnis.
 
-{% embed url="https://github.com/IctBerufsbildungZentralschweiz/modul-307/tree/master/Tag%201/06%20PHP%20Aufgaben/06%20Login/src" caption="Startertemplate" %}
+{% embed url="https://github.com/IctBerufsbildungZentralschweiz/modul-307/tree/master/Tag%201/06%20PHP%20Aufgaben/06%20Login/src" %}
+Startertemplate
+{% endembed %}
 
-{% embed url="https://github.com/IctBerufsbildungZentralschweiz/modul-307/tree/master/Tag%201/06%20PHP%20Aufgaben/06%20Login/tests" caption="Tests" %}
+{% embed url="https://github.com/IctBerufsbildungZentralschweiz/modul-307/tree/master/Tag%201/06%20PHP%20Aufgaben/06%20Login/tests" %}
+Tests
+{% endembed %}
 
 ### Zielumgebung
 
@@ -22,7 +26,7 @@ Bearbeite ausschliesslich die Funktion `login` in der Datei `login.php` in diese
 
 Um die Tests auszuführen, rufe einfach das `login.php` Script aus deiner Konsole auf.
 
-```text
+```
 php -f login.php
 ```
 
@@ -55,7 +59,7 @@ $user['password']
 
 **B**
 
-Der Rückgabewert `return 'Login okay!';` kommt zwei Mal vor. Möglicherweise lässt sich das `if`-Statement für diese Prüfung vereinfachen? \(Tipp: [Logische Operatoren](https://secure.php.net/manual/de/language.operators.logical.php) oder [`in_array`](https://secure.php.net/manual/de/function.in-array.php)\)
+Der Rückgabewert `return 'Login okay!';` kommt zwei Mal vor. Möglicherweise lässt sich das `if`-Statement für diese Prüfung vereinfachen? (Tipp: [Logische Operatoren](https://secure.php.net/manual/de/language.operators.logical.php) oder [`in_array`](https://secure.php.net/manual/de/function.in-array.php))
 
 #### Schritt 3
 
@@ -97,4 +101,3 @@ function login($username, $password)
 Mögliche Lösungen zu den Aufgaben werden dir vom Kursleiter bereitgestellt.
 
 Es sind mehrere Lösungen möglich, solange Dein Code allen gegebenen Vorgaben entspricht.
-

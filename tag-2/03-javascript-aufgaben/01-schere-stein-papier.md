@@ -8,8 +8,8 @@ Erstelle ein funktionierendes «Schere, Stein, Papier» Spiel in JavaScript.
 
 Das Script soll direkt nach dem Laden einer HTML-Seite ausgeführt werden. Es ist unterteilt in drei Schritte:
 
-* Frage nach dem eigenen Spielzug \(Schere, Stein oder Papier\)
-* Automatisches Generieren eines Spielzuges für den Gegenspieler \(Computer\)
+* Frage nach dem eigenen Spielzug (Schere, Stein oder Papier)
+* Automatisches Generieren eines Spielzuges für den Gegenspieler (Computer)
 * Erruieren des Gewinners
 
 ### Lösungsschritte
@@ -18,9 +18,9 @@ Entwickle das Script immer nur so weit, bis alle Komponenten des jeweiligen Schr
 
 #### Schritt 1
 
-Erstelle eine einfache HTML-Seite. Erstelle darin ein `script` Tag in dem du dein Code platzieren kannst.
+Erstelle einen Controller `GameController.php`, der eine View `rock-paper-scissors.view.php` lädt. Die View ist eine einfache HTML-Seite, welche die neue Datei `rock-paper-scissors.js` aus dem `public/`-Ordner lädt.
 
-Erstelle ein Array mit allen erlaubten Spielzügen \(`Schere`, `Stein` und `Papier`\).
+Erstelle ein Array mit allen erlaubten Spielzügen (`Schere`, `Stein` und `Papier`).
 
 ```javascript
 var erlaubt = [...];
@@ -36,7 +36,7 @@ var spielzugSpieler = prompt(...);
 
 Überprüfe mittels `indexOf`-Methode, ob die Eingabe im Array mit den erlaubten Spielzügen vorhanden ist. Erstelle eine entsprechende Ausgabe mittels `alert`:
 
-[Dokumentation zu `indexOf` auf MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)
+[Dokumentation zu `indexOf` auf MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array/indexOf)
 
 ```javascript
 if(/* spielzugNichtInErlaubtArray */) {
@@ -71,7 +71,7 @@ var resultat = spiele(spielzugSpieler, spielzugComputer);
 alert('Das Endergebnis lautet: ' + resultat);
 ```
 
-#### Schritt 4 \(Zusatzaufgabe\)
+#### Schritt 4 (Zusatzaufgabe)
 
 Stelle sicher, dass die Gross- und Kleinschreibung sowie vorhergehende oder folgende Leerzeichen in der Eingabe keine Auswirkung haben.
 
@@ -82,4 +82,3 @@ Stelle sicher, dass die Gross- und Kleinschreibung sowie vorhergehende oder folg
 Mögliche Lösungen zu den Aufgaben werden dir vom Kursleiter bereitgestellt. Natürlich ist die Ausgabe des Scripts entscheidend, nicht der Code dazu.
 
 Es sind also mehrere Lösungen möglich, solange durch die richtige Logik die gewünschte Ausgabe erzeugt wird.
-

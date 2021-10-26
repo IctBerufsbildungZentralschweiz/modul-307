@@ -1,4 +1,4 @@
-# 02 Cross-Site-Scripting \(XSS\)
+# 02 Cross-Site-Scripting (XSS)
 
 ## Arbeitsauftrag
 
@@ -7,12 +7,11 @@ Erstelle ein Gästebuch mit einer XSS-Sicherheitslücke. Die Sicherheitslücke s
 Nutze als Basis für dein Proof of Concept den Inhalt der `xss.zip` Datei.
 
 {% hint style="info" %}
-[xss.zip herunterladen](https://github.com/IctBerufsbildungZentralschweiz/modul-307/blob/master/.source/xss.zip?raw=true)
+[xss.zip herunterladen](../../../.source/xss.zip)
 {% endhint %}
 
 ## Lösungshilfe
 
-* Versuche herauszufinden, was ein Besucher für eine Nachricht eingeben muss, um alle zukünftigen Besucher des Gästebuchs auf google.com umzuleiten. \(Tipp: JavaScript spielt hierbei eine wichtige Rolle, Stichwort [`document.location.href`](https://www.google.com/search?q=document.location.href+redirect)\)
+* Versuche herauszufinden, was ein Besucher für eine Nachricht eingeben muss, um alle zukünftigen Besucher des Gästebuchs auf google.com umzuleiten. (Tipp: JavaScript spielt hierbei eine wichtige Rolle, Stichwort [`document.location.href`](https://www.google.com/search?q=document.location.href+redirect))
 
 Wie kannst Du dieses Problem verhindern? Was sind andere «Schäden», die ein Angreifer mit dieser Attacke anrichten kann?
-

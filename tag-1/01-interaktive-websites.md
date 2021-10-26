@@ -9,4 +9,3 @@
 Oder auf Websites bezogen:
 
 Kann eine Website die Aktion/Eingabe eines Benutzers **entgegennehmen, interpretieren und darauf reagieren**, ist diese interaktiv.
-

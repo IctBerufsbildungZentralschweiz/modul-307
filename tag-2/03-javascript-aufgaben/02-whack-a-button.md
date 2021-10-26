@@ -16,7 +16,9 @@ Entwickle das Script immer nur so weit, bis alle Komponenten des jeweiligen Schr
 
 #### Schritt 1
 
-Erstelle eine einfache HTML-Seite. Füge auf dieser Seite einen Button hinzu und positioniere diesen via CSS absolut im Body \(`position: absolute`\).
+Erstelle im Controller `GameController.php` eine zweite Methode mit dazugehöriger Route, welche die View `whack-a-button.view.php` lädt. Die View ist eine einfache HTML-Seite, welche die neue Datei `whack-a-button.js` aus dem `public/`-Ordner lädt.
+
+Füge auf dieser Seite einen Button hinzu und positioniere diesen via CSS absolut im Body (`position: absolute`).
 
 ```markup
 <button id="button">Whack me!</button>
@@ -66,7 +68,7 @@ Anstelle der fixen Position, möchten wir diese nun mit Hilfe von `Math.random()
 
 Erweitere dein Script so, dass der Button beim `mouseenter` immer an eine neue Stelle springt.
 
-[`Math.random()` auf MDN](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Math/math.random)
+[`Math.random()` auf MDN](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global\_Objects/Math/math.random)
 
 #### Schritt 5
 
@@ -117,7 +119,7 @@ Reduziere `delay` nach jedem Klick auf den Button um 25 Millisekunden.
 
 Gib den aktuellen Wert von `delay` zusammen mit dem Punktestand in der Konsole aus.
 
-#### Schritt 9 \(Zusatzaufgabe\)
+#### Schritt 9 (Zusatzaufgabe)
 
 Anstatt den Spielstand in der Konsole auszugeben, füge einen Status-Block in die View ein und setze die aktuellen Werte mit JS:
 
@@ -145,9 +147,9 @@ Anstatt den Spielstand in der Konsole auszugeben, füge einen Status-Block in di
     etc.
 ```
 
-Wenn das Spiel fertig ist, zeige im  "GAME OVER!" an \(auch mittels ´innerHtml´\)
+Wenn das Spiel fertig ist, zeige im  "GAME OVER!" an (auch mittels ´innerHtml´)
 
-#### Schritt 10 \(Zusatzaufgabe\)
+#### Schritt 10 (Zusatzaufgabe)
 
 Uns wurde ein Bug im Spiel gemeldet!
 
@@ -160,4 +162,3 @@ Was ist hier das Problem? Wie kannst Du es beheben?
 Mögliche Lösungen zu den Aufgaben werden dir vom Kursleiter bereitgestellt. Natürlich ist die Ausgabe des Scripts entscheidend, nicht der Code dazu.
 
 Es sind also mehrere Lösungen möglich, solange durch die richtige Logik die gewünschte Ausgabe erzeugt wird.
-

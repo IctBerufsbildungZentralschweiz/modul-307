@@ -4,9 +4,9 @@ Das Validieren oder «Prüfen» der empfangenen Daten ist enorm wichtig, da uner
 
 Grundsätzlich gilt es die Daten auf folgende Punkte zu überprüfen:
 
-* Sind alle benötigten Daten vorhanden \(alle Pflichtfelder ausgefüllt\)?
-* Sind die Daten logisch, liegen sie in einem gültigen Bereich \(Geburtsdatum in der Vergangenheit\)?
-* Entsprechen die Daten dem gewünschten Format \(Email, PLZ etc.\)?
+* Sind alle benötigten Daten vorhanden (alle Pflichtfelder ausgefüllt)?
+* Sind die Daten logisch, liegen sie in einem gültigen Bereich (Geburtsdatum in der Vergangenheit)?
+* Entsprechen die Daten dem gewünschten Format (Email, PLZ etc.)?
 
 ## Existenz überprüfen
 
@@ -84,7 +84,7 @@ if($geburtsjahr > (date('Y') - 18)) { // Geburtsjahr > 1998 -> Minderjährig
 }
 ```
 
-\(Bitte beachte, dass im letzten Beispiel natürlich das gesamte Geburtsdatum beachtet werden sollte, nicht nur das Jahr. Hier wurde das Beispiel vereinfacht.\)
+(Bitte beachte, dass im letzten Beispiel natürlich das gesamte Geburtsdatum beachtet werden sollte, nicht nur das Jahr. Hier wurde das Beispiel vereinfacht.)
 
 ## Format überprüfen
 
@@ -119,7 +119,7 @@ if(filter_var($url, FILTER_VALIDATE_URL) === false) {
 }
 ```
 
-Bitte beachte, dass FILTER\_VALIDATE\_EMAIL bei Eingaben mit Umlauten `false` zurück gibt. Eine Email mit Umlauten ist jedoch theoretisch gültig \(kontakt@höhenluft.ch\). Die Überprüfung von Email-Adressen ist ohnehin ein heikles Thema. Am besten wird nur überprüft, ob das `@`-Symbol vorhanden ist. Alle anderen Regeln könnten sonst ungewöhnliche aber dennoch gültige Email-Adressen als ungültig erkennen.
+Bitte beachte, dass FILTER\_VALIDATE\_EMAIL bei Eingaben mit Umlauten `false` zurück gibt. Eine Email mit Umlauten ist jedoch theoretisch gültig (kontakt@höhenluft.ch). Die Überprüfung von Email-Adressen ist ohnehin ein heikles Thema. Am besten wird nur überprüft, ob das `@`-Symbol vorhanden ist. Alle anderen Regeln könnten sonst ungewöhnliche aber dennoch gültige Email-Adressen als ungültig erkennen.
 
 ### Reguläre Ausdrücke
 
@@ -147,10 +147,10 @@ Eine genauere Überprüfung wurde folgender Ausdruck bringen.
 
 Wie Du siehst, wird es sehr schnell sehr komplex. Reguläre Ausdrücke sind daher ein Thema für sich und werden in diesem ÜK nur teilweise behandelt.
 
-* Siehe auch [PHP: Reguläre Ausdrücke auf wikibooks.org](https://de.wikibooks.org/wiki/Websiteentwicklung:_PHP:_Regul%C3%A4re_Ausdr%C3%BCcke)
-* Tool zum Testen von Ausdrücken: [PHP Live Regex](http://www.phpliveregex.com/)
+* Siehe auch [PHP: Reguläre Ausdrücke auf wikibooks.org](https://de.wikibooks.org/wiki/Websiteentwicklung:\_PHP:\_Regul%C3%A4re\_Ausdr%C3%BCcke)
+* Tool zum Testen von Ausdrücken: [PHP Live Regex](http://www.phpliveregex.com)
 
-## Aufgabe: Validierung \(Einzelarbeit\)
+## Aufgabe: Validierung (Einzelarbeit)
 
 Alle Felder, ausser das für die Bemerkung, sind Pflichtfelder.
 
@@ -162,24 +162,24 @@ Wenn keine Fehler vorhanden sind, gib einfach nur den String `OK` nach der Valid
 
 Die folgenden Testfälle sollte dein Formular erfüllen:
 
-| Feld | Input | Fehlermeldung |
-| :--- | :--- | :--- |
-| Name | `''`  _\(leer\)_ | Bitte geben Sie einen Namen ein. |
-| Email | `''` | Bitte geben Sie eine Email ein. |
-| Telefon | `''` | Bitte geben Sie eine Telefonnummer ein. |
-| Anzahl Personen | `''` | Bitte geben Sie die Anzahl teilnehmender Personen ein. |
-| Hotel | `''` | Bitte wählen Sie ein Hotel für die Übernachtung aus. |
-|  |  |  |
-| Email | `'google.com'` | Die Email-Adresse "google.com" ist ungültig. |
-| Telefon | `'phone'` | Die Telefonnummer "phone" ist ungültig. |
-| Anzahl Personen | `'Acht'` | Bitte geben Sie für die Anzahl Personen nur Zahlen ein. |
-|  |  |  |
-| Email | `'test@google.com'` | **keine** |
-| Email | `'info@cern.ch '` | **keine** |
-| Telefon | `'+41 260 30 39'` | **keine** |
-| Name | `'Peter'` | **keine** |
-| Anzahl Personen | `'5'` | **keine** |
-| Bemerkung | `''` | **keine** |
+| Feld            | Input               | Fehlermeldung                                           |
+| --------------- | ------------------- | ------------------------------------------------------- |
+| Name            | `''`  _(leer)_      | Bitte geben Sie einen Namen ein.                        |
+| Email           | `''`                | Bitte geben Sie eine Email ein.                         |
+| Telefon         | `''`                | Bitte geben Sie eine Telefonnummer ein.                 |
+| Anzahl Personen | `''`                | Bitte geben Sie die Anzahl teilnehmender Personen ein.  |
+| Hotel           | `''`                | Bitte wählen Sie ein Hotel für die Übernachtung aus.    |
+|                 |                     |                                                         |
+| Email           | `'google.com'`      | Die Email-Adresse "google.com" ist ungültig.            |
+| Telefon         | `'phone'`           | Die Telefonnummer "phone" ist ungültig.                 |
+| Anzahl Personen | `'Acht'`            | Bitte geben Sie für die Anzahl Personen nur Zahlen ein. |
+|                 |                     |                                                         |
+| Email           | `'test@google.com'` | **keine**                                               |
+| Email           | `'info@cern.ch '`   | **keine**                                               |
+| Telefon         | `'+41 260 30 39'`   | **keine**                                               |
+| Name            | `'Peter'`           | **keine**                                               |
+| Anzahl Personen | `'5'`               | **keine**                                               |
+| Bemerkung       | `''`                | **keine**                                               |
 
 Speichere alle gefundenen Fehler in ein`$errors` Array.
 
@@ -195,7 +195,7 @@ Sofern ein Fehler gefunden wurde, soll in der `form.view.php` eine Liste sämtli
 
 Falls kein Fehler gefunden wurde, wird die neue View `success.view.php` geladen.
 
-## Aufgabe: Usability \(Einzelarbeit\)
+## Aufgabe: Usability (Einzelarbeit)
 
 Damit der Benutzer bei einem Fehler nicht wieder alle Daten einfüllen muss. Fülle die eingetragenen Felder wieder in das Formular ab.
 
@@ -204,4 +204,3 @@ Hier ein Beispiel dazu:
 ```markup
 <input type="text" id="name" name="name" value="<?= $name ?? '' ?>">
 ```
-

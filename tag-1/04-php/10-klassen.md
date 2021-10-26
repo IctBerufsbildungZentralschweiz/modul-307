@@ -2,9 +2,9 @@
 
 Klassen können grob als "Bauplan" angesehen werden, mit dem Bauplan selbst kann nichts gemacht werden, aber der Bauplan kann genutzt werden, um etwas herzustellen. Klassen können also nicht direkt benutzt werden, aber aus den Klassen können wir Objekte erzeugen, welche wir anschliessend nutzen können.
 
-Stell dir vor, du hast eine Klasse `Auto` \(einen Bauplan für ein Auto\). Nun kannst du mit der Klasse ein konkretes Objekt erzeugen. Also könntest du zum Beispiel sagen: Klasse `Auto`, bau mir einen `Renault Clio` mit der Fahrzeug-Identifikationsnummer `VF1CB1N0501402066`.
+Stell dir vor, du hast eine Klasse `Auto` (einen Bauplan für ein Auto). Nun kannst du mit der Klasse ein konkretes Objekt erzeugen. Also könntest du zum Beispiel sagen: Klasse `Auto`, bau mir einen `Renault Clio` mit der Fahrzeug-Identifikationsnummer `VF1CB1N0501402066`.
 
-* Wir brauchen Klassen \(Baupläne\) um Objekte \(Gegenstände\) zu erzeugen
+* Wir brauchen Klassen (Baupläne) um Objekte (Gegenstände) zu erzeugen
 * Mit Klassen selbst können wir nichts machen, nur mit Objekten
 * Von einer Klasse können wir beliebig viele Objekte erstellen
 * Objekte werden auch als Instanzen bezeichnet
@@ -33,7 +33,7 @@ class SimpleClass
 }
 ```
 
-## Objekte erzeugen \(Klassen instanzieren\)
+## Objekte erzeugen (Klassen instanzieren)
 
 Um eine Instanz einer Klasse zu erzeugen, muss das `new`-Schlüsselwort verwendet werden.
 
@@ -45,7 +45,7 @@ $instanz = new SimpleClass();
 
 Innerhalb einer Klasse können Eigenschaften definiert und methodenübergreifend genutzt werden. Diese werden definiert, indem man eines der Schlüsselwörter `public`, `protected` oder `private` gefolgt von einer optionalen Typen-Deklaration verwendet. Zuletzt folgt der Name der Eigenschaft.
 
-Auf die Eigenschaft kann ausserhalb der instanzierten Klasse mit dem Objekt und dem Pfeiloperator `->` zugegriffen werden \(sofern sichtbar\). Innerhalb der Klasse ist es möglich mit dem Ausdruck `$this` und dem Pfeiloperator `->` auf eine definierte Variable zuzugreifen.
+Auf die Eigenschaft kann ausserhalb der instanzierten Klasse mit dem Objekt und dem Pfeiloperator `->` zugegriffen werden (sofern sichtbar). Innerhalb der Klasse ist es möglich mit dem Ausdruck `$this` und dem Pfeiloperator `->` auf eine definierte Variable zuzugreifen.
 
 ```php
 class SimpleClass
@@ -74,7 +74,7 @@ echo $instanz->var1;
 
 ### Methoden
 
-Die Methoden in einer Klasse haben sehr ähnliche Eigenschaften wie normale Funktionen \(siehe Kapitel `Benutzerdefinierte Funktionen`\). Jedoch wird jede Methode mit einem der Schlüsselwörter `public`, `protected` oder `private` gefolgt von einer regulären Methodendeklaration definiert.
+Die Methoden in einer Klasse haben sehr ähnliche Eigenschaften wie normale Funktionen (siehe Kapitel `Benutzerdefinierte Funktionen`). Jedoch wird jede Methode mit einem der Schlüsselwörter `public`, `protected` oder `private` gefolgt von einer regulären Methodendeklaration definiert.
 
 ```php
 class SimpleClass
@@ -104,8 +104,8 @@ echo $instanz->publicFunction();
 
 Die Sichtbarkeit einer Eigenschaft oder Methode kann definiert werden, indem man der Deklaration eines der Schlüsselwörter `public`, `protected` oder `private` voranstellt.
 
-* Als `public` deklarierte Elemente \(Variablen und Methoden\) können von überall her zugegriffen werden.
-* `Protected` beschränkt den Zugang auf die Elternklassen und abgeleitete Klassen sowie die Klasse, die das Element definiert. 
+* Als `public` deklarierte Elemente (Variablen und Methoden) können von überall her zugegriffen werden.
+* `Protected` beschränkt den Zugang auf die Elternklassen und abgeleitete Klassen sowie die Klasse, die das Element definiert.&#x20;
 * `Private` grenzt die Sichtbarkeit einzig auf die Klasse ein, welche das Element definiert.
 
 ## Konstruktoren
@@ -133,7 +133,7 @@ $firstClass = new BaseClass('Erbse', 'Baum');
 $secondClass = new BaseClass('Erbse');
 ```
 
-### Constructor property promotion \(ab PHP 8\)
+### Constructor property promotion (ab PHP 8)
 
 Ab PHP 8 gibt es neu eine Kurzschreibweise für Konstruktoren, mit der Eigenschaften direkt im Konstruktor definiert und gesetzt werden können.
 
@@ -183,7 +183,7 @@ $car = new Car('Renault', 'rot', 1990);
 
 ## Aufgabe: Tanken
 
-Neben den drei Attributen oben, verfügt jedes Auto noch über eine Tankfüllung. Einfachheitshalber ist der Tank bei jedem neuen Auto-Objekt leer \(0\).
+Neben den drei Attributen oben, verfügt jedes Auto noch über eine Tankfüllung. Einfachheitshalber ist der Tank bei jedem neuen Auto-Objekt leer (0).
 
 Nach der Instanzierung vom Auto-Objekt soll eine Methode in der Klasse aufgerufen werden, welche die Füllung des Tanks um einen gewissen Betrag erhöht.
 
@@ -214,14 +214,13 @@ Gib den aktualisierten Füllstand des Auto-Objekt nun aus.
 
 Nun möchten wir in der Datei `index.view.php` eine Liste aller Autos mit dem dazugehörigen Füllstand anzeigen.
 
-Erfasse mindestens drei weitere Autos und gib diese als Liste \(Marke \| Füllstand\) in der Datei `index.view.php` aus.
+Erfasse mindestens drei weitere Autos und gib diese als Liste (Marke | Füllstand) in der Datei `index.view.php` aus.
 
-### Zusatzaufgabe: Füllstand farbig markieren \(freiwillig\)
+### Zusatzaufgabe: Füllstand farbig markieren (freiwillig)
 
 Verpacke die ausgegebenen Werte in der Datei `index.view.php` in `<span>`-Tags und füge mit PHP folgende CSS-Klassen ein:
 
-* Wenn Füllstand &gt; 90%: `<span class='full'>`
-* Wenn Füllstand &lt; 10%: `<span class='empty'>`
+* Wenn Füllstand > 90%: `<span class='full'>`
+* Wenn Füllstand < 10%: `<span class='empty'>`
 
 Erstelle im HTML-Head einen `<style>`-Abschnitt oder eine externe CSS-Datei und färbe die Ausgaben grün bzw. rot.
-

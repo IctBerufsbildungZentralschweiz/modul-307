@@ -1,6 +1,6 @@
 # 02 Datenbankverbindung
 
-Verbindungen werden durch das Erstellen von Instanzen der PDO-Basisklasse erzeugt. Der Konstruktor der PDO-Klasse erwartet dabei Parameter zur Angabe der Datenbankquelle, den Benutzer und das Passwort \(falls vorhanden\).
+Verbindungen werden durch das Erstellen von Instanzen der PDO-Basisklasse erzeugt. Der Konstruktor der PDO-Klasse erwartet dabei Parameter zur Angabe der Datenbankquelle, den Benutzer und das Passwort (falls vorhanden).
 
 ```php
 // Datenbankquelle = mysql:host=localhost;dbname=meinedatenbank
@@ -15,9 +15,9 @@ $pdo = new PDO('mysql:host=localhost;dbname=meinedatenbank', 'root', 'ADfk3lox!4
 
 ## Datenbankquelle / Connection-String / DSN
 
-Die Datenbankquelle besteht aus einem definierten Connection-String. Darin wird angegeben, was für eine Art Quelle wir ansprechen möchten \(`mysql`\), was der Host dieser Datenbank ist \(`host=localhost`\) und wie die Datenbank heisst \(`meinedatenbank`\):
+Die Datenbankquelle besteht aus einem definierten Connection-String. Darin wird angegeben, was für eine Art Quelle wir ansprechen möchten (`mysql`), was der Host dieser Datenbank ist (`host=localhost`) und wie die Datenbank heisst (`meinedatenbank`):
 
-```text
+```
 mysql:host=localhost;dbname=meinedatenbank
 ```
 
@@ -48,7 +48,7 @@ Mit dem Wert `PDO::ERRMODE_EXCEPTION` für `PDO::ATTR_ERRMODE` wird sichergestel
 
 Der unter dieser Option aufgeführte Befehl wird bei jedem Verbindungsaufbau zur Datenbank ausgeführt. Mit `SET NAMES utf8;` teilen wir dem Server mit, dass unsere Kommunikation im `utf8` Zeichensatz erfolgen wird.
 
-## Aufgabe: Datenbankverbindung einrichten \(Gemeinsam\)
+## Aufgabe: Datenbankverbindung einrichten (Gemeinsam)
 
 Als erstes richten wir in unserem Controller `TaskController.php` die Verbindung zur eben erstellen Datenbank ein:
 
@@ -59,4 +59,3 @@ try {
    die('Keine Verbindung zur Datenbank möglich: ' . $e->getMessage());
 }
 ```
-

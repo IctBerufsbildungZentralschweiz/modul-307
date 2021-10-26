@@ -2,13 +2,13 @@
 
 Die Übertragung von Informationen mit Hilfe eines Formularfeldes folgt klaren Regeln und Strukturen. Somit lassen sich Formularelemente grundsätzlich in drei hierarchische Stufen unterteilen:
 
-1. Formularfelder \(Textfeld, Checkbox, Radio-Box...\)
-2. Formularfeld-Gruppe \(Fieldset\)
+1. Formularfelder (Textfeld, Checkbox, Radio-Box...)
+2. Formularfeld-Gruppe (Fieldset)
 3. Formular
 
 ### 1. Formularfeld
 
-Die Formularfelder sind die kleinsten Elemente innerhalb eines Formulars. Die verschiedenen Typen ermöglichen es dem Benutzer Informationen einzugeben \(Textfelder, Checkboxen...\) und/oder definierte Aktionen des Formulars auszulösen \(Submit, Reset\).
+Die Formularfelder sind die kleinsten Elemente innerhalb eines Formulars. Die verschiedenen Typen ermöglichen es dem Benutzer Informationen einzugeben (Textfelder, Checkboxen...) und/oder definierte Aktionen des Formulars auszulösen (Submit, Reset).
 
 ```markup
 <label for="firstname">Vorname</label>
@@ -75,7 +75,7 @@ Accessability/Barrierefreiheit: Kommunikation in der Weise, dass sie von Mensche
 Das `form` Tag ist auf der höchsten strukturellen Ebene eines Formulars und beinhaltet sämtliche Formularfelder und Formularfeld-Gruppen. Ein Formularfeld zeigt folgende Charakteristiken:
 
 * Das `form` Tag verfügt über kein Aussehen. Das Aussehen wird von den darin enthaltenen Elementen bestimmt.
-* Das `form` Tag definiert die Handhabung eines kompletten und abgesendeten Formulars \(mit Hilfe des `action` Attributs\).
+* Das `form` Tag definiert die Handhabung eines kompletten und abgesendeten Formulars (mit Hilfe des `action` Attributs).
 * Das `form` Tag definiert die Methode, mit welcher die Daten versendet werden.
 
 ```markup
@@ -114,7 +114,7 @@ Als keine Illustration:
 
 ![Formularfelder](../../.gitbook/assets/Form.jpg)
 
-## Aufgabe: Strukturierung \(Einzelarbeit\)
+## Aufgabe: Strukturierung (Einzelarbeit)
 
 ### Prolog
 
@@ -177,4 +177,3 @@ Ordne das Chaos, welches dein Chef verursacht hat mit den HTML-Tags `fieldset` u
 ## Aufgabe: Formular
 
 Sorge dafür, dass das Formular an die URI `validation` per `POST`-Methode gesendet wird.
-

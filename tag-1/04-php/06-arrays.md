@@ -23,7 +23,7 @@ echo $edelmetalle[1];  // Platin
 
 Zusätzlich zu jedem Wert, kann ein spezifischer Schlüssel vergeben werden.
 
-Wird kein eigener Schlüssel angegeben, vergibt PHP automatisch einen `Integer` als Schlüssel \(wie in vorherigem Beispiel\). Wird ein `String` als schlüssel angegeben, so erhält man ein Assoziatives Array: 
+Wird kein eigener Schlüssel angegeben, vergibt PHP automatisch einen `Integer` als Schlüssel (wie in vorherigem Beispiel). Wird ein `String` als schlüssel angegeben, so erhält man ein Assoziatives Array:
 
 ```php
 $wochentage = [
@@ -106,7 +106,7 @@ $vehicles = [
 
 ## Aufgabe: Assoziatives Array
 
-Erstelle das assoziative Array `$car` mit mindestens drei Werten \(Marke, Farbe, Jahrgang\) und gib nur den dritten Wert \(Jahrgang\) mit einem Echo-Konstrukt aus.
+Erstelle das assoziative Array `$car` mit mindestens drei Werten (Marke, Farbe, Jahrgang) und gib nur den dritten Wert (Jahrgang) mit einem Echo-Konstrukt aus.
 
 ```php
 $car = [
@@ -114,4 +114,3 @@ $car = [
     // ...
 ];
 ```
-
