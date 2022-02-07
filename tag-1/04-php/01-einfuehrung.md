@@ -34,7 +34,7 @@ Und natürlich die grossen CMS...
 * Joomla
 * ...
 
-PHP wird auf etwa 244 Millionen Websites eingesetzt (Stand: Januar 2013), wird auf über **79%** aller Websites als serverseitige Programmiersprache verwendet (Stand: [April 202](https://w3techs.com/technologies/overview/programming\_language)1) und ist damit die am häufigsten verwendete Sprache zum Erstellen von Websites - Tendenz steigend. Die Programmiersprache ist sie bei den meisten Webhostern vorinstalliert.
+PHP wird auf etwa 244 Millionen Websites eingesetzt (Stand: Januar 2013), wird auf über **78%** aller Websites als serverseitige Programmiersprache verwendet (Stand:[ Februar 2022](https://w3techs.com/technologies/overview/programming\_language)) und ist damit die am häufigsten verwendete Sprache zum Erstellen von Websites - Tendenz steigend. Die Programmiersprache ist sie bei den meisten Webhostern vorinstalliert.
 
 ## Was genau ist PHP?
 
