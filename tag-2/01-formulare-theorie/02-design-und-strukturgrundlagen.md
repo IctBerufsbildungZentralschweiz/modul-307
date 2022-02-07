@@ -12,8 +12,6 @@ Zum Einstieg ein kleines Video wieso User Experience und User Design wichtig sin
 
 Die User Experience bei Formularen ist wichtig, da zwischen dem Ziel des Benutzers (Kaufen, Beitreten, Bloggen) und dem Ziel des Unternehmen (Verkaufen, hohe Mitgliederzahl, mehr Content) oft ein Formular steht.
 
-![Gebrauch von Formularen.](https://www.smashingmagazine.com/wp-content/uploads/2011/10/00-Table-webform-objectives.jpg)
-
 Gebrauch von Formularen, auf [Smashing Magazine](http://www.smashingmagazine.com), gemäss [Luke Wroblewski](http://www.lukew.com/resources/web\_form\_design.asp).
 
 * Ein **Formular** macht somit eine Website **nutzbar**.
