@@ -19,8 +19,8 @@ include 'echo.php';
 
 | Schlüsselwort | Bedeutung                                                                                                        |
 | ------------- | ---------------------------------------------------------------------------------------------------------------- |
-| include       | Wenn die eingebundene Datei nicht existiert, wird ein E\_WARNING produziert. Die Skriptausführung läuft weiter.  |
-| require       | Wenn die eingebundene Datei nicht existiert, wird ein E\_COMPILE\_ERROR produziert. Die Skriptausführung stoppt. |
+| `include`     | Wenn die eingebundene Datei nicht existiert, wird ein E\_WARNING produziert. Die Skriptausführung läuft weiter.  |
+| `require`     | Wenn die eingebundene Datei nicht existiert, wird ein E\_COMPILE\_ERROR produziert. Die Skriptausführung stoppt. |
 
 ## Aufgabe: Script-Einbindung
 
