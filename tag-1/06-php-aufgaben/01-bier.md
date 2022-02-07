@@ -10,7 +10,8 @@ Schreibe ein PHP-Script, welches den Songtext des Liedes «99 Bottles of Beer» 
 
 Nutze zur Strukturierung des Codes die erstellte MVC-Umgebung:
 
-`BeerController.php` => Logik `beer.view.php` => Ausgabe
+`BeerController.php` => Logik \
+`beer.view.php` => Ausgabe
 
 ### Lösungsschritte
 
