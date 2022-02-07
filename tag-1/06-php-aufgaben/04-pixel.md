@@ -12,7 +12,8 @@ Erstelle ein PHP-Script, welches aufgrund der mitgegebenen GET-Variablen eine Ta
 
 Nutze zur Strukturierung des Codes die erstellte MVC-Umgebung. Erstelle die Route `/pixel`:
 
-`PixelController.php` => Logik `pixel.view.php` => Ausgabe
+`PixelController.php` => Logik \
+`pixel.view.php` => Ausgabe
 
 ### Lösungsschritte
 
