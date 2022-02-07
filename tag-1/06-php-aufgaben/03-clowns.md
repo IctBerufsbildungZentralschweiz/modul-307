@@ -10,7 +10,8 @@ Generiere auf Basis eines PHP-Arrays eine HTML-Liste.
 
 Nutze zur Strukturierung des Codes die erstellte MVC-Umgebung:
 
-`ClownController.php` => Logik `clown.view.php` => Ausgabe
+`ClownController.php` => Logik \
+`clown.view.php` => Ausgabe
 
 ### Lösungsschritte
 

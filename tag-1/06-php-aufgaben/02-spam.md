@@ -8,8 +8,7 @@ Erstelle ein Script, welches Sätze aus einem Array durchläuft und sie bei ents
 
 Nutze zur Strukturierung des Codes die erstellte MVC-Umgebung:
 
-`SpamController.php` => Logik \
-`spam.view.php` => Ausgabe
+`SpamController.php` => Logik `spam.view.php` => Ausgabe
 
 ### Lösungsschritte
 
