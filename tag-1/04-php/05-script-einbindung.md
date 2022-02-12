@@ -40,3 +40,7 @@ Das Ziel ist es, dass in der Datei `index.php` deine Variable definiert wird und
     </body>
 </html>
 ```
+
+### Zusatzaufgabe: `include_once` / `require_once`
+
+Was ist der Unterschied zwischen `include()` und `include_once()` bzw. `require()` und `require_once()` und wann ist was sinnvoll?&#x20;
