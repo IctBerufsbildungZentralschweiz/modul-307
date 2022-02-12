@@ -65,10 +65,10 @@ echo 'Ein sehr langer unleserlicher '
 Es ist auch möglich Variablen zu verketten.
 
 ```php
-$popstar = 'Justin Bieber';
+$popstar = 'Mariah Carey';
 
 echo 'Ich liebe die Musik von ' . $popstar;
-// Ich liebe die Musik von Justin Bieber
+// Ich liebe die Musik von Mariah Carey
 ```
 
 #### Parsing von Variablen
@@ -76,10 +76,10 @@ echo 'Ich liebe die Musik von ' . $popstar;
 Variablen können direkt in einen String eingefügt werden, sofern dieser mit `"` deklariert wird.
 
 ```php
-$popstar = 'Justin Bieber';
+$popstar = 'Mariah Carey';
 
 echo "Ich liebe die Musik von $popstar.";
-// Ich liebe die Musik von Justin Bieber.
+// Ich liebe die Musik von Mariah Carey.
 
 echo 'Ich liebe die Musik von $popstar.';
 // Ich liebe die Musik von $popstar.
