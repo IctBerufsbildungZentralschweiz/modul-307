@@ -143,7 +143,10 @@ class BaseClass
    // AB PHP 8: Die Definition und Zuweisung der Eigenschaften kann 
    // optional direkt im Konstruktor vorgenommen werden. Dieses
    // Codebeispiel ist gleichbedeutend mit dem vorherigen:
-   public function __construct(protected string $var1, protected string $var2) {}
+   public function __construct(
+      protected string $var1, 
+      protected string $var2
+   ) {}
 }
 ```
 
