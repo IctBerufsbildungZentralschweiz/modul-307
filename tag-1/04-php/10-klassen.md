@@ -23,12 +23,12 @@ Eine Klasse kann wie folgt definiert werden:
 class SimpleClass
 {
     // Deklaration einer Eigenschaft
-    public string $var = 'ein Standardwert';
+    public string $myVar = 'ein Standardwert';
 
     // Deklaration einer Methode
     public function displayVar()
     {
-        echo $this->var;
+        echo $this->myVar;
     }
 }
 ```
@@ -65,11 +65,17 @@ class SimpleClass
     }
 }
 
-// Die Klasse SimpleClass wird instanziert und das Objekt in die Variable $instanz gespeichert.
+// Die Klasse SimpleClass wird instanziert und 
+// das Objekt in die Variable $instanz gespeichert.
 $instanz = new SimpleClass(); 
 
-// Auf die Variablen in der Klasse kann nun mit dem Objekt und dem Pfeiloperator zugegriffen werden.
-echo $instanz->var1;
+// Auf die Variablen in der Klasse kann nun mit dem 
+// Objekt und dem Pfeiloperator zugegriffen werden.
+echo $instanz->var1; // Gibt 'Hallo Welt' aus
+
+// Von aussen kann man nur auf Eigenschaften und Methoden 
+// zugreiffen, die als "public" deklariert sind. Siehe "Sichtbarkeit".
+echo $instanz->var2; // Gibt eine Fehlermeldung aus
 ```
 
 ### Methoden

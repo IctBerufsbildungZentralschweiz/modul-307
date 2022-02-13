@@ -147,7 +147,7 @@ function isOldtimer(array $car): bool
 }
 
 if (isOldtimer($car)) {
-    echo "Beim " . $car['Marke'] . " handelt es sich um einen Oldtimer.";
+    echo "Beim " . $car['brand'] . " handelt es sich um einen Oldtimer.";
 } else {
     // ...
 }
