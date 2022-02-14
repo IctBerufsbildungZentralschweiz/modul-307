@@ -79,7 +79,7 @@ Das `form` Tag ist auf der höchsten strukturellen Ebene eines Formulars und bei
 * Das `form` Tag definiert die Methode, mit welcher die Daten versendet werden.
 
 ```markup
-<form action="http://ict-bz.ch/process.php" method="post">
+<form action="https://mydomain.xyz/process.php" method="post">
 
     <fieldset>
 

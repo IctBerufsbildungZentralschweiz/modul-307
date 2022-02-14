@@ -183,7 +183,7 @@ Die folgenden Testfälle sollte dein Formular erfüllen:
 
 Speichere alle gefundenen Fehler in ein`$errors` Array.
 
-Sofern ein Fehler gefunden wurde, soll in der `form.view.php` eine Liste sämtlicher angezeigt werden:
+Sofern ein Fehler gefunden wurde, soll in der `event.view.php` eine Liste sämtlicher angezeigt werden:
 
 ```markup
 <ul>
