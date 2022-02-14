@@ -141,9 +141,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 ## Aufgabe: Verarbeitung (Einzelarbeit)
 
-Erstelle eine neue Methode im Controller `EventController.php` und schaue via Routes-Eintrag, dass diese bei der URI `validate`aufgerufen wird.
+Erstelle eine neue Methode `validate()` im Controller `FormController.php` und schaue via Routes-Eintrag, dass diese bei der URI `/event/validate`aufgerufen wird.
 
-Überprüfe nun im Controller ob POST-Daten gesendet wurden. Falls ja: Gib diese mit einem `var_dump`-Konstrukt aus. Falls nein: Leite den Besucher zurück zum Formular.
+Überprüfe nun in der neuen Methode, ob POST-Daten gesendet wurden. Falls ja: Gib diese mit einem `var_dump`-Konstrukt aus. Falls nein: Leite den Besucher zurück zum Formular.
 
 ## Aufgabe: Datenzugriff (Einzelarbeit)
 

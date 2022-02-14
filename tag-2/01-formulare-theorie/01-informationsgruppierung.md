@@ -176,7 +176,4 @@ Ordne das Chaos, welches dein Chef verursacht hat mit den HTML-Tags `fieldset` u
 
 ## Aufgabe: Formular
 
-Sorge dafür, dass das Formular per `POST`-Methode an die URI `event/validate` gesendet wird. \
-Erstelle eine neue Route dazu und im `EventController` eine Methode `valitate()`, welche erst mal alle gesendeten Daten mit `var_dump($_POST);` ausgibt.&#x20;
-
-Schicke das Formular ab und schau, was beim Server ankommt.&#x20;
+Sorge dafür, dass das Formular per `POST`-Methode an die URI `event/validate` gesendet wird.&#x20;
