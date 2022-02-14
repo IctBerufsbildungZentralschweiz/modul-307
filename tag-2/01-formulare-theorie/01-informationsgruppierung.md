@@ -134,9 +134,9 @@ Dein Chef hat bereits probiert das Projekt umzusetzen. Am Rand der Verzweiflung 
 
 ### Auftrag
 
-Erstelle die neue View `event.view.php`, den passenden `EventController` und eine Methode `register()` dazu, welche die View lädt. Erstelle den dazugehörigen Routes-Eintrag `/event/register`.&#x20;
+Erstelle die neue View `form.view.php`, den passenden `FormController` und eine Methode `form()` dazu, welche die View lädt. Erstelle den dazugehörigen Routes-Eintrag `/event`.&#x20;
 
-Erstelle in der Datei `event.view.php` ein HTML-Grundgerüst und kopiere folgende Formularfelder in den Body-Bereich, welche von deinem Chef erstellt wurden.
+Erstelle in der Datei `form.view.php` ein HTML-Grundgerüst und kopiere folgende Formularfelder in den Body-Bereich, welche von deinem Chef erstellt wurden.
 
 ```markup
     Wir möchten den Shuttle-Bus-Service beanspruchen: 
@@ -176,4 +176,4 @@ Ordne das Chaos, welches dein Chef verursacht hat mit den HTML-Tags `fieldset` u
 
 ## Aufgabe: Formular
 
-Sorge dafür, dass das Formular per `POST`-Methode an die URI `event/validate` gesendet wird.&#x20;
+Sorge dafür, dass das Formular per `POST`-Methode an die URI `validate` gesendet wird.&#x20;
