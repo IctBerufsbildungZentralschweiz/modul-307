@@ -134,7 +134,7 @@ Dein Chef hat bereits probiert das Projekt umzusetzen. Am Rand der Verzweiflung 
 
 ### Auftrag
 
-Erstelle die neue View `event.view.php` und den passenden `EventController` und eine Methode `anmelden()` dazu, welche die View lädt. Erstelle den dazugehörigen Routes-Eintrag.&#x20;
+Erstelle die neue View `event.view.php`, den passenden `EventController` und eine Methode `register()` dazu, welche die View lädt. Erstelle den dazugehörigen Routes-Eintrag `/event/register`.&#x20;
 
 Erstelle in der Datei `event.view.php` ein HTML-Grundgerüst und kopiere folgende Formularfelder in den Body-Bereich, welche von deinem Chef erstellt wurden.
 
@@ -176,7 +176,7 @@ Ordne das Chaos, welches dein Chef verursacht hat mit den HTML-Tags `fieldset` u
 
 ## Aufgabe: Formular
 
-Sorge dafür, dass das Formular an die URI `validation` per `POST`-Methode gesendet wird. \
-Erstelle eine neue Route `/validation` und im `EventController` eine Methode `valitation()` dazu, welche erst mal alle gesendeten Daten mit `var_dump($_POST);` ausgibt.&#x20;
+Sorge dafür, dass das Formular per `POST`-Methode an die URI `event/validate` gesendet wird. \
+Erstelle eine neue Route dazu und im `EventController` eine Methode `valitate()`, welche erst mal alle gesendeten Daten mit `var_dump($_POST);` ausgibt.&#x20;
 
-Testen: Schicke das Formular ab und schau, was beim Server ankommt.&#x20;
+Schicke das Formular ab und schau, was beim Server ankommt.&#x20;
