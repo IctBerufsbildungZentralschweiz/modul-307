@@ -43,19 +43,21 @@ Auch die Methode um Fehlermeldungen zu sammeln oder darzustellen ist dir überla
 ### Formular mit Platzhalter für Fehlerliste
 
 ```markup
-<form action="submit.php" id="loginForm">
+<form action="login" id="loginForm">
 
-    <ul id="errorList"></ul> <!-- via CSS ausblenden -->
-
-    <div class="form-group">
-        <label for="username">Benutzername</label>
-        <input type="text" id="username" required>
-    </div>
-
-    <div class="form-group">
-        <label for="password">Passwort</label>
-        <input type="password" id="password" required>
-    </div>
+    <p id="errorList"></p> <!-- via CSS ausblenden -->
+    <fieldset>
+        <div class="form-group">
+            <label for="username">Benutzername</label>
+            <input type="text" id="username" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="password">Passwort</label>
+            <input type="password" id="password" required>
+        </div>
+        </fieldset>
+    <input id="submit" type="submit" value="Formular absenden">
 </form>
 ```
 
@@ -65,7 +67,7 @@ Die übergebene Variable `evt` hat eine Methode `preventDefault`. Falls Fehler v
 
 ```javascript
 window.addEventListener("load", function(){
-    document.querySelector('#listForm').addEventListener('submit', function(evt) {
+    document.querySelector('#loginForm').addEventListener('submit', function(evt) {
 
         var errors  = [];
 
@@ -92,8 +94,8 @@ window.addEventListener("load", function(){
             // Alles OK -> Error-Liste verstecken!
             errorList.style.display = "none";
         }
-
-    });
+    }
+});
 ```
 
 ### Ausgabe der Fehlerliste
@@ -111,14 +113,8 @@ Alle Fehler werden gebündelt im Platzhalter  ausgegeben:
 
         var errorList = document.querySelector('#errorList');
 
-        // Bestehende <li> entfernen
-        errorList.innerHTML = "";
-
-        errors.forEach(function(error) {
-            const errorMessage = document.createElement("li");
-            errorMessage.textContent = error;
-            errorList.append(errorMessage);
-        });
+        // Alle Fehler mit einem <br> getrennt ausgeben
+        errorList.innerHTML = errors.join('<br>');
 
         // Versteckte Liste anzeigen
         errorList.style.display = "block";
