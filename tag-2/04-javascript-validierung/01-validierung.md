@@ -104,8 +104,8 @@ Alle Fehler werden gebündelt im Platzhalter  ausgegeben:
 
 ```javascript
     /**
-     * Wandelt das `errors` Array in eine
-     * normale HTML-Liste um.
+     * Gib die Einträge im `errors` Array mit <br> getrennt 
+     * in einem Platzhalter aus.
      *
      * @param array errors
      */
