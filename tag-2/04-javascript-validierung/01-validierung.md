@@ -119,8 +119,6 @@ Alle Fehler werden gebündelt im Platzhalter  ausgegeben:
         // Versteckte Liste anzeigen
         errorList.style.display = "block";
     }
-
-});
 ```
 
 ## Zusatz für Fortgeschrittene
