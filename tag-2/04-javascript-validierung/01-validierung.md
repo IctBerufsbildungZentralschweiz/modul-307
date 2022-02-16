@@ -94,7 +94,7 @@ window.addEventListener("load", function(){
             // Alles OK -> Error-Liste verstecken!
             errorList.style.display = "none";
         }
-    }
+    });
 });
 ```
 
