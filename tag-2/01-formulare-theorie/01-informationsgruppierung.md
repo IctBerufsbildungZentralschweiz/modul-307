@@ -176,4 +176,4 @@ Ordne das Chaos, welches dein Chef verursacht hat mit den HTML-Tags `fieldset` u
 
 ## Aufgabe: Formular
 
-Sorge dafür, dass das Formular per `POST`-Methode an die URI `validate` gesendet wird.&#x20;
+Sorge dafür, dass das Formular per `POST`-Methode an die Route `/form` gesendet wird.&#x20;
